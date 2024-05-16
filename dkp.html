@@ -12,14 +12,16 @@
 </head>
 
 <body x-data="data" class="flex-column align-center">
-  <p class="font-xl font-center mb-none">Paradøx</p>
+  <header>
+    <p class="font-xl pg-title">Paradøx</p>
+  </header>
   <p class="font-lg font-center font-underline mb-lg">Raids</p>
   <select class="mb-lg font-lg p-sm" x-model="selectedRaidName" x-on:change="changeSelectedRaid">
     <template x-for="raid in raids">
       <option x-bind:value="raid.name" x-text="raid.name"></option>
     </template>
   </select>
-  <div class="mb-lg">
+  <div class="flex-row flex-wrap justify-center">
     <input class="font-lg mr-lg" placeholder="Search..." type="text" x-model="searchQuery" x-on:input.change.debounce="applyFilters">
     <select class="font-lg p-sm" x-model="slotFilter" x-on:change="applyFilters">
       <option value="All" selected>All</option>
@@ -29,7 +31,7 @@
     </select>
   </div>
   <template x-if="selectedRaid">
-    <div class="border-seaform p-lg mb-lg round-sm">
+    <div class="border-seaform p-lg my-lg round-sm raid-container">
       <p class="font-lg font-center mt-none" x-text="selectedRaidLabel"></p>
       <template x-for="mob in filteredRaidMobs">
         <div>

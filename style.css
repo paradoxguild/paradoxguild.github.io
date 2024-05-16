@@ -7,6 +7,26 @@ html, body {
   background-color: var(--color-dark-bg);
   color: var(--color-paradox-seafoam);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 30px;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--color-dark-bg);
+  border-bottom: 1px solid var(--color-paradox-seafoam);
+}
+
+header .pg-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -97,4 +117,29 @@ input[type="text"].font-lg, select.font-lg {
   padding: 0 var(--md-size);
   margin-top: 0;
   list-style: none;
+}
+
+@media screen and (max-width: 499px) {
+  select, input[type="text"] {
+    width: calc(100vw - var(--sm-size) * 2) !important;
+    margin-bottom: var(--lg-size);
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  select {
+    padding-left: var(--sm-size) !important;
+    padding-right: var(--sm-size) !important;
+  }
+  input[type="text"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-indent: var(--sm-size) !important;
+  }
+  .raid-container {
+    margin-top: 0 !important;
+  }
+  header .pg-title {
+    left: var(--lg-size) !important;
+    transform: translate(0, -50%);
+  }
 }
