@@ -70,8 +70,9 @@
         <div class="mx-xl px-md my-md pb-lg border-seaform round-sm font-center">
           <p class="mb-none font-left mx-sm stat-label">Item Stats:</p>
           <template x-for="stat in itemStats[modalItem.name].stats">
-            <p x-text="stat" class="stat my-none mx-sm py-none font-left" x-bind:class="{
-              'stat-effect': stat.indexOf('Equip:') === 0 || stat.indexOf('Chance on hit:') === 0 || stat.indexOf('Use:') === 0,
+            <p x-text="formatStat(stat)" class="stat my-none mx-sm py-none font-left" x-bind:class="{
+              'stat-effect': stat.indexOf('Equip:') === 0 || stat.indexOf('Chance on hit:') === 0
+                || stat.indexOf('Use:') === 0 || stat.indexOf('Armor!') >= 0,
               'set-effect': stat.indexOf('Set:') >= 0
             }"></p>
           </template>
@@ -176,6 +177,12 @@
             .then(res => res.json())
             .then(json => this.itemStats = json)
             .catch(err => console.error(err));
+        },
+        formatStat(stat) {
+          if (stat.endsWith('!')) {
+            stat = stat.substring(0, stat.length - 1);
+          }
+          return stat;
         },
         computeRaidDKP(raid) {
           return raid.mobs.map(m => m.value).reduce((p, c) => p + c, 0);
