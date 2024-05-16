@@ -149,6 +149,7 @@ input[type="text"].font-lg, select.font-lg {
   }
   .raid-container {
     margin-top: 0 !important;
+    width: calc(100vw - var(--sm-size) * 2) !important;
   }
   header .pg-title {
     left: var(--lg-size) !important;
