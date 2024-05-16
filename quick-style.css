@@ -5,6 +5,7 @@
   --lg-size: 15px;
   --xl-size: 25px;
   --sm-border-size: 8px;
+  --xs-font-size: 12px;
   --sm-font-size: 13px;
   --sm-plus-font-size: 16px;
   --md-font-size: 18px;
@@ -152,6 +153,7 @@
 .font-md { font-size: var(--md-font-size); }
 .font-sm-plus { font-size: var(--sm-plus-font-size); }
 .font-sm { font-size: var(--sm-font-size); }
+.font-xs { font-size: var(--xs-font-size); }
 
 .font-strike { text-decoration: line-through; }
 .font-underline { text-decoration: underline; }
@@ -165,6 +167,8 @@
 .font-gray { color: #9b9b9b; }
 .font-danger { color: #c05b5b; }
 .font-center { text-align: center; }
+.font-left { text-align: left; }
+.font-right { text-align: right; }
 
 .no-wrap { white-space: nowrap; }
 

@@ -66,6 +66,20 @@
   <div class="confirm-modal full-screen-modal" x-show="showModal" x-on:click.self="showModal = false">
     <div class="modal-content">
       <p class="modal-title" x-text="modalTitle"></p>
+      <template x-if="modalItem && itemStats[modalItem.name]">
+        <div class="mx-xl px-md my-md pb-lg border-seaform round-sm font-center">
+          <p class="mb-none font-left mx-sm stat-label">Item Stats:</p>
+          <template x-for="stat in itemStats[modalItem.name].stats">
+            <p x-text="stat" class="stat my-none mx-sm py-none font-left" x-bind:class="{
+              'stat-effect': stat.indexOf('Equip:') === 0 || stat.indexOf('Chance on hit:') === 0 || stat.indexOf('Use:') === 0,
+              'set-effect': stat.indexOf('Set:') >= 0
+            }"></p>
+          </template>
+          <a x-bind:href="'https://www.wowhead.com/classic/item=' + itemStats[modalItem.name].itemId" target="_blank">
+            <button class="wowhead-btn">View WowHead Link</button>
+          </a>
+        </div>
+      </template>
       <div class="flex-row mb-sm">
         <button x-text="modalConfirmText" x-on:click="executeModal('yes')"></button>
         <button class="btn-outline" x-on:click="executeModal()">Cancel</button>
@@ -147,6 +161,7 @@
           5: "Legendary (Orange)"
         },
         raids: [],
+        itemStats: {},
         init() {
           fetch("/items.json")
             .then(res => res.json())
@@ -156,6 +171,10 @@
               this.slotTypes = this.computeSlotTypes();
               this.changeSelectedRaid();
             })
+            .catch(err => console.error(err));
+          fetch("/item-stats.json")
+            .then(res => res.json())
+            .then(json => this.itemStats = json)
             .catch(err => console.error(err));
         },
         computeRaidDKP(raid) {

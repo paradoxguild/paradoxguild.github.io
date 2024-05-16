@@ -143,6 +143,27 @@ input[type="text"].font-lg, select.font-lg {
   text-align: center;
 }
 
+.stat {
+  color: white;
+}
+
+.stat, .stat-label {
+  font-size: 2vh;
+}
+
+.stat-effect {
+  color: #19da19;
+}
+
+.set-effect {
+  color: #bdbd4c;
+}
+
+.wowhead-btn {
+  width: calc(100% - var(--sm-size) * 2);
+  margin-top: var(--lg-size) !important;
+}
+
 @media screen and (max-width: 499px) {
   select, input[type="text"] {
     min-width: calc(100vw - var(--sm-size) * 2) !important;

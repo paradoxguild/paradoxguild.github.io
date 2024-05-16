@@ -53,7 +53,7 @@
           "name": "Flamewaker Shared Loot",
           "value": 0,
           "items": [
-            { "name": "Giantstalker's Epaulets", "slot": "Ranged (wands)", "rarity": 4, "ilvl": 63 },
+            { "name": "Crimson Shocker", "slot": "Ranged (wands)", "rarity": 4, "ilvl": 63 },
             { "name": "Sorcerous Dagger", "slot": "One-Hand", "rarity": 4, "ilvl": 65 },
             { "name": "Helm of the Lifegiver", "slot": "Head", "rarity": 4, "ilvl": 62 },
             { "name": "Robe of Volatile Power", "slot": "Chest (cloth)", "rarity": 4, "ilvl": 66 },
