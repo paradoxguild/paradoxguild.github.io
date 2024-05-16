@@ -1,0 +1,51 @@
+:root {
+  --color-paradox-seafoam: #32afa5;
+  --color-dark-bg: #121212;
+}
+
+html, body {
+  background-color: var(--color-dark-bg);
+  color: var(--color-paradox-seafoam);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+table {
+  min-width: 80vw;
+}
+
+table td, table th {
+  padding: var(--sm-size);
+  border: 1px solid var(--color-paradox-seafoam);
+  text-align: center;
+}
+
+table th:first-child {
+  border-top-left-radius: var(--sm-border-size);
+}
+
+table th:last-child {
+  border-top-right-radius: var(--sm-border-size);
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: var(--sm-border-size);
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: var(--sm-border-size);
+}
+
+select {
+  background: var(--color-dark-bg);
+  color: var(--color-paradox-seafoam);
+  border: 1px solid var(--color-paradox-seafoam);
+  border-radius: var(--sm-border-size);
+}
+
+.border-seaform {
+  border: 1px solid var(--color-paradox-seafoam);
+}

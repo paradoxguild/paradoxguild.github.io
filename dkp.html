@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paradøx DKP</title>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <link rel="stylesheet" href="quick-style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body x-data="data" class="flex-column align-center">
+  <p class="font-xl font-center mb-none">Paradøx</p>
+  <p class="font-lg font-center font-underline mb-lg">Raids</p>
+  <select class="mb-lg font-lg p-sm" x-model="selectedRaidName" x-on:change="changeSelectedRaid">
+    <template x-for="raid in raids">
+      <option x-bind:value="raid.name" x-text="raid.name"></option>
+    </template>
+  </select>
+  <template x-if="selectedRaid">
+    <div class="border-seaform p-lg mb-lg round-sm">
+      <p class="font-lg font-center mt-none" x-text="selectedRaidLabel"></p>
+      <template x-for="mob in filteredRaidMobs">
+        <div>
+          <p class="font-md font-center font-underline" x-text="mob.name"></p>
+          <table>
+            <tr>
+              <th>Item</th>
+              <th>Slot</th>
+              <th>Rarity</th>
+              <th>ilvl</th>
+              <th>Min Bid</th>
+            </tr>
+            <template x-for="(item, index) in mob.items">
+              <tr>
+                <td x-text="item.name"></td>
+                <td x-text="item.slot"></td>
+                <td x-text="rarity[item.rarity]"></td>
+                <td x-text="item.ilvl"></td>
+                <td x-text="computeMinBidValue(item)"></td>
+              </tr>
+            </template>
+          </table>
+        </div>
+      </template>
+    </div>
+  </template>
+  <script>
+    function data() {
+      return {
+        selectedRaid: null,
+        selectedRaidName: null,
+        selectedRaidLabel: null,
+        filteredRaidMobs: [],
+        multiplier: 1,
+        base: 4,
+        slotMultipliers: {
+          "Head": 1,
+          "Neck": 0.5,
+          "Shoulder": 0.75,
+          "Back": 0.5,
+          "Chest (leather+)": 1,
+          "Chest (cloth)": 1,
+          "Hands": 0.75,
+          "Wrist": 0.75,
+          "Waist": 1,
+          "Legs": 1,
+          "Feet": 0.75,
+          "Finger": 0.5,
+          "Trinket": 0.75,
+          "One-Hand": 1,
+          "Main Hand": 1.5,
+          "Off Hand": 1.5,
+          "Held in Off-hand": 0.5,
+          "Two-Hand": 2,
+          "Shield": 0.5,
+          "Ranged": 0.5,
+          "Ranged (wands)": 0.5,
+          "Thrown": 0.5,
+          "Quiver": 0.5,
+          "Relic": 0.5
+        },
+        rarity: {
+          2: "Uncommon (Green)",
+          3: "Rare (Blue)",
+          4: "Epic (Purple)",
+          5: "Legendary (Orange)"
+        },
+        raids: [],
+        init() {
+          fetch("/items.json")
+            .then(res => res.json())
+            .then(json => {
+              this.raids = json.raids;
+              this.selectedRaidName = this.raids[0].name;
+              this.changeSelectedRaid();
+            })
+            .catch(err => console.error(err));
+        },
+        computeRaidDKP(raid) {
+          return raid.mobs.map(m => m.value).reduce((p, c) => p + c, 0);
+        },
+        computeRaidLabel(raid) {
+          return `${raid.name} (${this.computeRaidDKP(raid)} DKP)`;
+        },
+        computeMinBidValue(item) {
+          // ceil([Multiplier] * [Base]^(ilvl / 26 + (rarity - 4)) * [slot multiplier])
+          return Math.ceil(this.multiplier * Math.pow(this.base, item.ilvl / 26 + (item.rarity - 4)) * this.slotMultipliers[item.slot]);
+        },
+        changeSelectedRaid() {
+          this.selectedRaid = this.raids.find(r => r.name === this.selectedRaidName);
+          this.filter();
+        },
+        filter() {
+          this.selectedRaidLabel = this.computeRaidLabel(this.selectedRaid);
+          let mobs = [...this.selectedRaid.mobs];
+          // filter logic with query & slot dropdown
+          this.filteredRaidMobs = mobs;
+        }
+      };
+    }
+  </script>
+</body>

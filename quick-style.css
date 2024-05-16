@@ -1,15 +1,15 @@
 :root {
   --xs-size: 2px;
-    --sm-size: 5px;
-    --md-size: 10px;
-    --lg-size: 15px;
-    --xl-size: 25px;
-    --sm-border-size: 8px;
-    --sm-font-size: 13px;
-    --sm-plus-font-size: 16px;
-    --md-font-size: 18px;
-    --lg-font-size: 22px;
-    --xl-font-size: 26px;
+  --sm-size: 5px;
+  --md-size: 10px;
+  --lg-size: 15px;
+  --xl-size: 25px;
+  --sm-border-size: 8px;
+  --sm-font-size: 13px;
+  --sm-plus-font-size: 16px;
+  --md-font-size: 18px;
+  --lg-font-size: 22px;
+  --xl-font-size: 26px;
 }
 
 /* Display Quick-Access Classes */
@@ -160,8 +160,8 @@
 
 .font-black { color: #000000; }
 .font-white { color: #ffffff; }
-.font-gray { color: rgb(155, 155, 155); }
-.font-danger { color: rgb(192, 91, 91); }
+.font-gray { color: #9b9b9b; }
+.font-danger { color: #c05b5b; }
 .font-center { text-align: center; }
 
 .no-wrap { white-space: nowrap; }
