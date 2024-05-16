@@ -136,7 +136,7 @@ input[type="text"].font-lg, select.font-lg {
 }
 
 .constrain-paragraphs p, .constrain-paragraphs ul {
-  max-width: min(60%, 330px);
+  max-width: min(65%, 340px);
 }
 
 .constrain-paragraphs p {
