@@ -152,6 +152,9 @@ input[type="text"].font-lg, select.font-lg {
     margin-top: 0 !important;
     max-width: calc(100vw - var(--sm-size) * 2) !important;
     min-width: calc(100vw - var(--sm-size) * 2) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: var(--md-size);
   }
   header .pg-title {
     left: var(--lg-size) !important;
