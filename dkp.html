@@ -14,6 +14,12 @@
 <body x-data="data" class="flex-column align-center">
   <header>
     <p class="font-xl pg-title">Paradøx</p>
+    <div class="planner" x-show="!showPlanner">
+      <p class="m-none hov-pointer hov-brighten p-md" x-on:click="showPlanner = !showPlanner">
+        <span class="font-underline" x-text="showPlanner ? 'Hide Plan' : 'Show Plan'"></span>
+        <span> (<span x-text="plannedDKP"></span> DKP)</span>
+      </p>
+    </div>
   </header>
   <p class="font-lg font-center font-underline mb-lg">Raids</p>
   <select class="mb-lg font-lg p-sm" x-model="selectedRaidName" x-on:change="changeSelectedRaid">
@@ -58,7 +64,7 @@
       </template>
     </div>
   </template>
-  <div class="full-screen-modal" x-show="showModal" x-on:click.self="showModal = false">
+  <div class="confirm-modal full-screen-modal" x-show="showModal" x-on:click.self="showModal = false">
     <div class="modal-content">
       <p class="modal-title" x-text="modalTitle"></p>
       <div class="flex-row mb-sm">
@@ -67,21 +73,22 @@
       </div>
     </div>
   </div>
-  <div class="planner">
-    <p class="m-none hov-pointer hov-brighten p-md" x-on:click="showPlanner = !showPlanner">
-      <span class="font-underline" x-text="showPlanner ? 'Hide Plan' : 'Show Plan'"></span>
-      <span> (<span x-text="plannedDKP"></span> DKP)</span>
-    </p>
-    <ul x-show="showPlanner && planner.length">
-      <template x-for="item in planner">
-        <li>
-          <span x-text="computeMinBidValue(item)"></span>
-          <span>DKP - </span>
-          <span x-text="item.name"></span>
-          <span class="hov-pointer hov-brighten hov-underline" x-on:click="removeFromPlanner(item)">(X)</span>
-        </li>
-      </template>
-    </ul>
+  <div class="planner-modal full-screen-modal" x-show="showPlanner" x-on:click.self="showPlanner = false">
+    <div class="modal-content">
+      <p class="modal-title">DKP Planner</p>
+      <p class="mt-none" x-show="!planner.length">No Items Added!</p>
+      <ul x-show="planner.length">
+        <template x-for="item in planner">
+          <li>
+            <span x-text="computeMinBidValue(item)"></span>
+            <span>DKP - </span>
+            <span x-text="item.name"></span>
+            <span class="hov-pointer hov-brighten hov-underline" x-on:click="removeFromPlanner(item)">(X)</span>
+          </li>
+        </template>
+      </ul>
+      <p class="mt-none" x-show="planner.length">Total: <span x-text="plannedDKP"></span> DKP</p>
+    </div>
   </div>
   <script>
     function data() {

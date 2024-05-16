@@ -113,7 +113,15 @@ input[type="text"].font-lg, select.font-lg {
   border-radius: var(--sm-border-size);
 }
 
-.planner ul {
+.confirm-modal {
+  z-index: 10;
+}
+
+.planner-modal {
+  z-index: 5;
+}
+
+.planner-modal ul {
   padding: 0 var(--md-size);
   margin-top: 0;
   list-style: none;
