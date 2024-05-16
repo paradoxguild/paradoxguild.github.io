@@ -348,7 +348,7 @@ table.full-width tr td:last-child {
   text-align: center;
 }
 
-.modal-content button {
+.modal-content button, button.btn {
   margin: var(--sm-size);
   font-size: var(--md-font-size);
   background-color: white;
@@ -358,12 +358,12 @@ table.full-width tr td:last-child {
   border-radius: var(--sm-size);
 }
 
-.modal-content button.btn-outline {
+.modal-content button.btn-outline, button.btn.btn-outline {
   background-color: transparent;
   color: white;
 }
 
-.modal-content button:hover {
+.modal-content button:hover, button.btn:hover {
   cursor: pointer;
   opacity: 0.8;
 }

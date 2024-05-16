@@ -98,13 +98,13 @@ input[type="text"].font-lg, select.font-lg {
   border: 1px solid var(--color-paradox-seafoam);
 }
 
-.modal-content button {
+.modal-content button, button.btn {
   background-color: var(--color-paradox-seafoam);
   color: var(--color-dark-bg);
   border-color: var(--color-paradox-seafoam);
 }
 
-.modal-content button.btn-outline {
+.modal-content button.btn-outline, button.btn.btn-outline {
   color: var(--color-paradox-seafoam);
 }
 
@@ -129,6 +129,18 @@ input[type="text"].font-lg, select.font-lg {
   padding: 0 var(--md-size);
   margin-top: 0;
   list-style: none;
+}
+
+.paradox-btn {
+  width: 300px;
+}
+
+.constrain-paragraphs p, .constrain-paragraphs ul {
+  max-width: min(60%, 330px);
+}
+
+.constrain-paragraphs p {
+  text-align: center;
 }
 
 @media screen and (max-width: 499px) {
