@@ -19,6 +19,15 @@
       <option x-bind:value="raid.name" x-text="raid.name"></option>
     </template>
   </select>
+  <div class="mb-lg">
+    <input class="font-lg mr-lg" placeholder="Search..." type="text" x-model="searchQuery" x-on:input.change.debounce="applyFilters">
+    <select class="font-lg p-sm" x-model="slotFilter" x-on:change="applyFilters">
+      <option value="All" selected>All</option>
+      <template x-for="slot in slotTypes">
+        <option x-bind:value="slot" x-text="slot"></option>
+      </template>
+    </select>
+  </div>
   <template x-if="selectedRaid">
     <div class="border-seaform p-lg mb-lg round-sm">
       <p class="font-lg font-center mt-none" x-text="selectedRaidLabel"></p>
@@ -54,6 +63,9 @@
         selectedRaidName: null,
         selectedRaidLabel: null,
         filteredRaidMobs: [],
+        slotTypes: [],
+        searchQuery: null,
+        slotFilter: "All",
         multiplier: 1,
         base: 4,
         slotMultipliers: {
@@ -95,6 +107,7 @@
             .then(json => {
               this.raids = json.raids;
               this.selectedRaidName = this.raids[0].name;
+              this.slotTypes = this.computeSlotTypes();
               this.changeSelectedRaid();
             })
             .catch(err => console.error(err));
@@ -105,18 +118,35 @@
         computeRaidLabel(raid) {
           return `${raid.name} (${this.computeRaidDKP(raid)} DKP)`;
         },
+        computeSlotTypes() {
+          const set = new Set();
+          this.raids.forEach(r => r.mobs.forEach(m => m.items.forEach(i => set.add(i.slot))));
+          const slotTypes = Array.from(set);
+          slotTypes.sort();
+          return slotTypes;
+        },
         computeMinBidValue(item) {
           // ceil([Multiplier] * [Base]^(ilvl / 26 + (rarity - 4)) * [slot multiplier])
           return Math.ceil(this.multiplier * Math.pow(this.base, item.ilvl / 26 + (item.rarity - 4)) * this.slotMultipliers[item.slot]);
         },
         changeSelectedRaid() {
           this.selectedRaid = this.raids.find(r => r.name === this.selectedRaidName);
-          this.filter();
+          this.applyFilters();
         },
-        filter() {
+        itemMatchesFilters(item) {
+          return (!this.searchQuery || item.name.toLowerCase().includes(this.searchQuery.toLowerCase())) &&
+              (this.slotFilter === "All" || item.slot === this.slotFilter);
+        },
+        applyFilters() {
           this.selectedRaidLabel = this.computeRaidLabel(this.selectedRaid);
-          let mobs = [...this.selectedRaid.mobs];
-          // filter logic with query & slot dropdown
+          const mobs = [];
+          for (let mob of this.selectedRaid.mobs) {
+            const mobClone = Object.assign({}, mob);
+            mobClone.items = mobClone.items.filter(i => this.itemMatchesFilters(i));
+            if (mobClone.items.length) {
+              mobs.push(mobClone);
+            }
+          }
           this.filteredRaidMobs = mobs;
         }
       };

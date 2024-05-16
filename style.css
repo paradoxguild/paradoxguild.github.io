@@ -46,6 +46,24 @@ select {
   border-radius: var(--sm-border-size);
 }
 
+input[type="text"] {
+  background: var(--color-dark-bg);
+  color: var(--color-paradox-seafoam);
+  border-color: var(--color-paradox-seafoam);
+  border-radius: var(--sm-border-size);
+  border-width: 1px;
+}
+
+input[type="text"].font-lg, select.font-lg {
+  min-height: calc(var(--lg-font-size) + var(--xl-size));
+  min-height: calc(var(--lg-font-size) + var(--xl-size));
+  padding: 0 var(--sm-size);
+}
+
+::placeholder, ::-ms-input-placeholder {
+  color: var(--color-paradox-seafoam);
+}
+
 .border-seaform {
   border: 1px solid var(--color-paradox-seafoam);
 }
