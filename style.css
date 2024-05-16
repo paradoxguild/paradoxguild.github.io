@@ -67,3 +67,19 @@ input[type="text"].font-lg, select.font-lg {
 .border-seaform {
   border: 1px solid var(--color-paradox-seafoam);
 }
+
+.modal-content {
+  background-color: var(--color-dark-bg);
+  color: var(--color-paradox-seafoam);
+  border: 1px solid var(--color-paradox-seafoam);
+}
+
+.modal-content button {
+  background-color: var(--color-paradox-seafoam);
+  color: var(--color-dark-bg);
+  border-color: var(--color-paradox-seafoam);
+}
+
+.modal-content button.btn-outline {
+  color: var(--color-paradox-seafoam);
+}

@@ -43,7 +43,7 @@
               <th>Min Bid</th>
             </tr>
             <template x-for="(item, index) in mob.items">
-              <tr>
+              <tr class="hov-pointer hov-brighten hov-underline" x-on:click="addToPlanner(item)">
                 <td x-text="item.name"></td>
                 <td x-text="item.slot"></td>
                 <td x-text="rarity[item.rarity]"></td>
@@ -56,6 +56,15 @@
       </template>
     </div>
   </template>
+  <div class="full-screen-modal" x-show="showModal" x-on:click.self="showModal = false">
+    <div class="modal-content">
+      <p class="modal-title" x-text="modalTitle"></p>
+      <div class="flex-row mb-sm">
+        <button x-on:click="executeModal('add')">Add</button>
+        <button class="btn-outline" x-on:click="executeModal('cancel')">Cancel</button>
+      </div>
+    </div>
+  </div>
   <script>
     function data() {
       return {
@@ -66,6 +75,11 @@
         slotTypes: [],
         searchQuery: null,
         slotFilter: "All",
+        planner: [],
+        modalId: null,
+        modalItem: null,
+        showModal: false,
+        modalTitle: null,
         multiplier: 1,
         base: 4,
         slotMultipliers: {
@@ -148,6 +162,20 @@
             }
           }
           this.filteredRaidMobs = mobs;
+        },
+        addToPlanner(item) {
+          this.modalId = "planner";
+          this.modalTitle = `Add ${item.name} To Planner?`;
+          this.showModal = true;
+          this.modalItem = item;
+        },
+        executeModal(action) {
+          if (this.modalId === "planner") {
+            if (action === "add") {
+              this.planner.push(this.modalItem);
+            }
+            this.showModal = false;
+          }
         }
       };
     }

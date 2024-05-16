@@ -310,5 +310,55 @@ table.full-width tr td:last-child {
     display: flex;
 }
 
+.full-screen-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.modal-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(70vw, 400px);
+  height: auto;
+  padding: var(--sm-size);
+  background-color: white;
+  color: black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: var(--md-size);
+}
+
+.modal-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal-content button {
+  margin: var(--sm-size);
+  font-size: var(--md-font-size);
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  padding: var(--sm-size) var(--md-size);
+  border-radius: var(--sm-size);
+}
+
+.modal-content button.btn-outline {
+  background-color: transparent;
+  color: white;
+}
+
+.modal-content button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 /* Alpine components with x-cloak should not be visible by default until conditionals kick in */
 [x-cloak] { display: none !important; }
