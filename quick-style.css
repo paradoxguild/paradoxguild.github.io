@@ -337,6 +337,12 @@ table.full-width tr td:last-child {
   border-radius: var(--md-size);
 }
 
+@media screen and (max-width: 499px) {
+  .modal-content {
+    width: 85vw;
+  }
+}
+
 .modal-title {
   font-weight: bold;
   text-align: center;
