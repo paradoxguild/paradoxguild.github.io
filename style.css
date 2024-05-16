@@ -133,7 +133,8 @@ input[type="text"].font-lg, select.font-lg {
 
 @media screen and (max-width: 499px) {
   select, input[type="text"] {
-    width: calc(100vw - var(--sm-size) * 2) !important;
+    min-width: calc(100vw - var(--sm-size) * 2) !important;
+    max-width: calc(100vw - var(--sm-size) * 2) !important;
     margin-bottom: var(--lg-size);
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -149,7 +150,8 @@ input[type="text"].font-lg, select.font-lg {
   }
   .raid-container {
     margin-top: 0 !important;
-    width: calc(100vw - var(--sm-size) * 2) !important;
+    max-width: calc(100vw - var(--sm-size) * 2) !important;
+    min-width: calc(100vw - var(--sm-size) * 2) !important;
   }
   header .pg-title {
     left: var(--lg-size) !important;
