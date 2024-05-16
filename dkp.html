@@ -21,7 +21,6 @@
       </p>
     </div>
   </header>
-  <p class="font-lg font-center font-underline mb-lg">Raids</p>
   <select class="mb-lg font-lg p-sm" x-model="selectedRaidName" x-on:change="changeSelectedRaid">
     <template x-for="raid in raids">
       <option x-bind:value="raid.name" x-text="raid.name"></option>
