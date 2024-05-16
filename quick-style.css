@@ -55,6 +55,7 @@
 .mt-auto, .my-auto { margin-top: auto; }
 .mb-auto, .my-auto { margin-bottom: auto; }
 
+.m-none { margin: 0 !important; }
 .my-none, .mt-none { margin-top: 0 !important; }
 .mx-none, .mr-none { margin-right: 0 !important; }
 .my-none, .mb-none { margin-bottom: 0 !important; }
@@ -92,6 +93,7 @@
 .pb-xl, .py-xl { padding-bottom: var(--xl-size); }
 .pl-xl, .px-xl { padding-left: var(--xl-size); }
 
+.p-none { padding: 0 !important; }
 .py-none, .pt-none { padding-top: 0 !important; }
 .px-none, .pr-none { padding-right: 0 !important; }
 .py-none, .pb-none { padding-bottom: 0 !important; }
@@ -296,7 +298,7 @@ table.full-width tr td:last-child {
     animation: anim-spin 2s infinite linear;
 }
 
-.hov-pointer { cursor: pointer; }
+.hov-pointer { cursor: pointer; user-select: none; }
 .hov-brighten:hover { filter: brightness(1.2); }
 .hov-darken:hover { filter: brightness(0.95); }
 .hov-underline:hover { text-decoration: underline; }

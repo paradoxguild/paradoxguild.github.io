@@ -83,3 +83,18 @@ input[type="text"].font-lg, select.font-lg {
 .modal-content button.btn-outline {
   color: var(--color-paradox-seafoam);
 }
+
+.planner {
+  position: fixed;
+  right: var(--lg-size);
+  top: var(--lg-size);
+  background-color: var(--color-dark-bg);
+  border: 1px solid var(--color-paradox-seafoam);
+  border-radius: var(--sm-border-size);
+}
+
+.planner ul {
+  padding: 0 var(--md-size);
+  margin-top: 0;
+  list-style: none;
+}

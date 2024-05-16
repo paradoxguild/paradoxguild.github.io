@@ -60,10 +60,26 @@
     <div class="modal-content">
       <p class="modal-title" x-text="modalTitle"></p>
       <div class="flex-row mb-sm">
-        <button x-on:click="executeModal('add')">Add</button>
-        <button class="btn-outline" x-on:click="executeModal('cancel')">Cancel</button>
+        <button x-text="modalConfirmText" x-on:click="executeModal('yes')"></button>
+        <button class="btn-outline" x-on:click="executeModal()">Cancel</button>
       </div>
     </div>
+  </div>
+  <div class="planner">
+    <p class="m-none hov-pointer hov-brighten p-md" x-on:click="showPlanner = !showPlanner">
+      <span class="font-underline" x-text="showPlanner ? 'Hide Plan' : 'Show Plan'"></span>
+      <span> (<span x-text="plannedDKP"></span> DKP)</span>
+    </p>
+    <ul x-show="showPlanner && planner.length">
+      <template x-for="item in planner">
+        <li>
+          <span x-text="computeMinBidValue(item)"></span>
+          <span>DKP - </span>
+          <span x-text="item.name"></span>
+          <span class="hov-pointer hov-brighten hov-underline" x-on:click="removeFromPlanner(item)">(X)</span>
+        </li>
+      </template>
+    </ul>
   </div>
   <script>
     function data() {
@@ -76,10 +92,13 @@
         searchQuery: null,
         slotFilter: "All",
         planner: [],
+        showPlanner: false,
+        plannedDKP: 0,
         modalId: null,
         modalItem: null,
         showModal: false,
         modalTitle: null,
+        modalConfirmText: null,
         multiplier: 1,
         base: 4,
         slotMultipliers: {
@@ -163,19 +182,32 @@
           }
           this.filteredRaidMobs = mobs;
         },
+        computePlannedDKP() {
+          return this.planner.map(i => this.computeMinBidValue(i)).reduce((p, v) => p + v, 0);
+        },
         addToPlanner(item) {
-          this.modalId = "planner";
+          this.modalId = "planner_add";
           this.modalTitle = `Add ${item.name} To Planner?`;
-          this.showModal = true;
+          this.modalConfirmText = "Add";
           this.modalItem = item;
+          this.showModal = true;
+        },
+        removeFromPlanner(item) {
+          this.modalId = "planner_remove";
+          this.modalTitle = `Remove ${item.name} From Planner?`;
+          this.modalConfirmText = "Remove";
+          this.modalItem = item;
+          this.showModal = true;
         },
         executeModal(action) {
-          if (this.modalId === "planner") {
-            if (action === "add") {
-              this.planner.push(this.modalItem);
-            }
-            this.showModal = false;
+          if (this.modalId === "planner_add" && action === "yes") {
+            this.planner.push(this.modalItem);
+            this.plannedDKP = this.computePlannedDKP();
+          } else if (this.modalId === "planner_remove" && action === "yes") {
+            this.planner = this.planner.filter(i => i.name !== this.modalItem.name);
+            this.plannedDKP = this.computePlannedDKP();
           }
+          this.showModal = false;
         }
       };
     }
