@@ -49,7 +49,7 @@
               <th>ilvl</th>
               <th>Min Bid</th>
             </tr>
-            <template x-for="(item, index) in mob.items">
+            <template x-for="item in mob.items">
               <tr class="hov-pointer hov-brighten hov-underline" x-on:click="addToPlanner(item)">
                 <td x-text="item.name"></td>
                 <td x-text="item.slot"></td>
@@ -76,17 +76,22 @@
     <div class="modal-content">
       <p class="modal-title">DKP Planner</p>
       <p class="mt-none" x-show="!planner.length">No Items Added!</p>
-      <ul x-show="planner.length">
+      <table x-show="planner.length" class="mb-md">
+        <tr>
+          <th>DKP</th>
+          <th>Item</th>
+        </tr>
         <template x-for="item in planner">
-          <li>
-            <span x-text="computeMinBidValue(item)"></span>
-            <span>DKP - </span>
-            <span x-text="item.name"></span>
-            <span class="hov-pointer hov-brighten hov-underline" x-on:click="removeFromPlanner(item)">(X)</span>
-          </li>
+          <tr class="hov-pointer hov-brighten hov-underline" x-on:click="removeFromPlanner(item)">
+            <td x-text="computeMinBidValue(item)"></td>
+            <td x-text="item.name"></td>
+          </tr>
         </template>
-      </ul>
-      <p class="mt-none" x-show="planner.length">Total: <span x-text="plannedDKP"></span> DKP</p>
+        <tr>
+          <td x-text="plannedDKP"></td>
+          <td>Minimum Needed DKP</td>
+        </tr>
+      </table>
     </div>
   </div>
   <script>
