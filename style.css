@@ -143,6 +143,11 @@ input[type="text"].font-lg, select.font-lg {
   text-align: center;
 }
 
+.constrain-paragraphs img {
+  max-width: 100%;
+  height: auto;
+}
+
 .stat {
   color: white;
 }
