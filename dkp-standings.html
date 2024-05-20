@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paradøx DKP</title>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <link rel="stylesheet" href="quick-style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body x-data="data" class="flex-column align-center">
+  <header>
+    <p class="font-xl pg-title">Paradøx</p>
+  </header>
+  <p class="font-lg font-center mt-none mb-none">Standings</p>
+  <p class="font-sm font-center mt-none">These will be updated after Tuesday's raids each week</p>
+  <table>
+    <tr>
+      <th>Player</th>
+      <th>Class</th>
+      <th>DKP</th>
+    </tr>
+    <template x-for="player in players">
+      <tr>
+        <td x-text="player.name"></td>
+        <td x-text="player.class"></td>
+        <td x-text="player.points"></td>
+      </tr>
+    </template>
+  </table>
+  <script>
+    function data() {
+      return {
+        players: [],
+        init() {
+          fetch("/standings.json")
+            .then(res => res.json())
+            .then(json => {
+              const players = json.standings.roster.find(r => r.name === 'Paradøx').standings.player;
+              players.sort((p1, p2) => {
+                let diff = p2.points - p1.points;
+                if (diff === 0) {
+                  return p1.name.localeCompare(p2.name);
+                }
+                return diff;
+              });
+              this.players = players;
+            })
+            .catch(err => console.error(err));
+        },
+      };
+    }
+  </script>
+</body>
