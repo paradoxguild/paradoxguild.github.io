@@ -25,7 +25,7 @@
     </tr>
     <template x-for="player in players">
       <tr>
-        <td x-text="player.name"></td>
+        <td><a x-bind:href="player.armoryLink" target="_blank" x-text="player.name"></a></td>
         <td x-text="player.class"></td>
         <td x-text="player.points"></td>
       </tr>
@@ -47,7 +47,10 @@
                 }
                 return diff;
               });
-              this.players = players;
+              this.players = players.map(p => ({
+                ...p, 
+                armoryLink: `https://ironforge.pro/era/player/US/${p.name.split('-')[1]}/${p.name.split('-')[0]}`
+              }));
             })
             .catch(err => console.error(err));
         },
