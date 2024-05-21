@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paradøx DKP</title>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <link rel="stylesheet" href="quick-style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body x-data="data" class="flex-column align-center">
+  <header>
+    <p class="font-xl pg-title">Paradøx</p>
+  </header>
+  <p class="font-lg font-center mt-none mb-none">Ledger</p>
+  <p class="font-sm font-center mt-none">These will be updated after Tuesday's raids each week</p>
+  <div class="flex-column justify-center mb-md">
+    <select class="font-lg p-sm mb-md" x-model="playerFilter" x-on:change="applyFilters">
+      <option value="All" selected>All</option>
+      <template x-for="player in players">
+        <option x-bind:value="player" x-text="player"></option>
+      </template>
+    </select>
+    <select class="font-lg p-sm" x-model="itemFilter" x-on:change="applyFilters">
+      <option value="All" selected>All</option>
+      <template x-for="item in items">
+        <option x-bind:value="item" x-text="item"></option>
+      </template>
+    </select>
+  </div>
+  <table>
+    <tr>
+      <th>Player</th>
+      <th>Awarded By</th>
+      <th>Item</th>
+      <th>DKP Spent</th>
+    </tr>
+    <template x-for="item in displayedLedger">
+      <tr>
+        <td x-text="item.player"></td>
+        <td x-text="item.awardedBy"></td>
+        <td x-text="item.name"></td>
+        <td x-text="item.points"></td>
+      </tr>
+    </template>
+  </table>
+  <script>
+    function data() {
+      return {
+        displayedLedger: [],
+        ledger: [],
+        players: [],
+        items: [],
+        playerFilter: 'All',
+        itemFilter: 'All',
+        init() {
+          fetch("/standings.json")
+            .then(res => res.json())
+            .then(json => {
+              const ledger = json.lootHistory.roster.find(r => r.name === 'Paradøx').lootHistory.item;
+              ledger.sort((p1, p2) => p2.timestamp - p1.timestamp);
+              this.ledger = ledger;
+              this.players = this.ledger.map(i => i.player);
+              this.items = this.ledger.map(i => i.name);
+              this.applyFilters();
+            })
+            .catch(err => console.error(err));
+        },
+        applyFilters() {
+          this.displayedLedger = [...this.ledger].filter(i =>
+            (this.playerFilter === 'All' || this.playerFilter === i.player)
+            && (this.itemFilter === 'All' || this.itemFilter === i.name)
+          );
+        }
+      };
+    }
+  </script>
+</body>
