@@ -148,7 +148,7 @@
               "guid": "Player-5066-017E5FB6",
               "spent": 0,
               "class": "Mage",
-              "points": 105,
+              "points": 95,
               "spec": "0/0/0"
             },
             {
@@ -1687,7 +1687,7 @@
               "guid": "Player-5066-01834B2B",
               "spent": 0,
               "class": "Warrior",
-              "points": 420,
+              "points": 410,
               "spec": "0/0/0"
             },
             {
@@ -2550,12 +2550,12 @@
                   "Msstorm-Rattlegore": 0,
                   "Pew-Whitemane": 0,
                   "Chiillii-Whitemane": 0,
-                  "Iculus-Whitemane": 0,
+                  "Scuffles-Bigglesworth": 0,
                   "Bault-Smolderweb": 0,
-                  "Misfit-ArcaniteReaper": 0,
+                  "Iculus-Whitemane": 0,
                   "Esandarius-Bigglesworth": 25,
                   "Alexanderr-Whitemane": 0,
-                  "Scuffles-Bigglesworth": 0,
+                  "Misfit-ArcaniteReaper": 0,
                   "Shøgun-Thunderfury": 0,
                   "Holyymolyy-Whitemane": 0,
                   "Vî-Whitemane": 0,
@@ -2567,12 +2567,12 @@
                   "Msstorm-Rattlegore": 38,
                   "Pew-Whitemane": 79,
                   "Chiillii-Whitemane": 23,
-                  "Iculus-Whitemane": 58,
+                  "Scuffles-Bigglesworth": 99,
                   "Bault-Smolderweb": 77,
-                  "Misfit-ArcaniteReaper": 42,
+                  "Iculus-Whitemane": 58,
                   "Esandarius-Bigglesworth": 25,
                   "Alexanderr-Whitemane": 88,
-                  "Scuffles-Bigglesworth": 99,
+                  "Misfit-ArcaniteReaper": 42,
                   "Shøgun-Thunderfury": 54,
                   "Holyymolyy-Whitemane": 20,
                   "Vî-Whitemane": 86,
@@ -2587,12 +2587,12 @@
                   "Msstorm-Rattlegore": "Pass",
                   "Pew-Whitemane": "Pass",
                   "Chiillii-Whitemane": "Pass",
-                  "Iculus-Whitemane": "Pass",
+                  "Scuffles-Bigglesworth": "Pass",
                   "Bault-Smolderweb": "Pass",
-                  "Misfit-ArcaniteReaper": "Pass",
+                  "Iculus-Whitemane": "Pass",
                   "Esandarius-Bigglesworth": "OS",
                   "Alexanderr-Whitemane": "Pass",
-                  "Scuffles-Bigglesworth": "Pass",
+                  "Misfit-ArcaniteReaper": "Pass",
                   "Shøgun-Thunderfury": "Pass",
                   "Holyymolyy-Whitemane": "Pass",
                   "Vî-Whitemane": "Pass",
@@ -2614,14 +2614,14 @@
                   "Chiillii-Whitemane": [
                     18693
                   ],
-                  "Iculus-Whitemane": [
-                    19164
+                  "Scuffles-Bigglesworth": [
+                    16826
                   ],
                   "Bault-Smolderweb": [
                     16826
                   ],
-                  "Misfit-ArcaniteReaper": [
-                    16863
+                  "Iculus-Whitemane": [
+                    19164
                   ],
                   "Esandarius-Bigglesworth": [
                     20264
@@ -2629,8 +2629,8 @@
                   "Alexanderr-Whitemane": [
                     22714
                   ],
-                  "Scuffles-Bigglesworth": [
-                    16826
+                  "Misfit-ArcaniteReaper": [
+                    16863
                   ],
                   "Shøgun-Thunderfury": [
                     22006
@@ -2876,19 +2876,19 @@
                 "bids": {
                   "Whyu-Whitemane": 0,
                   "Esandarius-Bigglesworth": 0,
-                  "Badcandy-Whitemane": 0,
-                  "Msstorm-Rattlegore": 21,
                   "Déwx-Thunderfury": 0,
+                  "Msstorm-Rattlegore": 21,
                   "Holyymolyy-Whitemane": 0,
+                  "Badcandy-Whitemane": 0,
                   "Popup-Thunderfury": 0
                 },
                 "rolls": {
                   "Whyu-Whitemane": 2,
                   "Esandarius-Bigglesworth": 30,
-                  "Badcandy-Whitemane": 75,
-                  "Msstorm-Rattlegore": 80,
                   "Déwx-Thunderfury": 13,
+                  "Msstorm-Rattlegore": 80,
                   "Holyymolyy-Whitemane": 6,
+                  "Badcandy-Whitemane": 75,
                   "Popup-Thunderfury": 99
                 },
                 "isEPGP": false,
@@ -2897,10 +2897,10 @@
                 "names": {
                   "Whyu-Whitemane": "Pass",
                   "Esandarius-Bigglesworth": "Pass",
-                  "Badcandy-Whitemane": "Pass",
-                  "Msstorm-Rattlegore": "MS",
                   "Déwx-Thunderfury": "Pass",
+                  "Msstorm-Rattlegore": "MS",
                   "Holyymolyy-Whitemane": "Pass",
+                  "Badcandy-Whitemane": "Pass",
                   "Popup-Thunderfury": "Pass"
                 },
                 "upgraded": {
@@ -2912,21 +2912,21 @@
                     22257,
                     16058
                   ],
-                  "Badcandy-Whitemane": [
-                    13098,
-                    17713
+                  "Déwx-Thunderfury": [
+                    22681,
+                    22433
                   ],
                   "Msstorm-Rattlegore": [
                     17768,
                     10634
                   ],
-                  "Déwx-Thunderfury": [
-                    22681,
-                    22433
-                  ],
                   "Holyymolyy-Whitemane": [
                     19382,
                     22721
+                  ],
+                  "Badcandy-Whitemane": [
+                    13098,
+                    17713
                   ],
                   "Popup-Thunderfury": [
                     19384,
@@ -2978,8 +2978,8 @@
                   "Esandarius-Bigglesworth": "Pass",
                   "Alexanderr-Whitemane": "Pass",
                   "Hoeleechit-Blaumeux": "Pass",
-                  "Holyymolyy-Whitemane": "Pass",
                   "Chiillii-Whitemane": "Pass",
+                  "Holyymolyy-Whitemane": "Pass",
                   "Bault-Smolderweb": "Pass",
                   "Popup-Thunderfury": "Pass"
                 },
@@ -3512,19 +3512,19 @@
                 "bids": {
                   "Whyu-Whitemane": 6,
                   "Popup-Thunderfury": 16,
-                  "Badcandy-Whitemane": 11,
-                  "Msstorm-Rattlegore": 0,
                   "Chiillii-Whitemane": 0,
+                  "Msstorm-Rattlegore": 0,
                   "Holyymolyy-Whitemane": 0,
+                  "Badcandy-Whitemane": 11,
                   "Esandarius-Bigglesworth": 0
                 },
                 "rolls": {
                   "Whyu-Whitemane": 29,
                   "Popup-Thunderfury": 65,
-                  "Badcandy-Whitemane": 5,
-                  "Msstorm-Rattlegore": 83,
                   "Chiillii-Whitemane": 92,
+                  "Msstorm-Rattlegore": 83,
                   "Holyymolyy-Whitemane": 82,
+                  "Badcandy-Whitemane": 5,
                   "Esandarius-Bigglesworth": 95
                 },
                 "isEPGP": false,
@@ -3533,10 +3533,10 @@
                 "names": {
                   "Whyu-Whitemane": "MS",
                   "Popup-Thunderfury": "MS",
-                  "Badcandy-Whitemane": "MS",
-                  "Msstorm-Rattlegore": "Pass",
                   "Chiillii-Whitemane": "Pass",
+                  "Msstorm-Rattlegore": "Pass",
                   "Holyymolyy-Whitemane": "Pass",
+                  "Badcandy-Whitemane": "MS",
                   "Esandarius-Bigglesworth": "Pass"
                 },
                 "upgraded": {
@@ -3546,17 +3546,17 @@
                   "Popup-Thunderfury": [
                     22002
                   ],
-                  "Badcandy-Whitemane": [
-                    16713
+                  "Chiillii-Whitemane": [
+                    16685
                   ],
                   "Msstorm-Rattlegore": [
                     16925
                   ],
-                  "Chiillii-Whitemane": [
-                    16685
-                  ],
                   "Holyymolyy-Whitemane": [
                     16925
+                  ],
+                  "Badcandy-Whitemane": [
+                    16713
                   ],
                   "Esandarius-Bigglesworth": [
                     19162
