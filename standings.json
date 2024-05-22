@@ -85,7 +85,7 @@
               "guid": "Player-5066-01B93993",
               "spent": 0,
               "class": "Warlock",
-              "points": 370,
+              "points": 475,
               "spec": "0/0/0"
             },
             {
@@ -101,9 +101,9 @@
               "role": "NONE",
               "name": "Chaosbot-Whitemane",
               "guid": "Player-5066-02258524",
-              "spent": 0,
+              "spent": 61,
               "class": "Warlock",
-              "points": 315,
+              "points": 409,
               "spec": "0/0/0"
             },
             {
@@ -166,7 +166,7 @@
               "guid": "Player-5066-02463D99",
               "spent": 0,
               "class": "Hunter",
-              "points": 205,
+              "points": 310,
               "spec": "0/0/0"
             },
             {
@@ -175,7 +175,7 @@
               "guid": "Player-5066-024AF273",
               "spent": 1,
               "class": "Mage",
-              "points": 54,
+              "points": 4,
               "spec": "0/0/0"
             },
             {
@@ -211,7 +211,7 @@
               "guid": "Player-5066-025FC0B6",
               "spent": 36,
               "class": "Rogue",
-              "points": 19,
+              "points": 124,
               "spec": "0/0/0"
             },
             {
@@ -292,7 +292,7 @@
               "guid": "Player-5066-017C2536",
               "spent": 0,
               "class": "Mage",
-              "points": 370,
+              "points": 475,
               "spec": "0/0/0"
             },
             {
@@ -301,7 +301,7 @@
               "guid": "Player-5066-023DD972",
               "spent": 0,
               "class": "Warrior",
-              "points": 55,
+              "points": 160,
               "spec": "0/0/0"
             },
             {
@@ -328,7 +328,7 @@
               "guid": "Player-5066-017551F0",
               "spent": 0,
               "class": "Priest",
-              "points": 55,
+              "points": 135,
               "spec": "0/0/0"
             },
             {
@@ -407,9 +407,9 @@
               "role": "NONE",
               "name": "Whyu-Whitemane",
               "guid": "Player-5066-02529825",
-              "spent": 0,
+              "spent": 11,
               "class": "Rogue",
-              "points": 215,
+              "points": 284,
               "spec": "0/0/0"
             },
             {
@@ -461,9 +461,9 @@
               "role": "NONE",
               "name": "Esandarius-Bigglesworth",
               "guid": "Player-5066-003E024F",
-              "spent": 60,
+              "spent": 66,
               "class": "Paladin",
-              "points": 310,
+              "points": 409,
               "spec": "0/0/0"
             },
             {
@@ -479,9 +479,9 @@
               "role": "NONE",
               "name": "Scuffles-Bigglesworth",
               "guid": "Player-5066-02417183",
-              "spent": 0,
+              "spent": 9,
               "class": "Rogue",
-              "points": 370,
+              "points": 446,
               "spec": "0/0/0"
             },
             {
@@ -499,7 +499,7 @@
               "guid": "Player-5066-018E9203",
               "spent": 0,
               "class": "Warrior",
-              "points": 370,
+              "points": 420,
               "spec": "0/0/0"
             },
             {
@@ -569,9 +569,9 @@
               "role": "NONE",
               "name": "Oars-Thunderfury",
               "guid": "Player-5066-0188B9BB",
-              "spent": 0,
+              "spent": 44,
               "class": "Warrior",
-              "points": 370,
+              "points": 431,
               "spec": "0/0/0"
             },
             {
@@ -596,9 +596,9 @@
               "role": "NONE",
               "name": "Lilianas-Whitemane",
               "guid": "Player-5066-019B0C47",
-              "spent": 0,
+              "spent": 48,
               "class": "Rogue",
-              "points": 315,
+              "points": 372,
               "spec": "0/0/0"
             },
             {
@@ -688,7 +688,7 @@
               "guid": "Player-5066-0186354F",
               "spent": 0,
               "class": "Priest",
-              "points": 370,
+              "points": 475,
               "spec": "0/0/0"
             },
             {
@@ -731,9 +731,9 @@
               "role": "NONE",
               "name": "Tyranus-Whitemane",
               "guid": "Player-5066-0174A9C2",
-              "spent": 0,
+              "spent": 8,
               "class": "Warrior",
-              "points": 370,
+              "points": 467,
               "spec": "0/0/0"
             },
             {
@@ -751,7 +751,7 @@
               "guid": "Player-5066-017D24E3",
               "spent": 0,
               "class": "Paladin",
-              "points": 370,
+              "points": 475,
               "spec": "0/0/0"
             },
             {
@@ -787,7 +787,7 @@
               "guid": "Player-5066-024FE818",
               "spent": 0,
               "class": "Hunter",
-              "points": 315,
+              "points": 420,
               "spec": "0/0/0"
             },
             {
@@ -850,7 +850,7 @@
               "guid": "Player-5066-01F87148",
               "spent": 0,
               "class": "Druid",
-              "points": 260,
+              "points": 365,
               "spec": "0/0/0"
             },
             {
@@ -902,9 +902,9 @@
               "role": "NONE",
               "name": "Iculus-Whitemane",
               "guid": "Player-5066-01CBD9F1",
-              "spent": 10,
+              "spent": 215,
               "class": "Warrior",
-              "points": 300,
+              "points": 200,
               "spec": "0/0/0"
             },
             {
@@ -913,7 +913,7 @@
               "guid": "Player-5066-02470708",
               "spent": 0,
               "class": "Warrior",
-              "points": 210,
+              "points": 200,
               "spec": "0/0/0"
             },
             {
@@ -922,7 +922,7 @@
               "guid": "Player-5066-01888A83",
               "spent": 0,
               "class": "Rogue",
-              "points": 370,
+              "points": 475,
               "spec": "0/0/0"
             },
             {
@@ -1073,9 +1073,9 @@
               "role": "NONE",
               "name": "Jooxter-Thunderfury",
               "guid": "Player-5066-018F919D",
-              "spent": 0,
+              "spent": 60,
               "class": "Warlock",
-              "points": 260,
+              "points": 305,
               "spec": "0/0/0"
             },
             {
@@ -1109,18 +1109,18 @@
               "role": "NONE",
               "name": "Legalizewee-Whitemane",
               "guid": "Player-5066-0256CE47",
-              "spent": 0,
+              "spent": 7,
               "class": "Druid",
-              "points": 260,
+              "points": 358,
               "spec": "0/0/0"
             },
             {
               "role": "NONE",
               "name": "Noshards-Anathema",
               "guid": "Player-5066-02597E8D",
-              "spent": 0,
+              "spent": 31,
               "class": "Warlock",
-              "points": 315,
+              "points": 389,
               "spec": "0/0/0"
             },
             {
@@ -1181,9 +1181,9 @@
               "role": "NONE",
               "name": "Popup-Thunderfury",
               "guid": "Player-5066-0183464F",
-              "spent": 60,
+              "spent": 83,
               "class": "Rogue",
-              "points": 255,
+              "points": 337,
               "spec": "0/0/0"
             },
             {
@@ -1244,9 +1244,9 @@
               "role": "NONE",
               "name": "Felcrodots-Whitemane",
               "guid": "Player-5066-02652614",
-              "spent": 12,
+              "spent": 322,
               "class": "Warlock",
-              "points": 253,
+              "points": 48,
               "spec": "0/0/0"
             },
             {
@@ -1264,7 +1264,7 @@
               "guid": "Player-5066-01B6425A",
               "spent": 0,
               "class": "Priest",
-              "points": 315,
+              "points": 420,
               "spec": "0/0/0"
             },
             {
@@ -1309,7 +1309,7 @@
               "guid": "Player-5066-018BAD12",
               "spent": 0,
               "class": "Rogue",
-              "points": 215,
+              "points": 320,
               "spec": "0/0/0"
             },
             {
@@ -1379,9 +1379,9 @@
               "role": "NONE",
               "name": "Holyymolyy-Whitemane",
               "guid": "Player-5066-02492F87",
-              "spent": 25,
+              "spent": 360,
               "class": "Priest",
-              "points": 340,
+              "points": 110,
               "spec": "0/0/0"
             },
             {
@@ -1408,7 +1408,7 @@
               "guid": "Player-5066-0174E177",
               "spent": 0,
               "class": "Rogue",
-              "points": 155,
+              "points": 145,
               "spec": "0/0/0"
             },
             {
@@ -1426,7 +1426,7 @@
               "guid": "Player-5066-0257DF09",
               "spent": 0,
               "class": "Rogue",
-              "points": 105,
+              "points": 210,
               "spec": "0/0/0"
             },
             {
@@ -1462,7 +1462,7 @@
               "guid": "Player-5066-01BDABD5",
               "spent": 0,
               "class": "Mage",
-              "points": 370,
+              "points": 475,
               "spec": "0/0/0"
             },
             {
@@ -1525,7 +1525,7 @@
               "guid": "Player-5066-0197C6D2",
               "spent": 0,
               "class": "Rogue",
-              "points": 260,
+              "points": 365,
               "spec": "0/0/0"
             },
             {
@@ -1541,9 +1541,9 @@
               "role": "NONE",
               "name": "Grindpa-Thunderfury",
               "guid": "Player-5066-018E71BC",
-              "spent": 0,
+              "spent": 14,
               "class": "Warrior",
-              "points": 370,
+              "points": 461,
               "spec": "0/0/0"
             },
             {
@@ -1577,9 +1577,9 @@
               "role": "NONE",
               "name": "Msstorm-Rattlegore",
               "guid": "Player-5066-0233FA7B",
-              "spent": 24,
+              "spent": 28,
               "class": "Priest",
-              "points": 151,
+              "points": 252,
               "spec": "0/0/0"
             },
             {
@@ -1682,12 +1682,12 @@
               "spec": "0/0/0"
             },
             {
-              "role": "",
+              "role": "NONE",
               "name": "Bradjones-Anathema",
               "guid": "Player-5066-01834B2B",
               "spent": 0,
               "class": "Warrior",
-              "points": 315,
+              "points": 420,
               "spec": "0/0/0"
             },
             {
@@ -1781,7 +1781,7 @@
               "spec": "0/0/0"
             },
             {
-              "role": "",
+              "role": "NONE",
               "name": "Sairacaz-Whitemane",
               "guid": "Player-5066-01CB60E8",
               "spent": 0,
@@ -1793,9 +1793,9 @@
               "role": "NONE",
               "name": "Alexanderr-Whitemane",
               "guid": "Player-5066-01897ED1",
-              "spent": 131,
+              "spent": 142,
               "class": "Warrior",
-              "points": 234,
+              "points": 328,
               "spec": "0/0/0"
             },
             {
@@ -1912,7 +1912,7 @@
               "guid": "Player-5066-0188B9BA",
               "spent": 0,
               "class": "Priest",
-              "points": 210,
+              "points": 315,
               "spec": "0/0/0"
             },
             {
@@ -2209,7 +2209,7 @@
               "guid": "Player-5066-018768A4",
               "spent": 0,
               "class": "Rogue",
-              "points": 160,
+              "points": 265,
               "spec": "0/0/0"
             },
             {
@@ -2335,24 +2335,24 @@
                   "Msstorm-Rattlegore": 0,
                   "Badcandy-Whitemane": 0,
                   "Bault-Smolderweb": 0,
-                  "Popup-Thunderfury": 0,
+                  "Trendkill-Whitemane": 0,
                   "Esandarius-Bigglesworth": 0,
                   "Shøgun-Thunderfury": 0,
                   "Holyymolyy-Whitemane": 0,
                   "Vî-Whitemane": 0,
-                  "Trendkill-Whitemane": 0
+                  "Popup-Thunderfury": 0
                 },
                 "rolls": {
                   "Hoeleechit-Blaumeux": 83,
                   "Msstorm-Rattlegore": 88,
                   "Badcandy-Whitemane": 79,
                   "Bault-Smolderweb": 21,
-                  "Popup-Thunderfury": 38,
+                  "Trendkill-Whitemane": 57,
                   "Esandarius-Bigglesworth": 100,
                   "Shøgun-Thunderfury": 85,
                   "Holyymolyy-Whitemane": 87,
                   "Vî-Whitemane": 33,
-                  "Trendkill-Whitemane": 57
+                  "Popup-Thunderfury": 38
                 },
                 "isEPGP": false,
                 "link": "[Lawbringer Boots]",
@@ -2362,12 +2362,12 @@
                   "Msstorm-Rattlegore": "Pass",
                   "Badcandy-Whitemane": "Pass",
                   "Bault-Smolderweb": "Pass",
-                  "Popup-Thunderfury": "Pass",
+                  "Trendkill-Whitemane": "Pass",
                   "Esandarius-Bigglesworth": "Pass",
                   "Shøgun-Thunderfury": "Pass",
                   "Holyymolyy-Whitemane": "Pass",
                   "Vî-Whitemane": "Pass",
-                  "Trendkill-Whitemane": "Pass"
+                  "Popup-Thunderfury": "Pass"
                 },
                 "upgraded": {
                   "Hoeleechit-Blaumeux": [
@@ -2382,8 +2382,8 @@
                   "Bault-Smolderweb": [
                     16906
                   ],
-                  "Popup-Thunderfury": [
-                    19906
+                  "Trendkill-Whitemane": [
+                    16957
                   ],
                   "Esandarius-Bigglesworth": [
                     20265
@@ -2397,8 +2397,8 @@
                   "Vî-Whitemane": [
                     11919
                   ],
-                  "Trendkill-Whitemane": [
-                    16957
+                  "Popup-Thunderfury": [
+                    19906
                   ]
                 },
                 "time": 1716258010,
@@ -2426,14 +2426,14 @@
                   "Hoeleechit-Blaumeux": 0,
                   "Msstorm-Rattlegore": 0,
                   "Chiillii-Whitemane": 0,
-                  "Popup-Thunderfury": 44,
+                  "Grindpa-Thunderfury": 0,
                   "Trendkill-Whitemane": 0,
-                  "Pew-Whitemane": 0,
+                  "Scuffles-Bigglesworth": 0,
                   "Bault-Smolderweb": 0,
                   "Shøgun-Thunderfury": 0,
-                  "Scuffles-Bigglesworth": 0,
+                  "Pew-Whitemane": 0,
                   "Vî-Whitemane": 0,
-                  "Grindpa-Thunderfury": 0
+                  "Popup-Thunderfury": 44
                 },
                 "rolls": {
                   "Lilianas-Whitemane": 6,
@@ -2445,14 +2445,14 @@
                   "Hoeleechit-Blaumeux": 52,
                   "Msstorm-Rattlegore": 11,
                   "Chiillii-Whitemane": 21,
-                  "Popup-Thunderfury": 5,
+                  "Grindpa-Thunderfury": 55,
                   "Trendkill-Whitemane": 32,
-                  "Pew-Whitemane": 30,
+                  "Scuffles-Bigglesworth": 87,
                   "Bault-Smolderweb": 75,
                   "Shøgun-Thunderfury": 8,
-                  "Scuffles-Bigglesworth": 87,
+                  "Pew-Whitemane": 30,
                   "Vî-Whitemane": 28,
-                  "Grindpa-Thunderfury": 55
+                  "Popup-Thunderfury": 5
                 },
                 "isEPGP": false,
                 "link": "[Nightslayer Pants]",
@@ -2467,14 +2467,14 @@
                   "Hoeleechit-Blaumeux": "Pass",
                   "Msstorm-Rattlegore": "Pass",
                   "Chiillii-Whitemane": "Pass",
-                  "Popup-Thunderfury": "MS",
+                  "Grindpa-Thunderfury": "Pass",
                   "Trendkill-Whitemane": "Pass",
-                  "Pew-Whitemane": "Pass",
+                  "Scuffles-Bigglesworth": "Pass",
                   "Bault-Smolderweb": "Pass",
                   "Shøgun-Thunderfury": "Pass",
-                  "Scuffles-Bigglesworth": "Pass",
+                  "Pew-Whitemane": "Pass",
                   "Vî-Whitemane": "Pass",
-                  "Grindpa-Thunderfury": "Pass"
+                  "Popup-Thunderfury": "MS"
                 },
                 "upgraded": {
                   "Lilianas-Whitemane": [
@@ -2504,14 +2504,14 @@
                   "Chiillii-Whitemane": [
                     19683
                   ],
-                  "Popup-Thunderfury": [
-                    22007
+                  "Grindpa-Thunderfury": [
+                    16962
                   ],
                   "Trendkill-Whitemane": [
                     16954
                   ],
-                  "Pew-Whitemane": [
-                    19683
+                  "Scuffles-Bigglesworth": [
+                    16909
                   ],
                   "Bault-Smolderweb": [
                     16822
@@ -2519,14 +2519,14 @@
                   "Shøgun-Thunderfury": [
                     12963
                   ],
-                  "Scuffles-Bigglesworth": [
-                    16909
+                  "Pew-Whitemane": [
+                    19683
                   ],
                   "Vî-Whitemane": [
                     22385
                   ],
-                  "Grindpa-Thunderfury": [
-                    16962
+                  "Popup-Thunderfury": [
+                    22007
                   ]
                 },
                 "time": 1716258065,
@@ -2545,10 +2545,10 @@
               "name": "Lawbringer Gauntlets",
               "auctionInfo": {
                 "bids": {
-                  "Popup-Thunderfury": 0,
-                  "Vî-Whitemane": 0,
-                  "Pew-Whitemane": 0,
+                  "Trendkill-Whitemane": 0,
+                  "Felcrodots-Whitemane": 0,
                   "Msstorm-Rattlegore": 0,
+                  "Pew-Whitemane": 0,
                   "Chiillii-Whitemane": 0,
                   "Iculus-Whitemane": 0,
                   "Bault-Smolderweb": 0,
@@ -2558,14 +2558,14 @@
                   "Scuffles-Bigglesworth": 0,
                   "Shøgun-Thunderfury": 0,
                   "Holyymolyy-Whitemane": 0,
-                  "Felcrodots-Whitemane": 0,
-                  "Trendkill-Whitemane": 0
+                  "Vî-Whitemane": 0,
+                  "Popup-Thunderfury": 0
                 },
                 "rolls": {
-                  "Popup-Thunderfury": 75,
-                  "Vî-Whitemane": 86,
-                  "Pew-Whitemane": 79,
+                  "Trendkill-Whitemane": 78,
+                  "Felcrodots-Whitemane": 31,
                   "Msstorm-Rattlegore": 38,
+                  "Pew-Whitemane": 79,
                   "Chiillii-Whitemane": 23,
                   "Iculus-Whitemane": 58,
                   "Bault-Smolderweb": 77,
@@ -2575,17 +2575,17 @@
                   "Scuffles-Bigglesworth": 99,
                   "Shøgun-Thunderfury": 54,
                   "Holyymolyy-Whitemane": 20,
-                  "Felcrodots-Whitemane": 31,
-                  "Trendkill-Whitemane": 78
+                  "Vî-Whitemane": 86,
+                  "Popup-Thunderfury": 75
                 },
                 "isEPGP": false,
                 "link": "[Lawbringer Gauntlets]",
                 "id": 16860,
                 "names": {
-                  "Popup-Thunderfury": "Pass",
-                  "Vî-Whitemane": "Pass",
-                  "Pew-Whitemane": "Pass",
+                  "Trendkill-Whitemane": "Pass",
+                  "Felcrodots-Whitemane": "Pass",
                   "Msstorm-Rattlegore": "Pass",
+                  "Pew-Whitemane": "Pass",
                   "Chiillii-Whitemane": "Pass",
                   "Iculus-Whitemane": "Pass",
                   "Bault-Smolderweb": "Pass",
@@ -2595,21 +2595,21 @@
                   "Scuffles-Bigglesworth": "Pass",
                   "Shøgun-Thunderfury": "Pass",
                   "Holyymolyy-Whitemane": "Pass",
-                  "Felcrodots-Whitemane": "Pass",
-                  "Trendkill-Whitemane": "Pass"
+                  "Vî-Whitemane": "Pass",
+                  "Popup-Thunderfury": "Pass"
                 },
                 "upgraded": {
-                  "Popup-Thunderfury": [
-                    22006
+                  "Trendkill-Whitemane": [
+                    20264
                   ],
-                  "Vî-Whitemane": [
-                    19869
-                  ],
-                  "Pew-Whitemane": [
+                  "Felcrodots-Whitemane": [
                     19929
                   ],
                   "Msstorm-Rattlegore": [
                     10019
+                  ],
+                  "Pew-Whitemane": [
+                    19929
                   ],
                   "Chiillii-Whitemane": [
                     18693
@@ -2638,11 +2638,11 @@
                   "Holyymolyy-Whitemane": [
                     16920
                   ],
-                  "Felcrodots-Whitemane": [
-                    19929
+                  "Vî-Whitemane": [
+                    19869
                   ],
-                  "Trendkill-Whitemane": [
-                    20264
+                  "Popup-Thunderfury": [
+                    22006
                   ]
                 },
                 "time": 1716258204,
@@ -2661,8 +2661,8 @@
               "name": "Lawbringer Legplates",
               "auctionInfo": {
                 "bids": {
-                  "Popup-Thunderfury": 0,
-                  "Vî-Whitemane": 0,
+                  "Trendkill-Whitemane": 0,
+                  "Noshards-Anathema": 0,
                   "Hoeleechit-Blaumeux": 0,
                   "Msstorm-Rattlegore": 0,
                   "Chiillii-Whitemane": 0,
@@ -2674,12 +2674,12 @@
                   "Iculus-Whitemane": 0,
                   "Shøgun-Thunderfury": 0,
                   "Holyymolyy-Whitemane": 0,
-                  "Noshards-Anathema": 0,
-                  "Trendkill-Whitemane": 0
+                  "Vî-Whitemane": 0,
+                  "Popup-Thunderfury": 0
                 },
                 "rolls": {
-                  "Popup-Thunderfury": 68,
-                  "Vî-Whitemane": 69,
+                  "Trendkill-Whitemane": 56,
+                  "Noshards-Anathema": 85,
                   "Hoeleechit-Blaumeux": 88,
                   "Msstorm-Rattlegore": 36,
                   "Chiillii-Whitemane": 33,
@@ -2691,15 +2691,15 @@
                   "Iculus-Whitemane": 9,
                   "Shøgun-Thunderfury": 16,
                   "Holyymolyy-Whitemane": 26,
-                  "Noshards-Anathema": 85,
-                  "Trendkill-Whitemane": 56
+                  "Vî-Whitemane": 69,
+                  "Popup-Thunderfury": 68
                 },
                 "isEPGP": false,
                 "link": "[Lawbringer Legplates]",
                 "id": 16855,
                 "names": {
-                  "Popup-Thunderfury": "Pass",
-                  "Vî-Whitemane": "Pass",
+                  "Trendkill-Whitemane": "Pass",
+                  "Noshards-Anathema": "Pass",
                   "Hoeleechit-Blaumeux": "Pass",
                   "Msstorm-Rattlegore": "Pass",
                   "Chiillii-Whitemane": "Pass",
@@ -2711,15 +2711,15 @@
                   "Iculus-Whitemane": "Pass",
                   "Shøgun-Thunderfury": "Pass",
                   "Holyymolyy-Whitemane": "Pass",
-                  "Noshards-Anathema": "Pass",
-                  "Trendkill-Whitemane": "Pass"
+                  "Vî-Whitemane": "Pass",
+                  "Popup-Thunderfury": "Pass"
                 },
                 "upgraded": {
-                  "Popup-Thunderfury": [
-                    16822
+                  "Trendkill-Whitemane": [
+                    16954
                   ],
-                  "Vî-Whitemane": [
-                    22385
+                  "Noshards-Anathema": [
+                    19683
                   ],
                   "Hoeleechit-Blaumeux": [
                     20266
@@ -2754,11 +2754,11 @@
                   "Holyymolyy-Whitemane": [
                     16922
                   ],
-                  "Noshards-Anathema": [
-                    19683
+                  "Vî-Whitemane": [
+                    22385
                   ],
-                  "Trendkill-Whitemane": [
-                    16954
+                  "Popup-Thunderfury": [
+                    16822
                   ]
                 },
                 "time": 1716258276,
@@ -2875,42 +2875,42 @@
               "auctionInfo": {
                 "bids": {
                   "Whyu-Whitemane": 0,
-                  "Popup-Thunderfury": 0,
+                  "Esandarius-Bigglesworth": 0,
                   "Badcandy-Whitemane": 0,
                   "Msstorm-Rattlegore": 21,
                   "Déwx-Thunderfury": 0,
                   "Holyymolyy-Whitemane": 0,
-                  "Esandarius-Bigglesworth": 0
+                  "Popup-Thunderfury": 0
                 },
                 "rolls": {
                   "Whyu-Whitemane": 2,
-                  "Popup-Thunderfury": 99,
+                  "Esandarius-Bigglesworth": 30,
                   "Badcandy-Whitemane": 75,
                   "Msstorm-Rattlegore": 80,
                   "Déwx-Thunderfury": 13,
                   "Holyymolyy-Whitemane": 6,
-                  "Esandarius-Bigglesworth": 30
+                  "Popup-Thunderfury": 99
                 },
                 "isEPGP": false,
                 "link": "[Band of Sulfuras]",
                 "id": 19138,
                 "names": {
                   "Whyu-Whitemane": "Pass",
-                  "Popup-Thunderfury": "Pass",
+                  "Esandarius-Bigglesworth": "Pass",
                   "Badcandy-Whitemane": "Pass",
                   "Msstorm-Rattlegore": "MS",
                   "Déwx-Thunderfury": "Pass",
                   "Holyymolyy-Whitemane": "Pass",
-                  "Esandarius-Bigglesworth": "Pass"
+                  "Popup-Thunderfury": "Pass"
                 },
                 "upgraded": {
                   "Whyu-Whitemane": [
                     22722,
                     21477
                   ],
-                  "Popup-Thunderfury": [
-                    19384,
-                    21405
+                  "Esandarius-Bigglesworth": [
+                    22257,
+                    16058
                   ],
                   "Badcandy-Whitemane": [
                     13098,
@@ -2928,9 +2928,9 @@
                     19382,
                     22721
                   ],
-                  "Esandarius-Bigglesworth": [
-                    22257,
-                    16058
+                  "Popup-Thunderfury": [
+                    19384,
+                    21405
                   ]
                 },
                 "time": 1716258566,
@@ -2975,13 +2975,13 @@
                 "id": 18811,
                 "names": {
                   "Whyu-Whitemane": "Pass",
-                  "Popup-Thunderfury": "Pass",
+                  "Esandarius-Bigglesworth": "Pass",
                   "Alexanderr-Whitemane": "Pass",
                   "Hoeleechit-Blaumeux": "Pass",
-                  "Bault-Smolderweb": "Pass",
                   "Holyymolyy-Whitemane": "Pass",
                   "Chiillii-Whitemane": "Pass",
-                  "Esandarius-Bigglesworth": "Pass"
+                  "Bault-Smolderweb": "Pass",
+                  "Popup-Thunderfury": "Pass"
                 },
                 "upgraded": {
                   "Whyu-Whitemane": [
@@ -3108,22 +3108,22 @@
               "name": "Brutality Blade",
               "auctionInfo": {
                 "bids": {
-                  "Hoeleechit-Blaumeux": 0,
-                  "Badcandy-Whitemane": 47,
-                  "Alexanderr-Whitemane": 125,
                   "Iculus-Whitemane": 120,
-                  "Msstorm-Rattlegore": 0,
                   "Holyymolyy-Whitemane": 0,
+                  "Alexanderr-Whitemane": 125,
+                  "Hoeleechit-Blaumeux": 0,
+                  "Msstorm-Rattlegore": 0,
+                  "Badcandy-Whitemane": 47,
                   "Vî-Whitemane": 55,
                   "Trendkill-Whitemane": 65
                 },
                 "rolls": {
-                  "Hoeleechit-Blaumeux": 74,
-                  "Badcandy-Whitemane": 77,
-                  "Alexanderr-Whitemane": 56,
                   "Iculus-Whitemane": 62,
-                  "Msstorm-Rattlegore": 4,
                   "Holyymolyy-Whitemane": 95,
+                  "Alexanderr-Whitemane": 56,
+                  "Hoeleechit-Blaumeux": 74,
+                  "Msstorm-Rattlegore": 4,
+                  "Badcandy-Whitemane": 77,
                   "Vî-Whitemane": 70,
                   "Trendkill-Whitemane": 2
                 },
@@ -3131,38 +3131,38 @@
                 "link": "[Brutality Blade]",
                 "id": 18832,
                 "names": {
-                  "Hoeleechit-Blaumeux": "Pass",
-                  "Badcandy-Whitemane": "MS",
-                  "Alexanderr-Whitemane": "MS",
                   "Iculus-Whitemane": "MS",
-                  "Msstorm-Rattlegore": "Pass",
                   "Holyymolyy-Whitemane": "Pass",
+                  "Alexanderr-Whitemane": "MS",
+                  "Hoeleechit-Blaumeux": "Pass",
+                  "Msstorm-Rattlegore": "Pass",
+                  "Badcandy-Whitemane": "MS",
                   "Vî-Whitemane": "MS",
                   "Trendkill-Whitemane": "OS"
                 },
                 "upgraded": {
-                  "Hoeleechit-Blaumeux": [
-                    1721,
-                    22253
+                  "Iculus-Whitemane": [
+                    21715,
+                    19866
                   ],
-                  "Badcandy-Whitemane": [
-                    2244,
-                    19901
+                  "Holyymolyy-Whitemane": [
+                    18608
                   ],
                   "Alexanderr-Whitemane": [
                     11684,
                     15806
                   ],
-                  "Iculus-Whitemane": [
-                    21715,
-                    19866
+                  "Hoeleechit-Blaumeux": [
+                    1721,
+                    22253
                   ],
                   "Msstorm-Rattlegore": [
                     13964,
                     22253
                   ],
-                  "Holyymolyy-Whitemane": [
-                    18608
+                  "Badcandy-Whitemane": [
+                    2244,
+                    19901
                   ],
                   "Vî-Whitemane": [
                     17071,
@@ -3246,37 +3246,37 @@
               "auctionInfo": {
                 "bids": {
                   "Alexanderr-Whitemane": 0,
-                  "Esandarius-Bigglesworth": 0,
+                  "Popup-Thunderfury": 0,
                   "Msstorm-Rattlegore": 0,
                   "Chiillii-Whitemane": 0,
                   "Felcrodots-Whitemane": 1,
-                  "Popup-Thunderfury": 0
+                  "Esandarius-Bigglesworth": 0
                 },
                 "rolls": {
                   "Alexanderr-Whitemane": 61,
-                  "Esandarius-Bigglesworth": 2,
+                  "Popup-Thunderfury": 8,
                   "Msstorm-Rattlegore": 83,
                   "Chiillii-Whitemane": 72,
                   "Felcrodots-Whitemane": 89,
-                  "Popup-Thunderfury": 8
+                  "Esandarius-Bigglesworth": 2
                 },
                 "isEPGP": false,
                 "link": "[Nemesis Leggings]",
                 "id": 16930,
                 "names": {
                   "Alexanderr-Whitemane": "Pass",
-                  "Esandarius-Bigglesworth": "Pass",
+                  "Popup-Thunderfury": "Pass",
                   "Msstorm-Rattlegore": "Pass",
                   "Chiillii-Whitemane": "Pass",
                   "Felcrodots-Whitemane": "MS",
-                  "Popup-Thunderfury": "Pass"
+                  "Esandarius-Bigglesworth": "Pass"
                 },
                 "upgraded": {
                   "Alexanderr-Whitemane": [
                     22385
                   ],
-                  "Esandarius-Bigglesworth": [
-                    16855
+                  "Popup-Thunderfury": [
+                    16822
                   ],
                   "Msstorm-Rattlegore": [
                     12965
@@ -3287,8 +3287,8 @@
                   "Felcrodots-Whitemane": [
                     19683
                   ],
-                  "Popup-Thunderfury": [
-                    16822
+                  "Esandarius-Bigglesworth": [
+                    16855
                   ]
                 },
                 "time": 1716259031,
@@ -3307,68 +3307,68 @@
               "name": "Eskhandar's Right Claw",
               "auctionInfo": {
                 "bids": {
-                  "Esandarius-Bigglesworth": 0,
-                  "Iculus-Whitemane": 10,
-                  "Chiillii-Whitemane": 0,
+                  "Popup-Thunderfury": 0,
                   "Hoeleechit-Blaumeux": 0,
-                  "Msstorm-Rattlegore": 0,
                   "Holyymolyy-Whitemane": 0,
+                  "Iculus-Whitemane": 10,
+                  "Msstorm-Rattlegore": 0,
+                  "Chiillii-Whitemane": 0,
                   "Vî-Whitemane": 6,
-                  "Popup-Thunderfury": 0
+                  "Esandarius-Bigglesworth": 0
                 },
                 "rolls": {
-                  "Esandarius-Bigglesworth": 33,
-                  "Iculus-Whitemane": 10,
-                  "Chiillii-Whitemane": 57,
+                  "Popup-Thunderfury": 61,
                   "Hoeleechit-Blaumeux": 25,
-                  "Msstorm-Rattlegore": 72,
                   "Holyymolyy-Whitemane": 48,
+                  "Iculus-Whitemane": 10,
+                  "Msstorm-Rattlegore": 72,
+                  "Chiillii-Whitemane": 57,
                   "Vî-Whitemane": 32,
-                  "Popup-Thunderfury": 61
+                  "Esandarius-Bigglesworth": 33
                 },
                 "isEPGP": false,
                 "link": "[Eskhandar's Right Claw]",
                 "id": 18203,
                 "names": {
-                  "Esandarius-Bigglesworth": "Pass",
-                  "Iculus-Whitemane": "MS",
-                  "Chiillii-Whitemane": "Pass",
+                  "Popup-Thunderfury": "Pass",
                   "Hoeleechit-Blaumeux": "Pass",
-                  "Msstorm-Rattlegore": "Pass",
                   "Holyymolyy-Whitemane": "Pass",
+                  "Iculus-Whitemane": "MS",
+                  "Msstorm-Rattlegore": "Pass",
+                  "Chiillii-Whitemane": "Pass",
                   "Vî-Whitemane": "OS",
-                  "Popup-Thunderfury": "Pass"
+                  "Esandarius-Bigglesworth": "Pass"
                 },
                 "upgraded": {
-                  "Esandarius-Bigglesworth": [
-                    22713,
-                    19312
-                  ],
-                  "Iculus-Whitemane": [
-                    21715,
-                    19866
-                  ],
-                  "Chiillii-Whitemane": [
-                    873
+                  "Popup-Thunderfury": [
+                    17075,
+                    18832
                   ],
                   "Hoeleechit-Blaumeux": [
                     1721,
                     22253
                   ],
+                  "Holyymolyy-Whitemane": [
+                    18608
+                  ],
+                  "Iculus-Whitemane": [
+                    21715,
+                    19866
+                  ],
                   "Msstorm-Rattlegore": [
                     13964,
                     22253
                   ],
-                  "Holyymolyy-Whitemane": [
-                    18608
+                  "Chiillii-Whitemane": [
+                    873
                   ],
                   "Vî-Whitemane": [
                     17071,
                     17705
                   ],
-                  "Popup-Thunderfury": [
-                    17075,
-                    18832
+                  "Esandarius-Bigglesworth": [
+                    22713,
+                    19312
                   ]
                 },
                 "time": 1716259086,
@@ -3444,21 +3444,21 @@
               "auctionInfo": {
                 "bids": {
                   "Whyu-Whitemane": 0,
-                  "Esandarius-Bigglesworth": 0,
+                  "Popup-Thunderfury": 0,
                   "Hoeleechit-Blaumeux": 0,
                   "Msstorm-Rattlegore": 1,
                   "Holyymolyy-Whitemane": 0,
                   "Chiillii-Whitemane": 0,
-                  "Popup-Thunderfury": 0
+                  "Esandarius-Bigglesworth": 0
                 },
                 "rolls": {
                   "Whyu-Whitemane": 50,
-                  "Esandarius-Bigglesworth": 31,
+                  "Popup-Thunderfury": 79,
                   "Hoeleechit-Blaumeux": 96,
                   "Msstorm-Rattlegore": 67,
                   "Holyymolyy-Whitemane": 12,
                   "Chiillii-Whitemane": 80,
-                  "Popup-Thunderfury": 79
+                  "Esandarius-Bigglesworth": 31
                 },
                 "isEPGP": false,
                 "link": "[Circlet of Prophecy]",
@@ -3466,17 +3466,17 @@
                 "names": {
                   "Whyu-Whitemane": "Pass",
                   "Hoeleechit-Blaumeux": "Pass",
-                  "Esandarius-Bigglesworth": "Pass",
+                  "Popup-Thunderfury": "Pass",
                   "Holyymolyy-Whitemane": "Pass",
                   "Chiillii-Whitemane": "Pass",
-                  "Popup-Thunderfury": "Pass"
+                  "Esandarius-Bigglesworth": "Pass"
                 },
                 "upgraded": {
                   "Whyu-Whitemane": [
                     16908
                   ],
-                  "Esandarius-Bigglesworth": [
-                    16854
+                  "Popup-Thunderfury": [
+                    22005
                   ],
                   "Hoeleechit-Blaumeux": [
                     22223
@@ -3490,8 +3490,8 @@
                   "Chiillii-Whitemane": [
                     22267
                   ],
-                  "Popup-Thunderfury": [
-                    22005
+                  "Esandarius-Bigglesworth": [
+                    16854
                   ]
                 },
                 "time": 1716259238,
@@ -3511,40 +3511,40 @@
               "auctionInfo": {
                 "bids": {
                   "Whyu-Whitemane": 6,
-                  "Esandarius-Bigglesworth": 0,
+                  "Popup-Thunderfury": 16,
                   "Badcandy-Whitemane": 11,
                   "Msstorm-Rattlegore": 0,
                   "Chiillii-Whitemane": 0,
                   "Holyymolyy-Whitemane": 0,
-                  "Popup-Thunderfury": 16
+                  "Esandarius-Bigglesworth": 0
                 },
                 "rolls": {
                   "Whyu-Whitemane": 29,
-                  "Esandarius-Bigglesworth": 95,
+                  "Popup-Thunderfury": 65,
                   "Badcandy-Whitemane": 5,
                   "Msstorm-Rattlegore": 83,
                   "Chiillii-Whitemane": 92,
                   "Holyymolyy-Whitemane": 82,
-                  "Popup-Thunderfury": 65
+                  "Esandarius-Bigglesworth": 95
                 },
                 "isEPGP": false,
                 "link": "[Nightslayer Belt]",
                 "id": 16827,
                 "names": {
                   "Whyu-Whitemane": "MS",
-                  "Esandarius-Bigglesworth": "Pass",
+                  "Popup-Thunderfury": "MS",
                   "Badcandy-Whitemane": "MS",
                   "Msstorm-Rattlegore": "Pass",
                   "Chiillii-Whitemane": "Pass",
                   "Holyymolyy-Whitemane": "Pass",
-                  "Popup-Thunderfury": "MS"
+                  "Esandarius-Bigglesworth": "Pass"
                 },
                 "upgraded": {
                   "Whyu-Whitemane": [
                     19396
                   ],
-                  "Esandarius-Bigglesworth": [
-                    19162
+                  "Popup-Thunderfury": [
+                    22002
                   ],
                   "Badcandy-Whitemane": [
                     16713
@@ -3558,8 +3558,8 @@
                   "Holyymolyy-Whitemane": [
                     16925
                   ],
-                  "Popup-Thunderfury": [
-                    22002
+                  "Esandarius-Bigglesworth": [
+                    19162
                   ]
                 },
                 "time": 1716259294,
@@ -3580,18 +3580,18 @@
                 "bids": {
                   "Whyu-Whitemane": 0,
                   "Alexanderr-Whitemane": 0,
-                  "Badcandy-Whitemane": 21,
-                  "Msstorm-Rattlegore": 0,
                   "Chiillii-Whitemane": 0,
+                  "Msstorm-Rattlegore": 0,
+                  "Badcandy-Whitemane": 21,
                   "Holyymolyy-Whitemane": 0,
                   "Esandarius-Bigglesworth": 0
                 },
                 "rolls": {
                   "Whyu-Whitemane": 69,
                   "Alexanderr-Whitemane": 62,
-                  "Badcandy-Whitemane": 37,
-                  "Msstorm-Rattlegore": 35,
                   "Chiillii-Whitemane": 21,
+                  "Msstorm-Rattlegore": 35,
+                  "Badcandy-Whitemane": 37,
                   "Holyymolyy-Whitemane": 67,
                   "Esandarius-Bigglesworth": 25
                 },
@@ -3601,9 +3601,9 @@
                 "names": {
                   "Whyu-Whitemane": "Pass",
                   "Alexanderr-Whitemane": "Pass",
-                  "Badcandy-Whitemane": "MS",
-                  "Msstorm-Rattlegore": "Pass",
                   "Chiillii-Whitemane": "Pass",
+                  "Msstorm-Rattlegore": "Pass",
+                  "Badcandy-Whitemane": "MS",
                   "Holyymolyy-Whitemane": "Pass",
                   "Esandarius-Bigglesworth": "Pass"
                 },
@@ -3614,14 +3614,14 @@
                   "Alexanderr-Whitemane": [
                     19823
                   ],
-                  "Badcandy-Whitemane": [
-                    16713
+                  "Chiillii-Whitemane": [
+                    16685
                   ],
                   "Msstorm-Rattlegore": [
                     16925
                   ],
-                  "Chiillii-Whitemane": [
-                    16685
+                  "Badcandy-Whitemane": [
+                    16713
                   ],
                   "Holyymolyy-Whitemane": [
                     16925
@@ -3855,6 +3855,355 @@
               "id": 18842,
               "points": 15,
               "timestamp": 1716259687,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Oars-Thunderfury",
+              "name": "Bracelets of Wrath",
+              "auctionInfo": [],
+              "id": 16959,
+              "points": 6,
+              "timestamp": 1716345118,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Grindpa-Thunderfury",
+              "name": "Waistband of Wrath",
+              "auctionInfo": [],
+              "id": 16960,
+              "points": 8,
+              "timestamp": 1716345163,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Tyranus-Whitemane",
+              "name": "Waistband of Wrath",
+              "auctionInfo": [],
+              "id": 16960,
+              "points": 8,
+              "timestamp": 1716345198,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Msstorm-Rattlegore",
+              "name": "Pendant of the Fallen Dragon",
+              "auctionInfo": [],
+              "id": 19371,
+              "points": 4,
+              "timestamp": 1716345234,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Scuffles-Bigglesworth",
+              "name": "Heartstriker",
+              "auctionInfo": [],
+              "id": 19350,
+              "points": 9,
+              "timestamp": 1716345274,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Grindpa-Thunderfury",
+              "name": "Sabatons of Wrath",
+              "auctionInfo": [],
+              "id": 16965,
+              "points": 6,
+              "timestamp": 1716345304,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Alexanderr-Whitemane",
+              "name": "Sabatons of Wrath",
+              "auctionInfo": [],
+              "id": 16965,
+              "points": 11,
+              "timestamp": 1716345349,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Oars-Thunderfury",
+              "player": "Holyymolyy-Whitemane",
+              "name": "Rejuvenating Gem",
+              "auctionInfo": {
+                "bids": {
+                  "Bunlop-Whitemane": 125,
+                  "Pew-Whitemane": 0,
+                  "Trendkill-Whitemane": 125,
+                  "Msstorm-Rattlegore": 0,
+                  "Holyymolyy-Whitemane": 335,
+                  "Alexanderr-Whitemane": 70,
+                  "Nampha-Whitemane": 0,
+                  "Legalizewee-Whitemane": 330,
+                  "Scuffles-Bigglesworth": 0,
+                  "Shøgun-Thunderfury": 0,
+                  "Bradjones-Anathema": 0,
+                  "Misself-Whitemane": 0,
+                  "Grindpa-Thunderfury": 0
+                },
+                "rolls": {
+                  "Bunlop-Whitemane": 94,
+                  "Pew-Whitemane": 79,
+                  "Trendkill-Whitemane": 91,
+                  "Msstorm-Rattlegore": 72,
+                  "Holyymolyy-Whitemane": 83,
+                  "Alexanderr-Whitemane": 47,
+                  "Nampha-Whitemane": 61,
+                  "Legalizewee-Whitemane": 48,
+                  "Scuffles-Bigglesworth": 70,
+                  "Shøgun-Thunderfury": 59,
+                  "Bradjones-Anathema": 42,
+                  "Misself-Whitemane": 90,
+                  "Grindpa-Thunderfury": 8
+                },
+                "isEPGP": false,
+                "link": "[Rejuvenating Gem]",
+                "id": 19395,
+                "names": {
+                  "Bunlop-Whitemane": "MS",
+                  "Pew-Whitemane": "Pass",
+                  "Trendkill-Whitemane": "MS",
+                  "Msstorm-Rattlegore": "Pass",
+                  "Holyymolyy-Whitemane": "MS",
+                  "Alexanderr-Whitemane": "OS",
+                  "Nampha-Whitemane": "Pass",
+                  "Legalizewee-Whitemane": "MS",
+                  "Scuffles-Bigglesworth": "Pass",
+                  "Shøgun-Thunderfury": "Pass",
+                  "Bradjones-Anathema": "Pass",
+                  "Misself-Whitemane": "Pass",
+                  "Grindpa-Thunderfury": "Pass"
+                },
+                "upgraded": {
+                  "Bunlop-Whitemane": [
+                    18469,
+                    19950
+                  ],
+                  "Pew-Whitemane": [
+                    18820,
+                    19379
+                  ],
+                  "Trendkill-Whitemane": [
+                    17064,
+                    19343
+                  ],
+                  "Msstorm-Rattlegore": [
+                    18469,
+                    11819
+                  ],
+                  "Holyymolyy-Whitemane": [
+                    19930,
+                    18469
+                  ],
+                  "Alexanderr-Whitemane": [
+                    21647,
+                    11815
+                  ],
+                  "Nampha-Whitemane": [
+                    18465,
+                    13965
+                  ],
+                  "Legalizewee-Whitemane": [
+                    19288,
+                    19950
+                  ],
+                  "Scuffles-Bigglesworth": [
+                    19342,
+                    19949
+                  ],
+                  "Shøgun-Thunderfury": [
+                    13965,
+                    833
+                  ],
+                  "Bradjones-Anathema": [
+                    11815,
+                    19289
+                  ],
+                  "Misself-Whitemane": [
+                    18473,
+                    13965
+                  ],
+                  "Grindpa-Thunderfury": [
+                    13965,
+                    11815
+                  ]
+                },
+                "time": 1716345944,
+                "uuid": {
+                  "1716345949-0-5066-25737659": true
+                }
+              },
+              "id": 19395,
+              "points": 335,
+              "timestamp": 1716345949,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Oars-Thunderfury",
+              "name": "Drake Talon Pauldrons",
+              "auctionInfo": [],
+              "id": 19394,
+              "points": 31,
+              "timestamp": 1716348645,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Whyu-Whitemane",
+              "name": "Claw of the Black Drake",
+              "auctionInfo": [],
+              "id": 19365,
+              "points": 11,
+              "timestamp": 1716348671,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Noshards-Anathema",
+              "name": "Nemesis Gloves",
+              "auctionInfo": [],
+              "id": 16928,
+              "points": 31,
+              "timestamp": 1716349586,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Legalizewee-Whitemane",
+              "name": "Malfurion's Blessed Bulwark",
+              "auctionInfo": [],
+              "id": 19405,
+              "points": 7,
+              "timestamp": 1716349657,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Popup-Thunderfury",
+              "name": "Bloodfang Chestpiece",
+              "auctionInfo": [],
+              "id": 16905,
+              "points": 23,
+              "timestamp": 1716349704,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Lilianas-Whitemane",
+              "name": "Bloodfang Chestpiece",
+              "auctionInfo": [],
+              "id": 16905,
+              "points": 48,
+              "timestamp": 1716349756,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Jooxter-Thunderfury",
+              "name": "Mish'undare, Circlet of the Mind Flayer",
+              "auctionInfo": [],
+              "id": 19375,
+              "points": 60,
+              "timestamp": 1716349845,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Oars-Thunderfury",
+              "name": "Emberweave Leggings",
+              "auctionInfo": [],
+              "id": 19433,
+              "points": 7,
+              "timestamp": 1716349879,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Felcrodots-Whitemane",
+              "name": "Neltharion's Tear",
+              "auctionInfo": [],
+              "id": 19379,
+              "points": 310,
+              "timestamp": 1716350013,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Esandarius-Bigglesworth",
+              "name": "Judgement Spaulders",
+              "auctionInfo": [],
+              "id": 16953,
+              "points": 6,
+              "timestamp": 1716350076,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Chaosbot-Whitemane",
+              "name": "Claw of Chromaggus",
+              "auctionInfo": [],
+              "id": 19347,
+              "points": 53,
+              "timestamp": 1716350136,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Chaosbot-Whitemane",
+              "name": "Angelista's Grasp",
+              "auctionInfo": [],
+              "id": 19388,
+              "points": 8,
+              "timestamp": 1716350176,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Oars-Thunderfury",
+              "player": "Iculus-Whitemane",
+              "name": "Head of Nefarian",
+              "auctionInfo": {
+                "bids": {
+                  "Bault-Smolderweb": 200,
+                  "Pouns-Whitemane": 0,
+                  "Oars-Thunderfury": 0,
+                  "Iculus-Whitemane": 205
+                },
+                "rolls": {
+                  "Bault-Smolderweb": 62,
+                  "Pouns-Whitemane": 84,
+                  "Oars-Thunderfury": 36,
+                  "Iculus-Whitemane": 40
+                },
+                "isEPGP": false,
+                "link": "[Head of Nefarian]",
+                "id": 19003,
+                "names": {
+                  "Bault-Smolderweb": "MS",
+                  "Pouns-Whitemane": "Pass",
+                  "Oars-Thunderfury": "Pass",
+                  "Iculus-Whitemane": "MS"
+                },
+                "upgraded": {
+                  "Bault-Smolderweb": [],
+                  "Pouns-Whitemane": [],
+                  "Oars-Thunderfury": [],
+                  "Iculus-Whitemane": []
+                },
+                "time": 1716350814,
+                "uuid": {
+                  "1716350817-0-5066-25737659": true
+                }
+              },
+              "id": 19003,
+              "points": 205,
+              "timestamp": 1716350817,
               "quality": 4
             }
           ]
