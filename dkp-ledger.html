@@ -39,7 +39,7 @@
       <th>DKP Spent</th>
     </tr>
     <template x-for="item in displayedLedger">
-      <tr>
+      <tr class="hov-pointer hov-brighten hov-underline" x-on:click="showAuction(item)">
         <td x-text="item.player"></td>
         <td x-text="item.awardedBy"></td>
         <td x-text="item.name"></td>
@@ -47,6 +47,36 @@
       </tr>
     </template>
   </table>
+  <div class="confirm-modal full-screen-modal" x-show="showModal" x-on:click.self="showModal = false">
+    <div class="modal-content">
+      <p class="modal-title">Auction Info</p>
+      <template x-if="selectedAuction">
+        <table class="mb-md">
+          <tr>
+            <th>Player</th>
+            <th>Bid</th>
+            <th>Roll</th>
+            <th>Type</th>
+          </tr>
+          <tr x-show="!selectedAuction.bidInfo.length">
+            <td x-text="selectedAuction.player"></td>
+            <td x-text="selectedAuction.points"></td>
+            <td>No Contest</td>
+            <td>No Contest</td>
+          </tr>
+          <template x-for="bidInfo in selectedAuction.bidInfo">
+            <tr>
+              <td x-text="bidInfo.player"></td>
+              <td x-text="bidInfo.bid"></td>
+              <td x-text="bidInfo.roll"></td>
+              <td x-text="getBidTypeLabel(bidInfo.bidType)"></td>
+            </tr>
+          </template>
+        </table>
+      </template>
+      <button class="btn-outline" x-on:click="showModal = false">Close</button>
+    </div>
+  </div>
   <script>
     function data() {
       return {
@@ -56,6 +86,9 @@
         items: [],
         playerFilter: 'All',
         itemFilter: 'All',
+        selectedAuction: null,
+        showModal: false,
+        bidTypes: { 1: 'OS', 2: 'MS' },
         init() {
           fetch("/standings.json")
             .then(res => res.json())
@@ -74,6 +107,37 @@
             (this.playerFilter === 'All' || this.playerFilter === i.player)
             && (this.itemFilter === 'All' || this.itemFilter === i.name)
           );
+        },
+        getBidTypeLabel(bidType) {
+          return this.bidTypes[bidType];
+        },
+        showAuction(item) {
+          this.selectedAuction = item;
+          this.selectedAuction.bidInfo = [];
+          if (this.selectedAuction.auctionInfo && this.selectedAuction.auctionInfo.bids) {
+            Object.keys(this.selectedAuction.auctionInfo.bids).forEach(player => {
+              const bid = this.selectedAuction.auctionInfo.bids[player];
+              if (bid > 0) {
+                const roll = this.selectedAuction.auctionInfo.rolls[player];
+                const bidType = this.selectedAuction.auctionInfo.names[player];
+                this.selectedAuction.bidInfo.push({ player, bid, roll, bidType: bidType === 'MS' ? 2 : 1 });
+              }
+            });
+            this.selectedAuction.bidInfo.sort((b1, b2) => {
+              if (b2.bidType > b1.bidType) {
+                return b2.bidType - b1.bidType;
+              }
+              if (b2.bid > b1.bid) {
+                return b2.bid - b1.bid;
+              }
+              if (b2.roll > b1.roll) {
+                return b2.roll - b1.roll;
+              }
+              return 0;
+            });
+            console.log(this.selectedAuction);
+          }
+          this.showModal = true;
         }
       };
     }
