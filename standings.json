@@ -67,7 +67,7 @@
               "guid": "Player-5066-01B93993",
               "spent": 709,
               "class": "Warlock",
-              "points": 26,
+              "points": 38,
               "spec": "0/0/0"
             },
             {
@@ -274,7 +274,7 @@
               "guid": "Player-5066-018E9203",
               "spent": 280,
               "class": "Warrior",
-              "points": 639,
+              "points": 643,
               "spec": "0/0/0"
             },
             {
@@ -328,7 +328,7 @@
               "guid": "Player-5066-01860C9C",
               "spent": 216,
               "class": "Warrior",
-              "points": 161,
+              "points": 173,
               "spec": "0/0/0"
             },
             {
@@ -382,7 +382,7 @@
               "guid": "Player-5066-017D24E3",
               "spent": 540,
               "class": "Paladin",
-              "points": 418,
+              "points": 426,
               "spec": "0/0/0"
             },
             {
@@ -436,7 +436,7 @@
               "guid": "Player-5066-01CBD9F1",
               "spent": 481,
               "class": "Warrior",
-              "points": 434,
+              "points": 442,
               "spec": "0/0/0"
             },
             {
@@ -526,7 +526,7 @@
               "guid": "Player-5066-0256CE47",
               "spent": 7,
               "class": "Druid",
-              "points": 690,
+              "points": 702,
               "spec": "0/0/0"
             },
             {
@@ -589,7 +589,7 @@
               "guid": "Player-5066-02652614",
               "spent": 322,
               "class": "Warlock",
-              "points": 577,
+              "points": 591,
               "spec": "0/0/0"
             },
             {
@@ -670,7 +670,7 @@
               "guid": "Player-5066-018E71BC",
               "spent": 227,
               "class": "Warrior",
-              "points": 735,
+              "points": 749,
               "spec": "0/0/0"
             },
             {
@@ -778,7 +778,7 @@
               "guid": "Player-5066-01897ED1",
               "spent": 638,
               "class": "Warrior",
-              "points": 267,
+              "points": 277,
               "spec": "0/0/0"
             },
             {
@@ -868,7 +868,7 @@
               "guid": "Player-5066-01F87148",
               "spent": 173,
               "class": "Druid",
-              "points": 552,
+              "points": 562,
               "spec": "0/0/0"
             },
             {
@@ -958,7 +958,7 @@
               "guid": "Player-5066-02258524",
               "spent": 321,
               "class": "Warlock",
-              "points": 639,
+              "points": 647,
               "spec": "0/0/0"
             },
             {
@@ -994,7 +994,7 @@
               "guid": "Player-5066-02463D99",
               "spent": 516,
               "class": "Hunter",
-              "points": 256,
+              "points": 270,
               "spec": "0/0/0"
             },
             {
@@ -1102,7 +1102,7 @@
               "guid": "Player-5066-02567892",
               "spent": 5,
               "class": "Warrior",
-              "points": 455,
+              "points": 467,
               "spec": "0/0/0"
             },
             {
@@ -1129,7 +1129,7 @@
               "guid": "Player-5066-003E024F",
               "spent": 312,
               "class": "Paladin",
-              "points": 652,
+              "points": 656,
               "spec": "0/0/0"
             },
             {
@@ -1183,7 +1183,7 @@
               "guid": "Player-5066-0188B9BB",
               "spent": 44,
               "class": "Warrior",
-              "points": 531,
+              "points": 545,
               "spec": "0/0/0"
             },
             {
@@ -1201,7 +1201,7 @@
               "guid": "Player-5066-0264FA99",
               "spent": 500,
               "class": "Warrior",
-              "points": 317,
+              "points": 329,
               "spec": "0/0/0"
             },
             {
@@ -1588,7 +1588,7 @@
               "guid": "Player-5066-018EE3AB",
               "spent": 498,
               "class": "Paladin",
-              "points": 399,
+              "points": 411,
               "spec": "0/0/0"
             },
             {
@@ -1732,7 +1732,7 @@
               "guid": "Player-5066-0174AACC",
               "spent": 53,
               "class": "Paladin",
-              "points": 372,
+              "points": 382,
               "spec": "0/0/0"
             },
             {
@@ -1768,7 +1768,7 @@
               "guid": "Player-5066-0174A8D7",
               "spent": 6,
               "class": "Hunter",
-              "points": 337,
+              "points": 349,
               "spec": "0/0/0"
             },
             {
@@ -1822,7 +1822,7 @@
               "guid": "Player-5066-01834B2B",
               "spent": 250,
               "class": "Warrior",
-              "points": 641,
+              "points": 653,
               "spec": "0/0/0"
             },
             {
@@ -1840,7 +1840,7 @@
               "guid": "Player-5066-01C54127",
               "spent": 22,
               "class": "Hunter",
-              "points": 669,
+              "points": 673,
               "spec": "0/0/0"
             },
             {
@@ -1849,7 +1849,7 @@
               "guid": "Player-5066-025FC0B6",
               "spent": 190,
               "class": "Rogue",
-              "points": 295,
+              "points": 309,
               "spec": "0/0/0"
             },
             {
@@ -1912,7 +1912,7 @@
               "guid": "Player-5066-023DD972",
               "spent": 372,
               "class": "Warrior",
-              "points": 158,
+              "points": 174,
               "spec": "0/0/0"
             },
             {
@@ -1939,7 +1939,7 @@
               "guid": "Player-5066-024B0877",
               "spent": 0,
               "class": "Mage",
-              "points": 100,
+              "points": 112,
               "spec": "0/0/0"
             },
             {
@@ -2047,7 +2047,7 @@
               "guid": "Player-5066-0188B9BA",
               "spent": 585,
               "class": "Priest",
-              "points": 0,
+              "points": 10,
               "spec": "0/0/0"
             },
             {
@@ -2101,7 +2101,7 @@
               "guid": "Player-5066-019B0C47",
               "spent": 558,
               "class": "Rogue",
-              "points": 349,
+              "points": 359,
               "spec": "0/0/0"
             },
             {
@@ -2164,7 +2164,7 @@
               "guid": "Player-5066-01870C15",
               "spent": 666,
               "class": "Mage",
-              "points": 100,
+              "points": 112,
               "spec": "0/0/0"
             },
             {
@@ -2245,7 +2245,7 @@
               "guid": "Player-5066-01B6425A",
               "spent": 16,
               "class": "Priest",
-              "points": 826,
+              "points": 830,
               "spec": "0/0/0"
             },
             {
@@ -2263,7 +2263,7 @@
               "guid": "Player-5066-018BAD12",
               "spent": 414,
               "class": "Rogue",
-              "points": 276,
+              "points": 280,
               "spec": "0/0/0"
             },
             {
@@ -2290,7 +2290,7 @@
               "guid": "Player-5066-017BE0C3",
               "spent": 19,
               "class": "Druid",
-              "points": 699,
+              "points": 705,
               "spec": "0/0/0"
             },
             {
@@ -2326,7 +2326,7 @@
               "guid": "Player-5066-0197C6D2",
               "spent": 1,
               "class": "Rogue",
-              "points": 686,
+              "points": 698,
               "spec": "0/0/0"
             },
             {
