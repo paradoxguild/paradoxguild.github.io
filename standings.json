@@ -254,9 +254,9 @@
               "role": "NONE",
               "name": "Scuffles-Bigglesworth",
               "guid": "Player-5066-02417183",
-              "spent": 307,
+              "spent": 342,
               "class": "Rogue",
-              "points": 631,
+              "points": 701,
               "spec": "0/0/0"
             },
             {
@@ -272,9 +272,9 @@
               "role": "NONE",
               "name": "Ninrah-Whitemane",
               "guid": "Player-5066-018E9203",
-              "spent": 440,
+              "spent": 490,
               "class": "Warrior",
-              "points": 742,
+              "points": 917,
               "spec": "0/0/0"
             },
             {
@@ -362,9 +362,9 @@
               "role": "NONE",
               "name": "Clothgoth-Fairbanks",
               "guid": "Player-5066-026B419B",
-              "spent": 61,
+              "spent": 246,
               "class": "Mage",
-              "points": 125,
+              "points": 105,
               "spec": "0/0/0"
             },
             {
@@ -382,7 +382,7 @@
               "guid": "Player-5066-017D24E3",
               "spent": 565,
               "class": "Paladin",
-              "points": 569,
+              "points": 674,
               "spec": "0/0/0"
             },
             {
@@ -434,18 +434,18 @@
               "role": "NONE",
               "name": "Iculus-Whitemane",
               "guid": "Player-5066-01CBD9F1",
-              "spent": 1086,
+              "spent": 1136,
               "class": "Warrior",
-              "points": 149,
+              "points": 264,
               "spec": "0/0/0"
             },
             {
               "role": "NONE",
               "name": "Øars-Thunderfury",
               "guid": "Player-5066-01B4E0D2",
-              "spent": 31,
+              "spent": 46,
               "class": "Druid",
-              "points": 537,
+              "points": 687,
               "spec": "0/0/0"
             },
             {
@@ -479,9 +479,9 @@
               "role": "NONE",
               "name": "Avelynn-Whitemane",
               "guid": "Player-5066-017551F0",
-              "spent": 0,
+              "spent": 115,
               "class": "Priest",
-              "points": 190,
+              "points": 240,
               "spec": "0/0/0"
             },
             {
@@ -551,9 +551,9 @@
               "role": "NONE",
               "name": "Popup-Thunderfury",
               "guid": "Player-5066-0183464F",
-              "spent": 965,
+              "spent": 980,
               "class": "Rogue",
-              "points": 232,
+              "points": 382,
               "spec": "0/0/0"
             },
             {
@@ -589,7 +589,7 @@
               "guid": "Player-5066-02652614",
               "spent": 362,
               "class": "Warlock",
-              "points": 913,
+              "points": 1078,
               "spec": "0/0/0"
             },
             {
@@ -616,7 +616,7 @@
               "guid": "Player-5066-017CD3E6",
               "spent": 475,
               "class": "Druid",
-              "points": 174,
+              "points": 181,
               "spec": "0/0/0"
             },
             {
@@ -625,7 +625,7 @@
               "guid": "Player-5066-02492F87",
               "spent": 981,
               "class": "Priest",
-              "points": 54,
+              "points": 219,
               "spec": "0/0/0"
             },
             {
@@ -670,7 +670,7 @@
               "guid": "Player-5066-018E71BC",
               "spent": 857,
               "class": "Warrior",
-              "points": 433,
+              "points": 463,
               "spec": "0/0/0"
             },
             {
@@ -740,9 +740,9 @@
               "role": "NONE",
               "name": "Mintsage-Whitemane",
               "guid": "Player-5066-0184F540",
-              "spent": 282,
+              "spent": 312,
               "class": "Mage",
-              "points": 12,
+              "points": 177,
               "spec": "0/0/0"
             },
             {
@@ -776,9 +776,18 @@
               "role": "NONE",
               "name": "Alexanderr-Whitemane",
               "guid": "Player-5066-01897ED1",
-              "spent": 643,
+              "spent": 658,
               "class": "Warrior",
-              "points": 537,
+              "points": 687,
+              "spec": "0/0/0"
+            },
+            {
+              "role": "NONE",
+              "name": "Figro-Whitemane",
+              "guid": "Player-5066-018757B0",
+              "spent": 50,
+              "class": "Rogue",
+              "points": 115,
               "spec": "0/0/0"
             },
             {
@@ -868,7 +877,7 @@
               "guid": "Player-5066-01F87148",
               "spent": 328,
               "class": "Druid",
-              "points": 605,
+              "points": 685,
               "spec": "0/0/0"
             },
             {
@@ -902,9 +911,9 @@
               "role": "NONE",
               "name": "Kismyleather-Fairbanks",
               "guid": "Player-5066-024E141C",
-              "spent": 46,
+              "spent": 156,
               "class": "Mage",
-              "points": 414,
+              "points": 499,
               "spec": "0/0/0"
             },
             {
@@ -956,9 +965,9 @@
               "role": "NONE",
               "name": "Chaosbot-Whitemane",
               "guid": "Player-5066-02258524",
-              "spent": 453,
+              "spent": 1110,
               "class": "Warlock",
-              "points": 841,
+              "points": 349,
               "spec": "0/0/0"
             },
             {
@@ -985,7 +994,7 @@
               "guid": "Player-5066-02597E8D",
               "spent": 442,
               "class": "Warlock",
-              "points": 768,
+              "points": 933,
               "spec": "0/0/0"
             },
             {
@@ -994,7 +1003,7 @@
               "guid": "Player-5066-02463D99",
               "spent": 516,
               "class": "Hunter",
-              "points": 602,
+              "points": 752,
               "spec": "0/0/0"
             },
             {
@@ -1064,9 +1073,9 @@
               "role": "NONE",
               "name": "Kasiri-Whitemane",
               "guid": "Player-5066-01DE3EF7",
-              "spent": 10,
+              "spent": 285,
               "class": "Priest",
-              "points": 411,
+              "points": 301,
               "spec": "0/0/0"
             },
             {
@@ -1102,7 +1111,7 @@
               "guid": "Player-5066-02567892",
               "spent": 10,
               "class": "Warrior",
-              "points": 669,
+              "points": 699,
               "spec": "0/0/0"
             },
             {
@@ -1129,7 +1138,7 @@
               "guid": "Player-5066-003E024F",
               "spent": 1288,
               "class": "Paladin",
-              "points": 4,
+              "points": 169,
               "spec": "0/0/0"
             },
             {
@@ -1199,9 +1208,9 @@
               "role": "NONE",
               "name": "Brosephina-Whitemane",
               "guid": "Player-5066-0264FA99",
-              "spent": 500,
+              "spent": 1200,
               "class": "Warrior",
-              "points": 667,
+              "points": 162,
               "spec": "0/0/0"
             },
             {
@@ -1262,9 +1271,9 @@
               "role": "NONE",
               "name": "Kuruptus-Thunderfury",
               "guid": "Player-5066-018B165B",
-              "spent": 0,
+              "spent": 15,
               "class": "Warlock",
-              "points": 25,
+              "points": 175,
               "spec": "0/0/0"
             },
             {
@@ -1484,12 +1493,30 @@
               "spec": "0/0/0"
             },
             {
+              "role": "NONE",
+              "name": "Taniel-Whitemane",
+              "guid": "Player-5066-01C4DAFB",
+              "spent": 5,
+              "class": "Warrior",
+              "points": 55,
+              "spec": "0/0/0"
+            },
+            {
               "role": "",
               "name": "Malaika-Whitemane",
               "guid": "Player-5066-0188B714",
               "spent": 0,
               "class": "Priest",
               "points": 0,
+              "spec": "0/0/0"
+            },
+            {
+              "role": "NONE",
+              "name": "Magestry-Whitemane",
+              "guid": "Player-5066-01CBECFA",
+              "spent": 0,
+              "class": "Mage",
+              "points": 10,
               "spec": "0/0/0"
             },
             {
@@ -1508,6 +1535,15 @@
               "spent": 0,
               "class": "Mage",
               "points": 0,
+              "spec": "0/0/0"
+            },
+            {
+              "role": "NONE",
+              "name": "Minnee-Thunderfury",
+              "guid": "Player-5066-018850CB",
+              "spent": 20,
+              "class": "Mage",
+              "points": 145,
               "spec": "0/0/0"
             },
             {
@@ -1541,9 +1577,9 @@
               "role": "NONE",
               "name": "Röt-Whitemane",
               "guid": "Player-5066-01872378",
-              "spent": 35,
+              "spent": 100,
               "class": "Warlock",
-              "points": 125,
+              "points": 225,
               "spec": "0/0/0"
             },
             {
@@ -1586,18 +1622,18 @@
               "role": "NONE",
               "name": "Nampha-Whitemane",
               "guid": "Player-5066-0257DF09",
-              "spent": 15,
+              "spent": 30,
               "class": "Rogue",
-              "points": 1021,
+              "points": 1171,
               "spec": "0/0/0"
             },
             {
               "role": "NONE",
               "name": "Rheyana-Whitemane",
               "guid": "Player-5066-0181C21D",
-              "spent": 46,
+              "spent": 66,
               "class": "Hunter",
-              "points": 64,
+              "points": 104,
               "spec": "0/0/0"
             },
             {
@@ -1613,9 +1649,9 @@
               "role": "NONE",
               "name": "Dagomi-Whitemane",
               "guid": "Player-5066-018EE3AB",
-              "spent": 628,
+              "spent": 638,
               "class": "Paladin",
-              "points": 643,
+              "points": 828,
               "spec": "0/0/0"
             },
             {
@@ -1759,7 +1795,7 @@
               "guid": "Player-5066-0174AACC",
               "spent": 595,
               "class": "Paladin",
-              "points": 150,
+              "points": 255,
               "spec": "0/0/0"
             },
             {
@@ -1793,9 +1829,9 @@
               "role": "NONE",
               "name": "Nyxie-Whitemane",
               "guid": "Player-5066-0174A8D7",
-              "spent": 11,
+              "spent": 16,
               "class": "Hunter",
-              "points": 621,
+              "points": 745,
               "spec": "0/0/0"
             },
             {
@@ -1849,7 +1885,7 @@
               "guid": "Player-5066-01834B2B",
               "spent": 550,
               "class": "Warrior",
-              "points": 603,
+              "points": 768,
               "spec": "0/0/0"
             },
             {
@@ -1867,7 +1903,7 @@
               "guid": "Player-5066-01C54127",
               "spent": 667,
               "class": "Hunter",
-              "points": 350,
+              "points": 515,
               "spec": "0/0/0"
             },
             {
@@ -1876,7 +1912,7 @@
               "guid": "Player-5066-025FC0B6",
               "spent": 594,
               "class": "Rogue",
-              "points": 229,
+              "points": 394,
               "spec": "0/0/0"
             },
             {
@@ -1901,9 +1937,9 @@
               "role": "NONE",
               "name": "Gräu-Bigglesworth",
               "guid": "Player-5066-01C85CA1",
-              "spent": 0,
+              "spent": 5,
               "class": "Paladin",
-              "points": 0,
+              "points": 160,
               "spec": "0/0/0"
             },
             {
@@ -1937,9 +1973,9 @@
               "role": "NONE",
               "name": "Vî-Whitemane",
               "guid": "Player-5066-023DD972",
-              "spent": 382,
+              "spent": 482,
               "class": "Warrior",
-              "points": 500,
+              "points": 565,
               "spec": "0/0/0"
             },
             {
@@ -2011,7 +2047,7 @@
               "guid": "Player-5066-02529825",
               "spent": 26,
               "class": "Rogue",
-              "points": 558,
+              "points": 663,
               "spec": "0/0/0"
             },
             {
@@ -2072,9 +2108,9 @@
               "role": "NONE",
               "name": "Aamara-Thunderfury",
               "guid": "Player-5066-0188B9BA",
-              "spent": 585,
+              "spent": 625,
               "class": "Priest",
-              "points": 332,
+              "points": 457,
               "spec": "0/0/0"
             },
             {
@@ -2128,7 +2164,7 @@
               "guid": "Player-5066-019B0C47",
               "spent": 558,
               "class": "Rogue",
-              "points": 691,
+              "points": 806,
               "spec": "0/0/0"
             },
             {
@@ -2191,7 +2227,7 @@
               "guid": "Player-5066-01870C15",
               "spent": 666,
               "class": "Mage",
-              "points": 436,
+              "points": 601,
               "spec": "0/0/0"
             },
             {
@@ -2272,7 +2308,7 @@
               "guid": "Player-5066-01B6425A",
               "spent": 731,
               "class": "Priest",
-              "points": 412,
+              "points": 577,
               "spec": "0/0/0"
             },
             {
@@ -2288,9 +2324,9 @@
               "role": "NONE",
               "name": "Shøgun-Thunderfury",
               "guid": "Player-5066-018BAD12",
-              "spent": 444,
+              "spent": 449,
               "class": "Rogue",
-              "points": 534,
+              "points": 694,
               "spec": "0/0/0"
             },
             {
@@ -2317,7 +2353,7 @@
               "guid": "Player-5066-017BE0C3",
               "spent": 19,
               "class": "Druid",
-              "points": 1059,
+              "points": 1224,
               "spec": "0/0/0"
             },
             {
@@ -2712,12 +2748,12 @@
                   "Msstorm-Rattlegore": 0,
                   "Pew-Whitemane": 0,
                   "Chiillii-Whitemane": 0,
-                  "Iculus-Whitemane": 0,
+                  "Scuffles-Bigglesworth": 0,
                   "Bault-Smolderweb": 0,
-                  "Misfit-ArcaniteReaper": 0,
+                  "Iculus-Whitemane": 0,
                   "Esandarius-Bigglesworth": 25,
                   "Alexanderr-Whitemane": 0,
-                  "Scuffles-Bigglesworth": 0,
+                  "Misfit-ArcaniteReaper": 0,
                   "Shøgun-Thunderfury": 0,
                   "Holyymolyy-Whitemane": 0,
                   "Vî-Whitemane": 0,
@@ -2729,12 +2765,12 @@
                   "Msstorm-Rattlegore": 38,
                   "Pew-Whitemane": 79,
                   "Chiillii-Whitemane": 23,
-                  "Iculus-Whitemane": 58,
+                  "Scuffles-Bigglesworth": 99,
                   "Bault-Smolderweb": 77,
-                  "Misfit-ArcaniteReaper": 42,
+                  "Iculus-Whitemane": 58,
                   "Esandarius-Bigglesworth": 25,
                   "Alexanderr-Whitemane": 88,
-                  "Scuffles-Bigglesworth": 99,
+                  "Misfit-ArcaniteReaper": 42,
                   "Shøgun-Thunderfury": 54,
                   "Holyymolyy-Whitemane": 20,
                   "Vî-Whitemane": 86,
@@ -2749,12 +2785,12 @@
                   "Msstorm-Rattlegore": "Pass",
                   "Pew-Whitemane": "Pass",
                   "Chiillii-Whitemane": "Pass",
-                  "Iculus-Whitemane": "Pass",
+                  "Scuffles-Bigglesworth": "Pass",
                   "Bault-Smolderweb": "Pass",
-                  "Misfit-ArcaniteReaper": "Pass",
+                  "Iculus-Whitemane": "Pass",
                   "Esandarius-Bigglesworth": "OS",
                   "Alexanderr-Whitemane": "Pass",
-                  "Scuffles-Bigglesworth": "Pass",
+                  "Misfit-ArcaniteReaper": "Pass",
                   "Shøgun-Thunderfury": "Pass",
                   "Holyymolyy-Whitemane": "Pass",
                   "Vî-Whitemane": "Pass",
@@ -2776,14 +2812,14 @@
                   "Chiillii-Whitemane": [
                     18693
                   ],
-                  "Iculus-Whitemane": [
-                    19164
+                  "Scuffles-Bigglesworth": [
+                    16826
                   ],
                   "Bault-Smolderweb": [
                     16826
                   ],
-                  "Misfit-ArcaniteReaper": [
-                    16863
+                  "Iculus-Whitemane": [
+                    19164
                   ],
                   "Esandarius-Bigglesworth": [
                     20264
@@ -2791,8 +2827,8 @@
                   "Alexanderr-Whitemane": [
                     22714
                   ],
-                  "Scuffles-Bigglesworth": [
-                    16826
+                  "Misfit-ArcaniteReaper": [
+                    16863
                   ],
                   "Shøgun-Thunderfury": [
                     22006
@@ -3038,19 +3074,19 @@
                 "bids": {
                   "Whyu-Whitemane": 0,
                   "Esandarius-Bigglesworth": 0,
-                  "Badcandy-Whitemane": 0,
-                  "Msstorm-Rattlegore": 21,
                   "Déwx-Thunderfury": 0,
+                  "Msstorm-Rattlegore": 21,
                   "Holyymolyy-Whitemane": 0,
+                  "Badcandy-Whitemane": 0,
                   "Popup-Thunderfury": 0
                 },
                 "rolls": {
                   "Whyu-Whitemane": 2,
                   "Esandarius-Bigglesworth": 30,
-                  "Badcandy-Whitemane": 75,
-                  "Msstorm-Rattlegore": 80,
                   "Déwx-Thunderfury": 13,
+                  "Msstorm-Rattlegore": 80,
                   "Holyymolyy-Whitemane": 6,
+                  "Badcandy-Whitemane": 75,
                   "Popup-Thunderfury": 99
                 },
                 "isEPGP": false,
@@ -3059,10 +3095,10 @@
                 "names": {
                   "Whyu-Whitemane": "Pass",
                   "Esandarius-Bigglesworth": "Pass",
-                  "Badcandy-Whitemane": "Pass",
-                  "Msstorm-Rattlegore": "MS",
                   "Déwx-Thunderfury": "Pass",
+                  "Msstorm-Rattlegore": "MS",
                   "Holyymolyy-Whitemane": "Pass",
+                  "Badcandy-Whitemane": "Pass",
                   "Popup-Thunderfury": "Pass"
                 },
                 "upgraded": {
@@ -3074,21 +3110,21 @@
                     22257,
                     16058
                   ],
-                  "Badcandy-Whitemane": [
-                    13098,
-                    17713
+                  "Déwx-Thunderfury": [
+                    22681,
+                    22433
                   ],
                   "Msstorm-Rattlegore": [
                     17768,
                     10634
                   ],
-                  "Déwx-Thunderfury": [
-                    22681,
-                    22433
-                  ],
                   "Holyymolyy-Whitemane": [
                     19382,
                     22721
+                  ],
+                  "Badcandy-Whitemane": [
+                    13098,
+                    17713
                   ],
                   "Popup-Thunderfury": [
                     19384,
@@ -3674,19 +3710,19 @@
                 "bids": {
                   "Whyu-Whitemane": 6,
                   "Popup-Thunderfury": 16,
-                  "Badcandy-Whitemane": 11,
-                  "Msstorm-Rattlegore": 0,
                   "Chiillii-Whitemane": 0,
+                  "Msstorm-Rattlegore": 0,
                   "Holyymolyy-Whitemane": 0,
+                  "Badcandy-Whitemane": 11,
                   "Esandarius-Bigglesworth": 0
                 },
                 "rolls": {
                   "Whyu-Whitemane": 29,
                   "Popup-Thunderfury": 65,
-                  "Badcandy-Whitemane": 5,
-                  "Msstorm-Rattlegore": 83,
                   "Chiillii-Whitemane": 92,
+                  "Msstorm-Rattlegore": 83,
                   "Holyymolyy-Whitemane": 82,
+                  "Badcandy-Whitemane": 5,
                   "Esandarius-Bigglesworth": 95
                 },
                 "isEPGP": false,
@@ -3695,10 +3731,10 @@
                 "names": {
                   "Whyu-Whitemane": "MS",
                   "Popup-Thunderfury": "MS",
-                  "Badcandy-Whitemane": "MS",
-                  "Msstorm-Rattlegore": "Pass",
                   "Chiillii-Whitemane": "Pass",
+                  "Msstorm-Rattlegore": "Pass",
                   "Holyymolyy-Whitemane": "Pass",
+                  "Badcandy-Whitemane": "MS",
                   "Esandarius-Bigglesworth": "Pass"
                 },
                 "upgraded": {
@@ -3708,17 +3744,17 @@
                   "Popup-Thunderfury": [
                     22002
                   ],
-                  "Badcandy-Whitemane": [
-                    16713
+                  "Chiillii-Whitemane": [
+                    16685
                   ],
                   "Msstorm-Rattlegore": [
                     16925
                   ],
-                  "Chiillii-Whitemane": [
-                    16685
-                  ],
                   "Holyymolyy-Whitemane": [
                     16925
+                  ],
+                  "Badcandy-Whitemane": [
+                    16713
                   ],
                   "Esandarius-Bigglesworth": [
                     19162
@@ -6646,6 +6682,466 @@
               "id": 21596,
               "points": 420,
               "timestamp": 1719379426,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Nampha-Whitemane",
+              "name": "Bloodfang Bracers",
+              "auctionInfo": [],
+              "id": 16911,
+              "points": 15,
+              "timestamp": 1719881072,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Minnee-Thunderfury",
+              "name": "Netherwind Belt",
+              "auctionInfo": [],
+              "id": 16818,
+              "points": 20,
+              "timestamp": 1719881159,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Gräu-Bigglesworth",
+              "name": "Helm of Endless Rage",
+              "auctionInfo": [],
+              "id": 19372,
+              "points": 5,
+              "timestamp": 1719881209,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Chaosbot-Whitemane",
+              "name": "Bracers of Arcane Accuracy",
+              "auctionInfo": [],
+              "id": 19374,
+              "points": 20,
+              "timestamp": 1719881483,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Shøgun-Thunderfury",
+              "name": "Bloodfang Boots",
+              "auctionInfo": [],
+              "id": 16906,
+              "points": 5,
+              "timestamp": 1719881801,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Scuffles-Bigglesworth",
+              "name": "Bloodfang Belt",
+              "auctionInfo": [],
+              "id": 16910,
+              "points": 35,
+              "timestamp": 1719881863,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Nyxie-Whitemane",
+              "name": "Dragonstalker's Greaves",
+              "auctionInfo": [],
+              "id": 16941,
+              "points": 5,
+              "timestamp": 1719881941,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Iculus-Whitemane",
+              "name": "Doom's Edge",
+              "auctionInfo": [],
+              "id": 19362,
+              "points": 5,
+              "timestamp": 1719882019,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Dagomi-Whitemane",
+              "name": "Legguards of the Fallen Crusader",
+              "auctionInfo": [],
+              "id": 19402,
+              "points": 10,
+              "timestamp": 1719883288,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Mintsage-Whitemane",
+              "name": "Netherwind Gloves",
+              "auctionInfo": [],
+              "id": 16913,
+              "points": 30,
+              "timestamp": 1719883404,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Röt-Whitemane",
+              "name": "Ebony Flame Gloves",
+              "auctionInfo": [],
+              "id": 19407,
+              "points": 55,
+              "timestamp": 1719884621,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Kuruptus-Thunderfury",
+              "name": "Nemesis Gloves",
+              "auctionInfo": [],
+              "id": 16928,
+              "points": 5,
+              "timestamp": 1719884659,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Avelynn-Whitemane",
+              "name": "Shroud of Pure Thought",
+              "auctionInfo": [],
+              "id": 19430,
+              "points": 110,
+              "timestamp": 1719884926,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Øars-Thunderfury",
+              "name": "Taut Dragonhide Belt",
+              "auctionInfo": [],
+              "id": 19396,
+              "points": 5,
+              "timestamp": 1719885192,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Clothgoth-Fairbanks",
+              "name": "Netherwind Robes",
+              "auctionInfo": [],
+              "id": 16916,
+              "points": 100,
+              "timestamp": 1719886311,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Vî-Whitemane",
+              "name": "Head of Nefarian",
+              "auctionInfo": [],
+              "id": 19003,
+              "points": 90,
+              "timestamp": 1719886364,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Øars-Thunderfury",
+              "name": "Taut Dragonhide Shoulderpads",
+              "auctionInfo": [],
+              "id": 19389,
+              "points": 5,
+              "timestamp": 1719886397,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Chaosbot-Whitemane",
+              "name": "Neltharion's Tear",
+              "auctionInfo": [],
+              "id": 19379,
+              "points": 637,
+              "timestamp": 1719886494,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Clothgoth-Fairbanks",
+              "name": "Netherwind Mantle",
+              "auctionInfo": [],
+              "id": 16917,
+              "points": 85,
+              "timestamp": 1719886602,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Iculus-Whitemane",
+              "name": "Archimtiros' Ring of Reckoning",
+              "auctionInfo": [],
+              "id": 19376,
+              "points": 40,
+              "timestamp": 1719886668,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Øars-Thunderfury",
+              "name": "Stormrage Chestguard",
+              "auctionInfo": [],
+              "id": 16897,
+              "points": 5,
+              "timestamp": 1719886690,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Figro-Whitemane",
+              "name": "Sword of Zeal",
+              "auctionInfo": [],
+              "id": 6622,
+              "points": 5,
+              "timestamp": 1719886733,
+              "quality": 3
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Rheyana-Whitemane",
+              "name": "Giantstalker's Bracers",
+              "auctionInfo": [],
+              "id": 16850,
+              "points": 5,
+              "timestamp": 1719888361,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Avelynn-Whitemane",
+              "name": "Pants of Prophecy",
+              "auctionInfo": [],
+              "id": 16814,
+              "points": 5,
+              "timestamp": 1719889069,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Röt-Whitemane",
+              "name": "Choker of Enlightenment",
+              "auctionInfo": [],
+              "id": 17109,
+              "points": 10,
+              "timestamp": 1719889328,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Ninrah-Whitemane",
+              "name": "Flameguard Gauntlets",
+              "auctionInfo": [],
+              "id": 19143,
+              "points": 50,
+              "timestamp": 1719889406,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Alexanderr-Whitemane",
+              "name": "Aged Core Leather Gloves",
+              "auctionInfo": [],
+              "id": 18823,
+              "points": 10,
+              "timestamp": 1719889854,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Alexanderr-Whitemane",
+              "name": "Aged Core Leather Gloves",
+              "auctionInfo": [],
+              "id": 18823,
+              "points": 5,
+              "timestamp": 1719890258,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Vî-Whitemane",
+              "name": "Giantstalker's Belt",
+              "auctionInfo": [],
+              "id": 16851,
+              "points": 5,
+              "timestamp": 1719890438,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Aamara-Thunderfury",
+              "name": "Crimson Shocker",
+              "auctionInfo": [],
+              "id": 17077,
+              "points": 40,
+              "timestamp": 1719890535,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Figro-Whitemane",
+              "name": "Nightslayer Gloves",
+              "auctionInfo": [],
+              "id": 16826,
+              "points": 35,
+              "timestamp": 1719890608,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Popup-Thunderfury",
+              "name": "Gutgore Ripper",
+              "auctionInfo": [],
+              "id": 17071,
+              "points": 15,
+              "timestamp": 1719890697,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Taniel-Whitemane",
+              "name": "Helm of Might",
+              "auctionInfo": [],
+              "id": 16866,
+              "points": 5,
+              "timestamp": 1719890827,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Kismyleather-Fairbanks",
+              "name": "Robe of Volatile Power",
+              "auctionInfo": [],
+              "id": 19145,
+              "points": 80,
+              "timestamp": 1719891375,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Figro-Whitemane",
+              "name": "Nightslayer Chestpiece",
+              "auctionInfo": [],
+              "id": 16820,
+              "points": 5,
+              "timestamp": 1719891573,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Vî-Whitemane",
+              "name": "Bracers of Might",
+              "auctionInfo": [],
+              "id": 16861,
+              "points": 5,
+              "timestamp": 1719891633,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Kasiri-Whitemane",
+              "name": "Cauterizing Band",
+              "auctionInfo": [],
+              "id": 19140,
+              "points": 275,
+              "timestamp": 1719892008,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Figro-Whitemane",
+              "name": "Core Hound Tooth",
+              "auctionInfo": [],
+              "id": 18805,
+              "points": 5,
+              "timestamp": 1719892135,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Brosephina-Whitemane",
+              "name": "Onslaught Girdle",
+              "auctionInfo": [],
+              "id": 19137,
+              "points": 700,
+              "timestamp": 1719892455,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Iculus-Whitemane",
+              "name": "Legplates of Wrath",
+              "auctionInfo": [],
+              "id": 16962,
+              "points": 5,
+              "timestamp": 1719892512,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Rheyana-Whitemane",
+              "name": "Dragonstalker's Legguards",
+              "auctionInfo": [],
+              "id": 16938,
+              "points": 5,
+              "timestamp": 1719892537,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Kismyleather-Fairbanks",
+              "name": "Shard of the Flame",
+              "auctionInfo": [],
+              "id": 17082,
+              "points": 30,
+              "timestamp": 1719892617,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Rheyana-Whitemane",
+              "name": "Crown of Destruction",
+              "auctionInfo": [],
+              "id": 18817,
+              "points": 5,
+              "timestamp": 1719892663,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Rheyana-Whitemane",
+              "name": "Blastershot Launcher",
+              "auctionInfo": [],
+              "id": 17072,
+              "points": 5,
+              "timestamp": 1719892698,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Kuruptus-Thunderfury",
+              "name": "Felheart Shoulder Pads",
+              "auctionInfo": [],
+              "id": 16807,
+              "points": 5,
+              "timestamp": 1719892745,
+              "quality": 4
+            },
+            {
+              "awardedBy": "Aamara-Thunderfury",
+              "player": "Kuruptus-Thunderfury",
+              "name": "Felheart Bracers",
+              "auctionInfo": [],
+              "id": 16804,
+              "points": 5,
+              "timestamp": 1719892786,
               "quality": 4
             }
           ]
