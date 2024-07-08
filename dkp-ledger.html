@@ -37,6 +37,7 @@
       <th>Awarded By</th>
       <th>Item</th>
       <th>DKP Spent</th>
+      <th>Date</th>
     </tr>
     <template x-for="item in displayedLedger">
       <tr class="hov-pointer hov-brighten hov-underline" x-on:click="showAuction(item)">
@@ -44,6 +45,7 @@
         <td x-text="item.awardedBy"></td>
         <td x-text="item.name"></td>
         <td x-text="item.points"></td>
+        <td x-text="formatDate(item.timestamp)"></td>
       </tr>
     </template>
   </table>
@@ -94,6 +96,7 @@
             .then(res => res.json())
             .then(json => {
               const ledger = json.lootHistory.roster.find(r => r.name === 'Paradøx').lootHistory.item;
+              ledger.forEach(i => i.timestamp = i.timestamp * 1000);
               ledger.sort((p1, p2) => p2.timestamp - p1.timestamp);
               this.ledger = ledger;
               this.players = this.ledger.map(i => i.player);
@@ -135,9 +138,11 @@
               }
               return 0;
             });
-            console.log(this.selectedAuction);
           }
           this.showModal = true;
+        },
+        formatDate(timestamp) {
+          return new Date(timestamp).toLocaleDateString();
         }
       };
     }
