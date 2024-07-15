@@ -70,6 +70,7 @@
     { name: "Sayge's Dark Fortune of Damage", id: 23768 },
     { name: "Sayge's Dark Fortune of Intelligence", id: 23766 },
     { name: "Sayge's Dark Fortune of Spirit", id: 23738 },
+    { name: "Might of Stormwind", id: 460940 }
   ];
 
   var buffData = [];
