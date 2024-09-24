@@ -70,6 +70,11 @@
     { name: "Sayge's Dark Fortune of Damage", id: 23768 },
     { name: "Sayge's Dark Fortune of Intelligence", id: 23766 },
     { name: "Sayge's Dark Fortune of Spirit", id: 23738 },
+    { name: "Sagye's Dark Fortune of Stamina", id: 23737 },
+    { name: "Sagye's Dark Fortune of Strength", id: 23735 },
+    { name: "Sagye's Dark Fortune of Agility", id: 23736 },
+    { name: "Sagye's Dark Fortune of Resistance", id: 23769 },
+    { name: "Sagye's Dark Fortune of Armor", id: 23767 },
     { name: "Might of Stormwind", id: 460940 }
   ];
 
