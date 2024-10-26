@@ -1,0 +1,132 @@
+<div x-data="calendar()" x-init="[initDate(), getNoOfDays()]" x-cloak class="w-full">
+  <div class="container mx-auto w-full">
+    <div class="bg-white rounded-lg shadow overflow-hidden dark:bg-zinc-800">
+      <div class="flex items-center justify-between py-2 px-6">
+        <div>
+          <span x-text="MONTH_NAMES[month]" class="text-lg font-bold text-gray-800 dark:text-gray-300"></span>
+          <span x-text="year" class="ml-1 text-lg text-gray-600 font-normal dark:text-gray-400"></span>
+        </div>
+        <div class="border rounded-lg px-1" style="padding-top: 2px;">
+          <button type="button"
+            class="leading-none rounded-lg transition ease-in-out duration-100 inline-flex cursor-pointer hover:bg-gray-200 p-1 items-center"
+            :class="{'cursor-not-allowed opacity-25': month == 0 }" :disabled="month == 0 ? true : false"
+            @click="month--; getNoOfDays()">
+            <svg class="h-6 w-6 text-gray-500 dark:text-gray-300 inline-flex leading-none" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <div class="border-r inline-flex h-6"></div>
+          <button type="button"
+            class="leading-none rounded-lg transition ease-in-out duration-100 inline-flex items-center cursor-pointer hover:bg-gray-200 p-1"
+            :class="{'cursor-not-allowed opacity-25': month == 11 }" :disabled="month == 11 ? true : false"
+            @click="month++; getNoOfDays()">
+            <svg class="h-6 w-6 text-gray-500 dark:text-gray-300 inline-flex leading-none" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="-mx-1 -mb-1">
+        <div class="flex flex-wrap">
+          <template x-for="(day, index) in DAYS" :key="index">
+            <div style="width: 14.26%" class="px-2 py-2">
+              <div x-text="day" class="text-gray-600 text-sm uppercase tracking-wide font-bold text-center dark:text-gray-200"></div>
+            </div>
+          </template>
+        </div>
+
+        <div class="flex flex-wrap border-t border-l">
+          <template x-for="blankday in blankDays">
+            <div style="width: 14.28%; height: 130px" class="text-center border-r border-b px-4 pt-2"></div>
+          </template>
+          <template x-for="(date, dateIndex) in numberOfDays" :key="dateIndex">
+            <div style="width: 14.28%; height: 130px" class="px-2 pt-1 border-r border-b relative">
+              <div x-text="date"
+                class="inline-flex w-6 h-6 items-center justify-center text-center leading-none rounded-full transition ease-in-out duration-100"
+                :class="{'bg-blue-500 text-white dark:bg-teal-500 dark:text-zinc-800': isToday(date), 'text-gray-700 dark:text-gray-300': !isToday(date) }">
+              </div>
+              <div style="height: 90px;" class="overflow-y-auto mt-1">
+                <template
+                  x-for="event in events.filter(e => new Date(e.date).toDateString() === new Date(year, month, date).toDateString())">
+                  <div class="rounded-lg mt-1 overflow-hidden border" :class="{
+                        'border-teal-500 text-zinc-800 bg-teal-400': !event.theme, 
+												'border-blue-200 text-blue-800 bg-blue-100': event.theme === 'blue',
+												'border-red-200 text-red-800 bg-red-100': event.theme === 'red',
+												'border-yellow-200 text-yellow-800 bg-yellow-100': event.theme === 'yellow',
+												'border-green-200 text-green-800 bg-green-100': event.theme === 'green',
+												'border-purple-200 text-purple-800 bg-purple-100': event.theme === 'purple'
+											}">
+                    <p x-text="event.title" class="text-xs leading-tight text-center p-1 md:px-2 md:py-1"></p>
+                  </div>
+                </template>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+    function calendar() {
+      return {
+        month: '',
+        year: '',
+        numberOfDays: [],
+        blankDays: [],
+        days: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+
+        initDate() {
+          let today = new Date();
+          this.month = today.getMonth();
+          this.year = today.getFullYear();
+          this.datepickerValue = new Date(this.year, this.month, today.getDate()).toDateString();
+
+          // Add recurring events to the current month
+          if (this.every) {
+            let daysInMonth = new Date(this.year, this.month + 1, 0).getDate();
+            for (let i = 1; i <= daysInMonth; i++) {
+              const date = new Date(this.year, this.month, i);
+              if (this.every[DAYS[date.getDay()]]) {
+                for (let eventTitle of this.every[DAYS[date.getDay()]]) {
+                  this.events.push({ date, title: eventTitle });
+                }
+              }
+            }
+          }
+        },
+
+        isToday(date) {
+          const today = new Date();
+          const d = new Date(this.year, this.month, date);
+          return today.toDateString() === d.toDateString() ? true : false;
+        },
+
+        getNoOfDays() {
+          let daysInMonth = new Date(this.year, this.month + 1, 0).getDate();
+
+          // find where to start calendar day of week
+          let dayOfWeek = new Date(this.year, this.month).getDay();
+          let blankDaysArray = [];
+          for (var i = 1; i <= dayOfWeek; i++) {
+            blankDaysArray.push(i);
+          }
+
+          let daysArray = [];
+          for (var i = 1; i <= daysInMonth; i++) {
+            daysArray.push(i);
+          }
+
+          this.blankDays = blankDaysArray;
+          this.numberOfDays = daysArray;
+        }
+      }
+    }
+  </script>
+</div>

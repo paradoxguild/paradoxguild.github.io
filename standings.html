@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/lib/tailwind-3.4.5.js"></script>
+  <script defer src="/lib/alpine-morph-3.x.x.js"></script>
+  <script defer src="/lib/alpine-collapse-3.x.x.js"></script>
+  <script defer src="/lib/alpine-3.x.x.js"></script>
+  <script src="/lib/htmx-2.0.3.js"></script>
+  <script src="/lib/htmx-preload-2.0.1.js"></script>
+  <script src="/lib/htmx-morph-1.9.12.js"></script>
+  <script src="/components/js/utils.js"></script>
+  <script src="/components/js/alpine-components.js"></script>
+  <script src="/components/js/htmx-components.js"></script>
+  <style type="text/tailwindcss">
+    body {
+      @apply bg-slate-200 dark:bg-zinc-900 text-sky-900 dark:text-teal-500;
+    }
+  </style>
+</head>
+
+<body>
+  <custom-nav page="Standings"></custom-nav>
+
+  <div class="py-5 px-5 max-w-[1000px] mx-auto">
+    <h1 class="text-3xl font-bold text-center">
+      Standings
+    </h1>
+
+    <div class="mt-5 overflow-hidden w-full overflow-x-auto rounded-md border border-gray-500 dark:border-gray-500">
+      <table class="w-full text-left text-sm text-gray-800 dark:text-gray-300" x-data="data()">
+        <thead
+          class="border-b border-gray-500 bg-gray-200 text-sm text-gray-950 dark:border-gray-500 dark:bg-zinc-800 dark:text-gray-50">
+          <tr>
+            <th scope="col" class="p-4">Player</th>
+            <th scope="col" class="p-4">Class</th>
+            <th scope="col" class="p-4">DKP</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-500 dark:divide-gray-500">
+          <template x-for="player in players">
+            <tr>
+              <td class="p-2"><a x-bind:href="player.armoryLink" target="_blank" x-text="player.name"></a></td>
+              <td class="p-2" x-text="player.class"></td>
+              <td class="p-2" x-text="player.points"></td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script>
+    function data() {
+      return {
+        players: [],
+        init() {
+          fetch("/standings.json")
+            .then(res => res.json())
+            .then(json => {
+              const players = json.standings.roster.find(r => r.name === 'Paradøx').standings.player;
+              players.sort((p1, p2) => {
+                let diff = p2.points - p1.points;
+                if (diff === 0) {
+                  return p1.name.localeCompare(p2.name);
+                }
+                return diff;
+              });
+              this.players = players.map(p => ({
+                ...p, 
+                armoryLink: `https://ironforge.pro/era/player/US/${p.name.split('-')[1]}/${p.name.split('-')[0]}`
+              }));
+            })
+            .catch(err => console.error(err));
+        },
+      };
+    }
+  </script>
+</body>
+
+</html>

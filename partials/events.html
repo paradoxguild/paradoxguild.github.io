@@ -1,0 +1,26 @@
+<div class="flex-col justify-center">
+  <banner-card x-data="{
+    image: '/static/images/events/10-20-2024-gnome-race/1.png',
+    heading: 'Community Event - 10/20/2024 @ 3:00 PM Server',
+    title: 'Level 1 Gnome Race',
+    description: `
+      Join us on the Whitemane cluster!\n
+      We will race from Dun Morogh -> Mulgore\n
+      - 1st place -> 750g\n
+      - 2nd place -> 500g\n
+      - 3rd place -> 350g\n
+    `
+  }"></banner-card>
+
+  <custom-accordion x-data="{
+    id: '10-20-2024-gnome-race',
+    title: '09-15-2024: Level 1 Hogger Raid',
+    expandByDefault: true
+  }">
+    <slot name="content">
+      <image-carousel x-data="{
+        images: imageArray('/static/images/events/09-15-2024-hogger-raid', 2, 'png')
+      }"></image-carousel>
+    </slot>
+  </custom-accordion>
+</div>

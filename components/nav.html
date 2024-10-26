@@ -1,0 +1,75 @@
+<style type="text/tailwindcss">
+  nav {
+    @apply flex items-center justify-between bg-gray-200 border-b border-gray-500 px-6 py-4 dark:border-gray-500 dark:bg-zinc-900;
+  }
+  .nav-link-desktop {
+    @apply font-medium text-gray-800 underline-offset-2 hover:text-sky-900 focus:outline-none focus:underline dark:text-gray-300 dark:hover:text-teal-500;
+  }
+  .nav-link-desktop.current-page {
+    @apply font-bold text-sky-900 underline-offset-2 hover:text-sky-900 focus:outline-none focus:underline dark:text-teal-500 dark:hover:text-teal-500;
+  }
+  .mobile-menu {
+    @apply flex text-gray-800 dark:text-gray-300 md:hidden;
+  }
+  .nav-link-mobile {
+    @apply w-full text-lg font-medium text-gray-800 focus:underline dark:text-gray-300;
+  }
+  .nav-link-mobile.current-page {
+    @apply w-full text-lg font-bold text-sky-900 focus:underline dark:text-teal-500;
+  }
+  #mobile-menu {
+    @apply fixed max-h-svh overflow-y-auto inset-x-0 top-0 z-10 flex flex-col divide-y divide-gray-500 rounded-b-md border-b border-gray-500 bg-gray-200 px-6 pb-6 pt-20 dark:divide-gray-500 dark:border-gray-500 dark:bg-zinc-800 md:hidden;
+  }
+</style>
+
+<nav x-data="{
+  mobileMenuIsOpen: false,
+  pages: [
+    { name: 'Home', href: '/' },
+    { name: 'Standings', href: '/standings.html' },
+    { name: 'Ledger', href: '/ledger.html' }
+  ]
+}" @click.away="mobileMenuIsOpen = false" aria-label="penguin ui menu" class="w-full">
+  <div class="w-full max-w-[1000px] flex items-center justify-between mx-auto">
+    <!-- Brand Logo -->
+    <a href="/" class="text-2xl font-bold text-gray-950 dark:text-gray-100">
+      <img src="/static/images/paradox-transparent.png" alt="Paradøx Logo" class="w-10 mr-1 inline" />
+      <span>Para<span class="text-sky-900 dark:text-teal-500">døx</span></span>
+    </a>
+    <!-- Desktop Menu -->
+    <ul class="hidden items-center gap-4 md:flex">
+      <template x-for="pageItem of pages">
+        <li>
+          <a :href="pageItem.href" class="nav-link-desktop" :class="page === pageItem.name ? 'current-page' : null"
+            :aria-current="page === pageItem.name ? 'page' : null" x-text="pageItem.name"></a>
+        </li>
+      </template>
+    </ul>
+  </div>
+  <!-- Mobile Menu Button -->
+  <button @click="mobileMenuIsOpen = !mobileMenuIsOpen" :aria-expanded="mobileMenuIsOpen"
+    :class="mobileMenuIsOpen ? 'fixed top-6 right-6 z-20' : null" type="button" class="mobile-menu"
+    aria-label="mobile menu" aria-controls="mobile-menu">
+    <svg x-cloak x-show="!mobileMenuIsOpen" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true"
+      viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+    <svg x-cloak x-show="mobileMenuIsOpen" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true"
+      viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+    </svg>
+  </button>
+  <!-- Mobile Menu -->
+  <ul id="mobile-menu" x-cloak x-show="mobileMenuIsOpen"
+    x-transition:enter="transition motion-reduce:transition-none ease-out duration-300"
+    x-transition:enter-start="-translate-y-full" x-transition:enter-end="translate-y-0"
+    x-transition:leave="transition motion-reduce:transition-none ease-out duration-300"
+    x-transition:leave-start="translate-y-0" x-transition:leave-end="-translate-y-full">
+    <template x-for="pageItem of pages">
+      <li class="py-4">
+        <a :href="pageItem.href" class="nav-link-mobile" :class="page === pageItem.name ? 'current-page' : null"
+          :aria-current="page === pageItem.name ? 'page' : null" x-text="pageItem.name"></a>
+      </li>
+    </template>
+  </ul>
+</nav>

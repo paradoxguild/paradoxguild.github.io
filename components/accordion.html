@@ -1,0 +1,19 @@
+<div class="flex w-full flex-col gap-4 text-gray-800 dark:text-gray-300 mt-4">
+  <div x-data="{ isExpanded: typeof expandByDefault !== 'undefined' ? true : false }"
+    class="divide-y divide-gray-500 overflow-hidden rounded-md border border-gray-500 bg-gray-200/40 dark:divide-gray-500 dark:border-gray-500 dark:bg-zinc-800">
+    <button :id="id + '-btn'" type="button"
+      class="flex w-full items-center justify-between gap-2 bg-gray-200 p-4 text-left underline-offset-2 hover:bg-gray-200/75 focus-visible:bg-gray-200/75 focus-visible:underline focus-visible:outline-none dark:bg-zinc-800 dark:hover:bg-zinc-900/25 dark:focus-visible:bg-gray-800/75"
+      :aria-controls="id + '-btn'" @click="isExpanded = ! isExpanded"
+      :class="isExpanded ? 'text-onSurfaceStrong dark:text-onSurfaceDarkStrong font-bold' : 'text-onSurface dark:text-onSurfaceDark font-medium'"
+      :aria-expanded="isExpanded ? 'true' : 'false'">
+      <span x-text="title"></span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="currentColor"
+        class="size-5 shrink-0 transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+      </svg>
+    </button>
+    <div x-cloak x-show="isExpanded" :id="id" role="region" :aria-labelledby="id + '-btn'" x-collapse>
+      <slot name="content"></slot>
+    </div>
+  </div>
+</div>

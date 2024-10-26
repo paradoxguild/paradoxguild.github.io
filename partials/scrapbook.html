@@ -1,0 +1,11 @@
+<custom-accordion x-data="{
+  id: 'naxx-scrapbook',
+  title: 'Naxx Progression',
+  expandByDefault: true,
+}">
+  <slot name="content">
+    <image-carousel x-data="{
+      images: imageArray('/static/images/scrapbook/naxx', 8, 'png')
+    }"></image-carousel>
+  </slot>
+</custom-accordion>

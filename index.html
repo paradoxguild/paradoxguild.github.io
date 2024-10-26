@@ -1,31 +1,57 @@
-<!DOCTYPE html>
-<html lang="en" class="mt-lg mb-xl">
+<!doctype html>
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Paradøx Guild</title>
-  <link rel="stylesheet" href="quick-style.css">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/lib/tailwind-3.4.5.js"></script>
+  <script defer src="/lib/alpine-morph-3.x.x.js"></script>
+  <script defer src="/lib/alpine-collapse-3.x.x.js"></script>
+  <script defer src="/lib/alpine-3.x.x.js"></script>
+  <script src="/lib/htmx-2.0.3.js"></script>
+  <script src="/lib/htmx-preload-2.0.1.js"></script>
+  <script src="/lib/htmx-morph-1.9.12.js"></script>
+  <script src="/components/js/utils.js"></script>
+  <script src="/components/js/alpine-components.js"></script>
+  <script src="/components/js/htmx-components.js"></script>
+  <style type="text/tailwindcss">
+    body {
+      @apply bg-slate-200 dark:bg-zinc-900 text-sky-900 dark:text-teal-500;
+    }
+  </style>
 </head>
 
-<body class="flex-column align-center mt-none mb-xl">
-  <p class="font-xl font-center mb-md">Paradøx</p>
+<body>
+  <custom-nav page="Home"></custom-nav>
 
-  <a href="/raid-info.html">
-    <button class="paradox-btn btn">View Raid Info</button>
-  </a>
+  <div class="p-5 max-w-[1000px] mx-auto">
+    <tab-container selected="events">
+      <tab-button-container>
+        <tab-button id="events" label="Events" target="panel-events"></tab-button>
+        <tab-button id="scrapbook" label="Scrapbook" target="panel-scrapbook"></tab-button>
+        <tab-button id="calendar" label="Calendar" target="panel-calendar"></tab-button>
+        <tab-button id="raid-info" label="Raiding" target="panel-raid-info"></tab-button>
+      </tab-button-container>
 
-  <a href="/dkp-standings.html">
-    <button class="paradox-btn btn">View DKP Standings</button>
-  </a>
+      <tab-panel-container>
+        <tab-panel tab="events" id="panel-events">
+          <htmx-component template="/partials/events.html"></htmx-component>
+        </tab-panel>
 
-  <a href="/dkp-ledger.html">
-    <button class="paradox-btn btn">View DKP Ledger</button>
-  </a>
+        <tab-panel tab="scrapbook" id="panel-scrapbook">
+          <htmx-component template="/partials/scrapbook.html"></htmx-component>
+        </tab-panel>
 
-  <a href="https://docs.google.com/spreadsheets/d/1tGwBSVwKiB0rsJ-yBTdTF0nsrvkAkh2EgjgVgJFDZYE/edit?gid=1351602376#gid=1351602376" target="_blank">
-    <button class="paradox-btn btn">DKP Consumes</button>
-  </a>
+        <tab-panel tab="calendar" id="panel-calendar">
+          <htmx-component template="/partials/calendar.html"></htmx-component>
+        </tab-panel>
+
+        <tab-panel tab="raid-info" id="panel-raid-info">
+          <htmx-component template="/partials/raid-info.html"></htmx-component>
+        </tab-panel>
+      </tab-panel-container>
+    </div>
+  </div>
 </body>
+
+</html>

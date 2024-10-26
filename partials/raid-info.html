@@ -1,0 +1,259 @@
+<div class="relative flex border-gray-500 bg-gray-200 p-4 text-gray-800 dark:border-gray-500 dark:bg-zinc-800 dark:text-gray-300 rounded">
+  <p class="w-full text-center">
+    <cta-link prefix="Find out more about" callout="Core Loot Manager" href="https://docs.google.com/document/d/1GohKEhkwWb9cmvu9JofQ3z22tyGneJqybKYbVNIdS-U/edit?tab=t.0" no-arrow></cta-link>
+    or
+    <cta-link prefix="" callout="DKP Donations" href="https://docs.google.com/spreadsheets/d/1tGwBSVwKiB0rsJ-yBTdTF0nsrvkAkh2EgjgVgJFDZYE/edit?gid=2136448638#gid=2136448638"></cta-link>
+  </p>
+</div>
+
+<custom-accordion x-data="{ id: 'raid-etiquette', title: 'Raid Etiquette' }">
+  <slot name="content">
+    <div class="p-4">
+      <p>Please respect the following rules to ensure a quick and smooth raid:</p>
+      <ul class="list-disc pl-6">
+        <li>
+          If at any point "clear comms" is called, please respect the call and clear the comms immediately (not when you finish your thought).
+        </li>
+        <li>
+          When we are initiating a boss, DO NOT DPS until it is called for.<br>
+          If you wipe the raid because tanks have not positioned or gained enough threat, there will be a penalty.<br>
+          Likely leading with a warning, but repeated offenses will be addressed.
+        </li>
+        <li>
+          As we are getting into more complicated raids, it should be expected that you come with your primary consumes, some bandages/healing potions, and at least head and heart world buffs.<br>
+          **Please ask if you need help with consumes. If you are unsure about which consumes to bring, ask in your class channels.
+        </li>
+        <li>
+          If you sign up for a raid, or are automatically signed up for a raid (these will be posted every Wednesday), you need to mark if you will be absent or give us head's up.<br>
+          Do not sign up & no-show, you will incur a DKP penalty.<br>
+          Signups with the "Late" indicator are okay - life happens.<br>
+          Just make sure you attempt to show up. If we fill, we will let you know.
+        </li>
+      </ul>
+    </div>
+  </slot>
+</custom-accordion>
+
+<custom-accordion x-data="{ id: 'dkp-values', title: 'DKP Bidding, Awards & Transfers' }">
+  <slot name="content">
+    <div class="p-4">
+      <h3 class="text-2xl underline pb-2">Bidding</h3>
+      <ul class="list-disc pl-6">
+        <li>All items start at 5 DKP</li>
+        <li>Bids should be in increments of 5 DKP</li>
+      </ul>
+
+      <h3 class="text-2xl underline pt-4 pb-2">Awarding</h3>
+      <p>We award DKP for the following situations:</p>
+      <ul class="list-disc pl-6">
+        <li>2 DKP per world buff during Naxx unboon</li>
+        <li>On-Time to raids: 5</li>
+        <li>MC: Bosses add up to 50 DKP</li>
+        <li>BWL: Bosses add up to 50 DKP</li>
+        <li>AQ40: Bosses add up to 100 DKP</li>
+        <li>Naxx: Bosses add up to 250 DKP</li>
+        <li>ZG/AQ20: 20 DKP (these are ran as SR)</li>
+        <li>Onyxia: 15 DKP (this is ran as SR)</li>
+        <li>Donating consumes: up to 30 DKP/wk</li>
+        <li>Prog bonus: 50 DKP (while content is not cleared)</li>
+        <li>Sign up & No-Show: -25 DKP increasing each occurrence - simply communicate in #attendance</li>
+      </ul>
+
+      <h3 class="text-2xl underline pt-4 pb-2">Transfers</h3>
+      <p>
+        You can transfer a maximum of 1000 DKP between your toons after a 30% fee (~1430 DKP). You are allowed to do this every 6 weeks per toon.
+      </p>
+      <br>
+      <p>
+        You are allowed to come on whatever toon that you would like, but if a role is missing or heals/tanks are needed,
+        you may need to hop to that toon as needed. This means you need to save your lockouts if you intend to role swap.
+      </p>
+      <br>
+      <p>
+        In these cases, you can transfer the DKP earned for that raid (minus whatever you spent) to the toon that you wanted to initially run with, with no fee.
+      </p>
+      <br>
+      <p>
+        If we need healers to accomplish a raid, you may be asked to change to your healer for that raid.
+      </p>
+    </div>
+  </slot>
+</custom-accordion>
+
+<custom-accordion x-data="{ id: 'naxx-dkp', title: 'Loot Rules: Naxx DKP' }">
+  <slot name="content">
+    <div class="p-4">
+      <p class="pb-2">As we are in progression of Naxx, the following rules will apply on bids:</p>
+      <div class="mt-2 w-full bg-[#242424] rounded p-2 border border-gray-500 grid grid-cols-1 gap-2 md:grid-cols-2">
+        <wow-restricted-item class="col-span-1" x-data="{
+          image: '/static/images/restricted-items/naxx/iblis.png',
+          lines: ['First two (2) to human rogues', 'Third to mpds', 'Open bid after']
+        }"></wow-restricted-item>
+
+        <wow-restricted-item class="col-span-1" x-data="{
+          image: '/static/images/restricted-items/naxx/kingsfall.png',
+          lines: [
+            'First three (3) to a non-human dagger rogues with +daggers skill',
+            'After open bid amongst rogues'
+          ]
+        }"></wow-restricted-item>
+
+        <wow-restricted-item class="col-span-1" x-data="{
+          image: '/static/images/restricted-items/naxx/hatchet-of-sundered-bone.png',
+          lines: ['Always prio to warriors with relevant weapon skill']
+        }"></wow-restricted-item>
+
+        <wow-restricted-item class="col-span-1" x-data="{
+          image: '/static/images/restricted-items/naxx/castigator.png',
+          lines: ['Always prio to warriors with relevant weapon skill']
+        }"></wow-restricted-item>
+
+        <wow-restricted-item class="col-span-1" x-data="{
+          image: '/static/images/restricted-items/naxx/misplaced-servo-arm.png',
+          lines: ['Always prio to warriors with relevant weapon skill']
+        }"></wow-restricted-item>
+
+        <wow-restricted-item class="col-span-1" x-data="{
+          image: '/static/images/restricted-items/naxx/eye-of-nerub.png',
+          lines: ['Always prio to hunters before open bid']
+        }"></wow-restricted-item>
+
+        <wow-restricted-item class="col-span-1" x-data="{
+          image: '/static/images/restricted-items/naxx/nerubian-slavemaker.png',
+          lines: ['Always prio to hunters before open bid']
+        }"></wow-restricted-item>
+
+        <wow-restricted-item class="col-span-1" x-data="{
+          image: '/static/images/restricted-items/naxx/wraith-blade.png',
+          lines: ['First three (3) to mages OR warlocks before open bid']
+        }"></wow-restricted-item>
+
+        <wow-restricted-item class="col-span-1" x-data="{
+          image: '/static/images/restricted-items/naxx/soulseeker.png',
+          lines: ['First two (2) to mages before open bid']
+        }"></wow-restricted-item>
+
+        <wow-restricted-item class="col-span-1" x-data="{
+          image: '/static/images/restricted-items/naxx/brimstone-staff.png',
+          lines: ['First two (2) to warlocks before open bid']
+        }"></wow-restricted-item>
+
+        <wow-restricted-item class="col-span-1" x-data="{
+          image: '/static/images/restricted-items/naxx/kiss-of-spider.png',
+          lines: ['First two (2) to melee dps before open bid']
+        }"></wow-restricted-item>
+
+        <wow-restricted-item class="col-span-1" x-data="{
+          image: '/static/images/restricted-items/naxx/girdle-of-mentor.png',
+          lines: ['Prio to dps that DO NOT have Onslaught Girdle']
+        }"></wow-restricted-item>
+
+        <wow-restricted-item class="col-span-1" x-data="{
+          image: '/static/images/restricted-items/naxx/band-of-unnatural-forces.png',
+          lines: ['First three (3) are to dps before open bid']
+        }"></wow-restricted-item>
+
+        <wow-restricted-item class="col-span-1" x-data="{
+          image: '/static/images/restricted-items/naxx/doomfinger.png',
+          lines: ['First to a mage', 'Second to a mage OR warlock', 'Third+ open bid']
+        }"></wow-restricted-item>
+
+        <wow-restricted-item class="col-span-1" x-data="{
+          image: '/static/images/restricted-items/naxx/wand-of-fates.png',
+          lines: ['First to a warlock', 'Second to a warlock OR mage', 'Third+ open bid']
+        }"></wow-restricted-item>
+      </div>
+    </div>
+  </slot>
+</custom-accordion>
+
+<custom-accordion x-data="{ id: 'mc-sr-dkp', title: 'Loot Rules: Molten Core SR & DKP' }">
+  <slot name="content">
+    <div class="p-4">
+      <h3 class="text-2xl underline pb-2">About</h3>
+      <p>As we are focused on Naxx, MC/BWL/AQ40 are lower priority raids. DKP will still be earned.</p>
+      <p>We intend to have a 3rd raid day, but these days are quite difficult to fill 40 people for.</p>
+      <p>In the case that we are fully filled with guild members, we will be running DKP as per usual.</p>
+      <p>In the case that we need to fill, we will be running these as SR, with certain items HR to the guild.</p>
+      <p>These items that are HR to the guild will be bid off for DKP.</p>
+
+      <h3 class="text-2xl underline mt-4 pb-2">Guild HR'd Items in Molten Core:</h3>
+      <div class="mt-2 w-full bg-[#242424] rounded p-2 border border-gray-500 grid grid-cols-1 gap-2 md:grid-cols-2">
+        <wow-restricted-item class="col-span-1" no-description x-data="{
+          image: '/static/images/restricted-items/mc/onslaught-girdle.png'
+        }"></wow-restricted-item>
+        <wow-restricted-item class="col-span-1" no-description x-data="{
+          image: '/static/images/restricted-items/mc/quick-strike-ring.png'
+        }"></wow-restricted-item>
+        <wow-restricted-item class="col-span-1" no-description x-data="{
+          image: '/static/images/restricted-items/mc/band-of-accuria.png'
+        }"></wow-restricted-item>
+      </div>
+    </div>
+  </slot>
+</custom-accordion>
+
+<custom-accordion x-data="{ id: 'bwl-sr-dkp', title: 'Loot Rules: Black Wing Lair SR & DKP' }">
+  <slot name="content">
+    <div class="p-4">
+      <h3 class="text-2xl underline pb-2">About</h3>
+      <p>As we are focused on Naxx, MC/BWL/AQ40 are lower priority raids. DKP will still be earned.</p>
+      <p>We intend to have a 3rd raid day, but these days are quite difficult to fill 40 people for.</p>
+      <p>In the case that we are fully filled with guild members, we will be running DKP as per usual.</p>
+      <p>In the case that we need to fill, we will be running these as SR, with certain items HR to the guild.</p>
+      <p>These items that are HR to the guild will be bid off for DKP.</p>
+
+      <h3 class="text-2xl underline mt-4 pb-2">Guild HR'd Items in BWL:</h3>
+      <div class="mt-2 w-full bg-[#242424] rounded p-2 border border-gray-500 grid grid-cols-1 gap-2 md:grid-cols-2">
+        <wow-restricted-item class="col-span-1" no-description x-data="{
+          image: '/static/images/restricted-items/bwl/drake-fang-talisman.png'
+        }"></wow-restricted-item>
+        <wow-restricted-item class="col-span-1" no-description x-data="{
+          image: '/static/images/restricted-items/bwl/rejuvenating-gem.png'
+        }"></wow-restricted-item>
+        <wow-restricted-item class="col-span-1" no-description x-data="{
+          image: '/static/images/restricted-items/bwl/neltharions-tear.png'
+        }"></wow-restricted-item>
+        <wow-restricted-item class="col-span-1" no-description x-data="{
+          image: '/static/images/restricted-items/bwl/chromatically-tempered-sword.png'
+        }"></wow-restricted-item>
+      </div>
+    </div>
+  </slot>
+</custom-accordion>
+
+<custom-accordion x-data="{ id: 'aq40-sr-dkp', title: 'Loot Rules: Ahn\'Qiraj SR & DKP' }">
+  <slot name="content">
+    <div class="p-4">
+      
+      <h3 class="text-2xl underline pb-2">About</h3>
+      <p>As we are focused on Naxx, MC/BWL/AQ40 are lower priority raids. DKP will still be earned.</p>
+      <p>We intend to have a 3rd raid day, but these days are quite difficult to fill 40 people for.</p>
+      <p>In the case that we are fully filled with guild members, we will be running DKP as per usual.</p>
+      <p>In the case that we need to fill, we will be running these as SR, with certain items HR to the guild.</p>
+      <p>These items that are HR to the guild will be bid off for DKP.</p>
+
+      <h3 class="text-2xl underline mt-4 pb-2">Guild HR'd Items in Ahn'Qiraj:</h3>
+      <div class="mt-2 w-full bg-[#242424] rounded p-2 border border-gray-500 grid grid-cols-1 gap-2 md:grid-cols-2">
+        <wow-restricted-item class="col-span-1" no-description x-data="{
+          image: '/static/images/restricted-items/aq40/ancient-qiraji-ripper.png'
+        }"></wow-restricted-item>
+        <wow-restricted-item class="col-span-1" no-description x-data="{
+          image: '/static/images/restricted-items/aq40/deaths-sting.png'
+        }"></wow-restricted-item>
+        <wow-restricted-item class="col-span-1" no-description x-data="{
+          image: '/static/images/restricted-items/aq40/badge-of-swarmguard.png'
+        }"></wow-restricted-item>
+        <wow-restricted-item class="col-span-1" no-description x-data="{
+          image: '/static/images/restricted-items/aq40/dark-storm-gauntlets.png'
+        }"></wow-restricted-item>
+        <wow-restricted-item class="col-span-1" no-description x-data="{
+          image: '/static/images/restricted-items/aq40/gauntlets-of-annihilation.png'
+        }"></wow-restricted-item>
+        <wow-restricted-item class="col-span-1" no-description x-data="{
+          image: '/static/images/restricted-items/aq40/eyestalk-waist-cord.png'
+        }"></wow-restricted-item>
+      </div>
+    </div>
+  </slot>
+</custom-accordion>

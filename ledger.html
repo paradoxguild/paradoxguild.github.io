@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/lib/tailwind-3.4.5.js"></script>
+  <script defer src="/lib/alpine-morph-3.x.x.js"></script>
+  <script defer src="/lib/alpine-collapse-3.x.x.js"></script>
+  <script defer src="/lib/alpine-3.x.x.js"></script>
+  <script src="/lib/htmx-2.0.3.js"></script>
+  <script src="/lib/htmx-preload-2.0.1.js"></script>
+  <script src="/lib/htmx-morph-1.9.12.js"></script>
+  <script src="/components/js/utils.js"></script>
+  <script src="/components/js/alpine-components.js"></script>
+  <script src="/components/js/htmx-components.js"></script>
+  <style type="text/tailwindcss">
+    body {
+      @apply bg-slate-200 dark:bg-zinc-900 text-sky-900 dark:text-teal-500;
+    }
+  </style>
+</head>
+
+<body>
+  <custom-nav page="Ledger"></custom-nav>
+
+  <div class="py-5 px-5 max-w-[1000px] mx-auto" x-data="data()">
+    <h1 class="text-3xl font-bold text-center">
+      Ledger
+    </h1>
+
+    <div class="pt-4 gap-2 flex flex-col md:flex-row">
+      <select x-model="playerFilter" x-on:change="applyFilters"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-zinc-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-teal-500 dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <option value="All" selected>All Players</option>
+        <template x-for="player in players">
+          <option x-bind:value="player" x-text="player"></option>
+        </template>
+      </select>
+
+      <select x-model="itemFilter" x-on:change="applyFilters"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-zinc-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-teal-500 dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <option value="All" selected>All Loot</option>
+        <template x-for="item in items">
+          <option x-bind:value="item" x-text="item"></option>
+        </template>
+      </select>
+    </div>
+
+    <div class="mt-5 overflow-hidden w-full overflow-x-auto rounded-md border border-gray-500 dark:border-gray-500">
+      <table class="w-full text-left text-sm text-gray-800 dark:text-gray-300">
+        <thead
+          class="border-b border-gray-500 bg-gray-200 text-sm text-gray-950 dark:border-gray-500 dark:bg-zinc-800 dark:text-gray-50">
+          <tr>
+            <th scope="col" class="p-4">Player</th>
+            <th scope="col" class="p-4">Item</th>
+            <th scope="col" class="p-4">DKP Spent</th>
+            <th scope="col" class="p-4">Date</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-500 dark:divide-gray-500">
+          <template x-for="row in displayedLedger">
+            <tr>
+              <td class="p-2" x-text="row.player"></td>
+              <td class="p-2" x-text="row.name"></td>
+              <td class="p-2" x-text="row.points"></td>
+              <td class="p-2" x-text="formatDate(row.timestamp)"></td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+    </div>
+
+    <script>
+      function data() {
+        return {
+          displayedLedger: [],
+          ledger: [],
+          players: [],
+          items: [],
+          playerFilter: 'All',
+          itemFilter: 'All',
+          selectedAuction: null,
+          showModal: false,
+          bidTypes: { 1: 'OS', 2: 'MS' },
+          init() {
+            fetch("/standings.json")
+              .then(res => res.json())
+              .then(json => {
+                const ledger = json.lootHistory.roster.find(r => r.name === 'Paradøx').lootHistory.item;
+                ledger.forEach(i => i.timestamp = i.timestamp * 1000);
+                ledger.sort((p1, p2) => p2.timestamp - p1.timestamp);
+                this.ledger = ledger;
+                this.players = [...new Set(this.ledger.map(i => i.player))];
+                this.items = [...new Set(this.ledger.map(i => i.name))];
+
+                this.players.sort((a, b) => a.localeCompare(b));
+                this.items.sort((a, b) => a.localeCompare(b));
+
+                this.applyFilters();
+              })
+              .catch(err => console.error(err));
+          },
+          applyFilters() {
+            this.displayedLedger = [...this.ledger].filter(i =>
+              (this.playerFilter === 'All' || this.playerFilter === i.player)
+              && (this.itemFilter === 'All' || this.itemFilter === i.name)
+            );
+          },
+          formatDate(timestamp) {
+            return new Date(timestamp).toLocaleDateString();
+          }
+        }
+      }
+    </script>
+  </div>
+</body>
+
+</html>
