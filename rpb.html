@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/lib/tailwind-3.4.5.js"></script>
+  <script defer src="/lib/alpine-morph-3.x.x.js"></script>
+  <script defer src="/lib/alpine-collapse-3.x.x.js"></script>
+  <script defer src="/lib/alpine-3.x.x.js"></script>
+  <script src="/lib/htmx-2.0.3.js"></script>
+  <script src="/lib/htmx-preload-2.0.1.js"></script>
+  <script src="/lib/htmx-morph-1.9.12.js"></script>
+  <script src="/components/js/utils.js"></script>
+  <script src="/components/js/alpine-components.js"></script>
+  <script src="/components/js/htmx-components.js"></script>
+  <style type="text/tailwindcss">
+    body {
+      @apply bg-slate-200 dark:bg-zinc-900 text-sky-900 dark:text-teal-500;
+    }
+  </style>
+</head>
+
+<body>
+  <custom-nav page="RPB"></custom-nav>
+
+  <div class="py-5 px-5 max-w-[1000px] mx-auto" x-data="data()">
+    <h1 class="text-3xl font-bold text-center">
+      RPB
+    </h1>
+
+    <p x-show="!hasData" class="text-center text-2xl mt-4">
+      No data exists for that date.<br>
+      <span x-show="!hasParam">Please supply ?date=yyyy-mm-dd</span>
+    </p>
+
+    <div x-show="hasData">
+      <htmx-component template="/partials/rpb/warrior.html"></htmx-component>
+    </div>
+  </div>
+  <script>
+    function data() {
+      return {
+        hasData: false,
+        hasParam: false,
+        players: [],
+        warriors: { players: [], uniqueCasts: [] },
+        getUniqueCasts(players) {
+          const set = new Set();
+          players.forEach(p => p.casts.forEach(c => set.add(c.name)));
+          return [...set];
+        },
+        getCastData(player, spellName) {
+          return player.casts.find(c => c.name === spellName);
+        },
+        getCastPropertyOrDefault(player, spellName, propertyName, defaultValue) {
+          const data = this.getCastData(player, spellName);
+          return data && data[propertyName] ? data[propertyName] : defaultValue;
+        },
+        isCastPropertyRelevant(players, spellName, propertyName) {
+          const set = new Set();
+          players.forEach(p => set.add(this.getCastPropertyOrDefault(p, spellName, propertyName, '-')));
+          return set.size > 1;
+        },
+        init() {
+          const searchParams = new URLSearchParams(window.location.search);
+          if (searchParams.has('date')) {
+            this.hasParam = true;
+            fetch(`/static/rpb/${searchParams.get('date')}.json`)
+              .then(res => res.json())
+              .then(json => {
+                this.hasData = true;
+                this.players = json.players;
+                this.warriors.players = this.players.filter(p => p.toonClass === 'Warrior');
+                this.warriors.uniqueCasts = this.getUniqueCasts(this.warriors.players);
+                console.log(this.warriors);
+              })
+              .catch(err => console.error(err));
+          }
+        },
+      };
+    }
+  </script>
+</body>
+
+</html>

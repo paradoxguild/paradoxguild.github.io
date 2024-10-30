@@ -26,9 +26,11 @@ class HTMXComponent extends HTMLElement {
     });
 
     this.addEventListener('htmx:afterSwap', () => {
+      console.debug('htmx:afterSwap', slots);
       slots.forEach(slot => {
         const slotElement = this.querySelector('slot[name="' + slot.target + '"]');
         if (!slotElement.hasAttribute('swapped')) {
+          console.debug('swapped', slot.target);
           slotElement.setAttribute('swapped', true);
           htmx.swap(slotElement, slot.innerHTML, { swapStyle: 'innerHTML' });
           htmx.process(slotElement);

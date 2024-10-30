@@ -136,6 +136,34 @@
     console.debug('Grabbed player IDs!');
   }
 
+  async function grabDamageStats() {
+    console.debug('Grabbing damage stats...');
+    await useParameters({ type: 'damage-done' }, function() {
+      document.querySelectorAll(".report-table-name").forEach(el => {
+        const playerLink = el.querySelector('a');
+        const player = findPlayer(cleanString(playerLink.innerText));
+        if (player) {
+          player.damageTotal = cleanString(el.parentElement.querySelector('.report-amount-total').innerText);
+          player.dpsTotal = parseFloat(cleanString(el.parentElement.querySelector('.main-per-second-amount').innerText));
+        }
+      });
+    });
+  }
+
+  async function grabHealingStats() {
+    console.debug('Grabbing healer stats...');
+    await useParameters({ type: 'healing' }, function() {
+      document.querySelectorAll(".report-table-name").forEach(el => {
+        const playerLink = el.querySelector('a');
+        const player = findPlayer(cleanString(playerLink.innerText));
+        if (player) {
+          player.healingTotal = cleanString(el.parentElement.querySelector('.report-amount-total').innerText);
+          player.hpsTotal = parseFloat(cleanString(el.parentElement.querySelector('.main-per-second-amount').innerText));
+        }
+      });
+    });
+  }
+
   async function grabCasts() {
     console.debug('Grabbing casts...');
     for (let player of report.players) {
@@ -147,6 +175,7 @@
       function parseTable(pageType) {
         document.querySelectorAll('.summary-table.report tbody > tr[id*="main-table-row"]').forEach(function(toonRow) {
           const ability = toonRow.querySelector('.report-table-name a span');
+
           const castData = {
             id: parseInt(ability.id.split('ability-')[1].split('-')[0]),
             name: ability.innerText.trim(),
@@ -177,9 +206,11 @@
             castData.overheal = parseFloat(cleanString(toonRow.querySelector('.main-table-miss').innerText)) || 0;
           } else if (pageType === 'damage') {
             castData.damage = cleanString(toonRow.querySelector('.report-table-amount .report-amount-total').innerText);
-            castData.crit = parseFloat(cleanString(toonRow.querySelector('.main-table-hits + .num + .num').innerText));
             castData.miss = parseFloat(cleanString(toonRow.querySelector('.main-table-miss').innerText));
             castData.dps = parseFloat(cleanString(toonRow.querySelector('.main-per-second-amount').innerText));
+            if (toonRow.querySelector('.main-table-hits + .num + .num')) {
+              castData.crit = parseFloat(cleanString(toonRow.querySelector('.main-table-hits + .num + .num').innerText));
+            }
           }
 
           if (pageType === 'damage' || pageType === 'healing') {
@@ -230,6 +261,8 @@
   await initialize();
   await grabPlayers();
   await grabPlayerIds();
+  await grabDamageStats();
+  await grabHealingStats();
   await grabCasts();
 
   console.log('report', report);
