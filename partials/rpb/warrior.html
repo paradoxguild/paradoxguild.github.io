@@ -1,4 +1,4 @@
-<custom-accordion x-data="{ id: 'warriors', title: 'Warriors' }">
+<custom-accordion x-data="{ id: 'warriors', title: 'Warriors', displayIndex: 0 }">
   <slot name="content">
     <div class="w-full overflow-x-scroll">
       <table class="w-full text-left text-gray-800 dark:text-gray-300 text-[12px] text-center">
@@ -29,13 +29,15 @@
               <td class="p-2" x-text="player.dpsTotal"></td>
             </template>
           </tr>
-          <template x-for="(spellName, index) in warriors.uniqueCasts">
-            <tr x-show="isCastPropertyRelevant(warriors.players, spellName, 'casts')" :class="index % 2 === 1 && 'bg-[#202020]'">
-              <td class="p-2" x-text="spellName"></td>
-              <template x-for="player in warriors.players">
-                <td class="p-2" x-text="getCastPropertyOrDefault(player, spellName, 'casts', '-')"></td>
-              </template>
-            </tr>
+          <template x-for="spellName in warriors.uniqueCasts">
+            <template x-if="isCastPropertyRelevant(warriors.players, spellName, 'casts')">
+              <tr :class="displayIndex++ % 2 === 1 && 'bg-[#202020]'">
+                <td class="p-2" x-text="spellName"></td>
+                <template x-for="player in warriors.players">
+                  <td class="p-2" x-text="getCastPropertyOrDefault(player, spellName, 'casts', '-')"></td>
+                </template>
+              </tr>
+            </template>
           </template>
         </tbody>
       </table>
