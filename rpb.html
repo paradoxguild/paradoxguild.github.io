@@ -26,7 +26,7 @@
 
   <div class="py-5 px-5 max-w-[1000px] mx-auto" x-data="data()">
     <h1 class="text-3xl font-bold text-center">
-      RPB
+      RPB <span x-show="hasData"><span x-text="date"></span></span>
     </h1>
 
     <p x-show="!hasData" class="text-center text-2xl mt-4">
@@ -41,7 +41,7 @@
   <script>
     function data() {
       return {
-        hasData: false,
+        hasData: null,
         hasParam: false,
         players: [],
         warriors: { players: [], uniqueCasts: [] },
@@ -65,8 +65,9 @@
         init() {
           const searchParams = new URLSearchParams(window.location.search);
           if (searchParams.has('date')) {
+            this.date = searchParams.get('date');
             this.hasParam = true;
-            fetch(`/static/rpb/${searchParams.get('date')}.json`)
+            fetch(`/static/rpb/${this.date}.json`)
               .then(res => res.json())
               .then(json => {
                 this.hasData = true;
@@ -75,7 +76,12 @@
                 this.warriors.uniqueCasts = this.getUniqueCasts(this.warriors.players);
                 console.log(this.warriors);
               })
-              .catch(err => console.error(err));
+              .catch(err => {
+                this.hasData = false;
+                console.error(err);
+              });
+          } else {
+            this.hasData = false;
           }
         },
       };
