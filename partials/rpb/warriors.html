@@ -12,19 +12,19 @@
         </thead>
         <tbody>
           <tr class="bg-[#202020]">
-            <td class="p-2">Talents</td>
+            <td class="p-2 font-bold">Talents</td>
             <template x-for="player in warriors.players">
               <td class="p-2" x-text="player.toonTalents"></td>
             </template>
           </tr>
           <tr>
-            <td class="p-2">Total Damage</td>
+            <td class="p-2 font-bold">Total Damage</td>
             <template x-for="player in warriors.players">
               <td class="p-2" x-text="player.damageTotal"></td>
             </template>
           </tr>
           <tr class="bg-[#202020]">
-            <td class="p-2">Total DPS</td>
+            <td class="p-2 font-bold">Total DPS</td>
             <template x-for="player in warriors.players">
               <td class="p-2" x-text="player.dpsTotal"></td>
             </template>
@@ -32,7 +32,7 @@
           <template x-for="spellName in warriors.uniqueCasts">
             <template x-if="isCastPropertyRelevant(warriors.players, spellName, 'casts')">
               <tr :class="displayIndex++ % 2 === 1 && 'bg-[#202020]'">
-                <td class="p-2" x-text="spellName"></td>
+                <td class="p-2 font-bold" x-text="spellName"></td>
                 <template x-for="player in warriors.players">
                   <td class="p-2" x-text="getCastPropertyOrDefault(player, spellName, 'casts', '-')"></td>
                 </template>
