@@ -35,7 +35,10 @@
     </p>
 
     <div x-show="hasData">
-      <htmx-component template="/partials/rpb/warrior.html"></htmx-component>
+      <htmx-component template="/partials/rpb/warriors.html"></htmx-component>
+      <htmx-component template="/partials/rpb/rogues.html"></htmx-component>
+      <htmx-component template="/partials/rpb/mages.html"></htmx-component>
+      <htmx-component template="/partials/rpb/warlocks.html"></htmx-component>
     </div>
   </div>
   <script>
@@ -45,6 +48,9 @@
         hasParam: false,
         players: [],
         warriors: { players: [], uniqueCasts: [] },
+        rogues: { players: [], uniqueCasts: [] },
+        mages: { players: [], uniqueCasts: [] },
+        warlocks: { players: [], uniqueCasts: [] },
         getUniqueCasts(players) {
           const set = new Set();
           players.forEach(p => p.casts.forEach(c => set.add(c.name)));
@@ -71,6 +77,11 @@
           const bCount = classObject.players.map(p => this.getCastCount(p, b)).reduce((p, c) => p + c, 0);
           return bCount - aCount;
         },
+        populateProps(object, toonClass) {
+            object.players = this.players.filter(p => p.toonClass === toonClass);
+            object.uniqueCasts = this.getUniqueCasts(object.players);
+            object.uniqueCasts.sort((a, b) => this.spellSort(object, a, b));
+        },
         init() {
           const searchParams = new URLSearchParams(window.location.search);
           if (searchParams.has('date')) {
@@ -81,10 +92,10 @@
               .then(json => {
                 this.hasData = true;
                 this.players = json.players;
-                this.warriors.players = this.players.filter(p => p.toonClass === 'Warrior');
-                this.warriors.uniqueCasts = this.getUniqueCasts(this.warriors.players);
-                this.warriors.uniqueCasts.sort((a, b) => this.spellSort(this.warriors, a, b));
-                console.log(this.warriors);
+                this.populateProps(this.warriors, 'Warrior');
+                this.populateProps(this.rogues, 'Rogue');
+                this.populateProps(this.mages, 'Mage');
+                this.populateProps(this.warlocks, 'Warlock');
               })
               .catch(err => {
                 this.hasData = false;

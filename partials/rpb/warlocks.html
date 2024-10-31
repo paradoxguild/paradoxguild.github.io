@@ -1,0 +1,46 @@
+<custom-accordion x-data="{ id: 'warlocks', title: 'Warlocks', displayIndex: 0 }">
+  <slot name="content">
+    <div class="w-full overflow-x-scroll">
+      <table class="w-full text-left text-gray-800 dark:text-gray-300 text-[12px] text-center">
+        <thead class="border-b border-gray-500 bg-gray-200 text-gray-950 dark:border-gray-500 dark:bg-zinc-800 dark:text-gray-50">
+          <tr>
+            <th scope="col" class="p-4"></th>
+            <template x-for="player in warlocks.players">
+              <th scope="col" class="p-4" x-text="player.toonName"></th>
+            </template>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-[#202020]">
+            <td class="p-2">Talents</td>
+            <template x-for="player in warlocks.players">
+              <td class="p-2" x-text="player.toonTalents"></td>
+            </template>
+          </tr>
+          <tr>
+            <td class="p-2">Total Damage</td>
+            <template x-for="player in warlocks.players">
+              <td class="p-2" x-text="player.damageTotal"></td>
+            </template>
+          </tr>
+          <tr class="bg-[#202020]">
+            <td class="p-2">Total DPS</td>
+            <template x-for="player in warlocks.players">
+              <td class="p-2" x-text="player.dpsTotal"></td>
+            </template>
+          </tr>
+          <template x-for="spellName in warlocks.uniqueCasts">
+            <template x-if="isCastPropertyRelevant(warlocks.players, spellName, 'casts')">
+              <tr :class="displayIndex++ % 2 === 1 && 'bg-[#202020]'">
+                <td class="p-2" x-text="spellName"></td>
+                <template x-for="player in warlocks.players">
+                  <td class="p-2" x-text="getCastPropertyOrDefault(player, spellName, 'casts', '-')"></td>
+                </template>
+              </tr>
+            </template>
+          </template>
+        </tbody>
+      </table>
+    </div>
+  </slot>
+</custom-accordion>
