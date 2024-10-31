@@ -62,6 +62,15 @@
           players.forEach(p => set.add(this.getCastPropertyOrDefault(p, spellName, propertyName, '-')));
           return set.size > 1;
         },
+        getCastCount(player, spellName) {
+          const cast = player.casts.find(c => c.name === spellName);
+          return cast && cast.casts ? cast.casts : 0;
+        },
+        spellSort(classObject, a, b) {
+          const aCount = classObject.players.map(p => this.getCastCount(p, a)).reduce((p, c) => p + c, 0);
+          const bCount = classObject.players.map(p => this.getCastCount(p, b)).reduce((p, c) => p + c, 0);
+          return bCount - aCount;
+        },
         init() {
           const searchParams = new URLSearchParams(window.location.search);
           if (searchParams.has('date')) {
@@ -74,6 +83,7 @@
                 this.players = json.players;
                 this.warriors.players = this.players.filter(p => p.toonClass === 'Warrior');
                 this.warriors.uniqueCasts = this.getUniqueCasts(this.warriors.players);
+                this.warriors.uniqueCasts.sort((a, b) => this.spellSort(this.warriors, a, b));
                 console.log(this.warriors);
               })
               .catch(err => {
