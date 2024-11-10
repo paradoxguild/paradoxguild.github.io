@@ -26,6 +26,12 @@ class AlpineComponent extends HTMLElement {
 class TabContainer extends AlpineComponent {
   connectedCallback() {
     this.verifyAttributes(['selected'], 'TabContainer requires attributes: [selected]');
+
+    const params = new URLSearchParams(window.location.search);
+    if (params.has('tab')) {
+      this.setAttribute('selected', params.get('tab'));
+    }
+
     this.setAttribute('x-data', `{ selectedTab: '${this.getAttribute('selected')}' }`);
     this.setAttribute('class', 'w-full');
     super.connectedCallback();
