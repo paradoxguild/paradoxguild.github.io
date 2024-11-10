@@ -88,14 +88,16 @@
           this.year = today.getFullYear();
           this.datepickerValue = new Date(this.year, this.month, today.getDate()).toDateString();
 
-          // Add recurring events to the current month
+          // Add recurring events to the current and following month
           if (this.every) {
-            let daysInMonth = new Date(this.year, this.month + 1, 0).getDate();
-            for (let i = 1; i <= daysInMonth; i++) {
-              const date = new Date(this.year, this.month, i);
-              if (this.every[DAYS[date.getDay()]]) {
-                for (let eventTitle of this.every[DAYS[date.getDay()]]) {
-                  this.events.push({ date, title: eventTitle });
+            for (let monthOffset = 1; monthOffset <= 2; monthOffset++) {
+              let daysInMonth = new Date(this.year, this.month + monthOffset, 0).getDate();
+              for (let i = 1; i <= daysInMonth; i++) {
+                const date = new Date(this.year, this.month + (monthOffset - 1), i);
+                if (this.every[DAYS[date.getDay()]]) {
+                  for (let eventTitle of this.every[DAYS[date.getDay()]]) {
+                    this.events.push({ date, title: eventTitle });
+                  }
                 }
               }
             }
