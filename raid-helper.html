@@ -261,6 +261,7 @@
                 document.execCommand('copy');
                 this.copyButtonText = 'Copy Raid-Helper Command ✔'; 
               });
+            setTimeout(() => this.copyButtonText = 'Copy Raid-Helper Command', 2000);
           }
         }
       }
