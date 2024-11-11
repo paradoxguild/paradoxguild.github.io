@@ -249,6 +249,7 @@
             if (this.copySignupsMessageId && this.copySignupsMessageId.length > 0) {
               command += `[optout: ${this.copySignupsMessageId}]`;
             }
+            command += `[advanced: < show_numbering: false > < bench_overflow: false > < lock_at_limit: false > < preserve_order: always > < limit: 60 >]`;
             this.quickCreateCommand = command;
             this.commandGenerated = true;
           },
