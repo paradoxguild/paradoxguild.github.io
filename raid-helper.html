@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/lib/tailwind-3.4.5.js"></script>
+  <script defer src="/lib/alpine-morph-3.x.x.js"></script>
+  <script defer src="/lib/alpine-collapse-3.x.x.js"></script>
+  <script defer src="/lib/alpine-3.x.x.js"></script>
+  <script src="/lib/htmx-2.0.3.js"></script>
+  <script src="/lib/htmx-preload-2.0.1.js"></script>
+  <script src="/lib/htmx-morph-1.9.12.js"></script>
+  <script src="/components/js/utils.js"></script>
+  <script src="/components/js/alpine-components.js"></script>
+  <script src="/components/js/htmx-components.js"></script>
+  <style type="text/tailwindcss">
+    body {
+      @apply bg-slate-200 dark:bg-zinc-900 text-sky-900 dark:text-teal-500;
+    }
+  </style>
+</head>
+
+<body>
+  <custom-nav page="Raid-Helper"></custom-nav>
+
+  <div class="py-5 px-5 max-w-[1000px] mx-auto" x-data="data()">
+    <h1 class="text-3xl font-bold text-center">
+      Raid-Helper
+    </h1>
+
+    <div class="py-4 flex flex-col gap-4">
+      <select x-model="selectedRaid" x-on:change="onRaidChanged"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-zinc-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-teal-500 dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <option value="none" selected>Select A Raid</option>
+        <option value="ZG">Zul'Gurub (20)</option>
+        <option value="AQ20">Ruins of Ahn'Qiraj (20)</option>
+        <option value="Onyxia">Onyxia (20+)</option>
+        <option value="MC">Molten Core (40)</option>
+        <option value="BWL">Black Wing Lair (40)</option>
+        <option value="AQ40">Ahn'Qiraj (40)</option>
+        <option value="Naxx">Naxx (40)</option>
+      </select>
+
+      <div x-show="selectedRaid !== 'none'" class="w-full flex flex-col gap-4">
+        <select x-model="selectedDay" x-on:change="onDayChanged"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-zinc-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-teal-500 dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <option value="Monday" selected>Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+          <option value="Sunday">Sunday</option>
+        </select>
+
+        <div class="flex w-full flex-col gap-1 text-gray-800 dark:text-teal-500">
+          <label for="selectedDateId" class="w-fit pl-0.5 text-sm">Date</label>
+          <input id="selectedDateId" type="text" name="selectedDateId" autocomplete="selectedDateId" 
+            x-model="selectedDate" placeholder="Enter Date in MM-DD-YYYY format" 
+            class="w-full rounded-md border border-gray-500 bg-gray-200 px-2 py-2 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-900 disabled:cursor-not-allowed disabled:opacity-75 dark:border-gray-500 dark:bg-zinc-800 dark:focus-visible:outline-teal-400"/>
+        </div>
+
+        <div class="flex w-full flex-col gap-1 text-gray-800 dark:text-teal-500">
+          <label for="copySignupsMessageId" class="w-fit pl-0.5 text-sm">Discord Signup Copy Message ID</label>
+          <input id="copySignupsMessageId" type="text" name="copySignupsMessageId" autocomplete="copySignupsMessageId"
+            x-model="copySignupsMessageId" placeholder="Enter Discord Message ID of Signups to Copy or Leave Blank" 
+            class="w-full rounded-md border border-gray-500 bg-gray-200 px-2 py-2 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-900 disabled:cursor-not-allowed disabled:opacity-75 dark:border-gray-500 dark:bg-zinc-800 dark:focus-visible:outline-teal-400"/>
+        </div>
+
+        <div class="flex w-full flex-col gap-1 text-gray-800 dark:text-teal-500">
+          <label for="pullTimeId" class="w-fit pl-0.5 text-sm">Pull Time</label>
+          <input id="pullTimeId" type="text" name="pullTimeId" autocomplete="pullTimeId" 
+            x-model="pullTime" placeholder="Enter Pull Time in 24h format" 
+            class="w-full rounded-md border border-gray-500 bg-gray-200 px-2 py-2 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-900 disabled:cursor-not-allowed disabled:opacity-75 dark:border-gray-500 dark:bg-zinc-800 dark:focus-visible:outline-teal-400"/>
+        </div>
+
+        <select x-model="selectedChannel"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-zinc-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-teal-500 dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <option value="signup-copies" selected>#signup-copies</option>
+          <option value="aq40">#aq40</option>
+          <option value="naxx">#naxx</option>
+          <option value="bwl-mc">#bwl-mc</option>
+          <option value="sr-runs">#sr-runs</option>
+        </select>
+
+        <div class="flex w-full flex-col gap-1 text-gray-800 dark:text-gray-300">
+          <label for="descriptionId" class="w-fit pl-0.5 text-sm">Description</label>
+          <textarea id="descriptionId" rows="10"
+            x-model="description" placeholder="Put the description of the raid signup here"
+            class="w-full rounded-md border border-gray-500 bg-gray-200 px-2.5 py-2 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-900 disabled:cursor-not-allowed disabled:opacity-75 dark:border-gray-500 dark:bg-zinc-800 dark:focus-visible:outline-teal-400"></textarea>
+        </div>
+
+        <button type="button" x-on:click="buildRaidHelperCommand"
+          class="cursor-pointer whitespace-nowrap rounded-md bg-sky-900 px-4 py-2 text-sm font-medium tracking-wide text-white transition hover:opacity-75 text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-900 active:opacity-100 active:outline-offset-0 disabled:opacity-75 disabled:cursor-not-allowed dark:bg-teal-400 dark:text-black dark:focus-visible:outline-teal-400"
+        >Generate Raid-Helper Command</button>
+
+        <div class="flex w-full flex-col gap-1 text-gray-800 dark:text-gray-300" x-show="commandGenerated">
+          <label for="quickCreateCommandId" class="w-fit pl-0.5 text-sm">Raid-Helper Quickcreate Command</label>
+          <textarea id="quickCreateCommandId" rows="10" disabled
+            x-model="quickCreateCommand" placeholder="Raid-Helper /quickcreate command will display here"
+            class="w-full rounded-md border border-gray-500 bg-gray-200 px-2.5 py-2 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-900 disabled:cursor-not-allowed disabled:opacity-75 dark:border-gray-500 dark:bg-zinc-800 dark:focus-visible:outline-teal-400"></textarea>
+        </div>
+
+        <button type="button" x-on:click="copyRaidHelperCommand" x-show="commandGenerated"
+          class="cursor-pointer whitespace-nowrap rounded-md bg-sky-900 px-4 py-2 text-sm font-medium tracking-wide text-white transition hover:opacity-75 text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-900 active:opacity-100 active:outline-offset-0 disabled:opacity-75 disabled:cursor-not-allowed dark:bg-teal-400 dark:text-black dark:focus-visible:outline-teal-400"
+        >Copy Raid-Helper Command</button>
+      </div>
+    </div>
+
+    <script>
+      function data() {
+        return {
+          selectedRaid: 'none',
+          selectedDay: 'Monday',
+          selectedChannel: 'signup-copies',
+          selectedDate: null,
+          pullTime: '17:00',
+          copySignupsMessageId: null,
+          quickCreateCommand: '',
+          commandGenerated: false,
+          description: '',
+          defaultOptions: {
+            'ZG': {
+              selectedDay: 'Friday',
+              time: '19:00',
+              description: `
+                This will be ran after Onyxia.
+                This will be ran as 1xSR.
+                +5 DKP will be earned for being on-time.
+                +20 DKP will be earned throughout the raid.
+                Idols are to be rolled only by Consigliere+, if you believe you should be one, please reach out.
+                Mounts are to be open rolled only by guildies.
+              `
+            },
+            'AQ20': {
+              time: '17:30',
+              description: `
+                This will be ran as 2xSR.
+                +5 DKP will be earned for being on-time.
+              `
+            },
+            'Onyxia': {
+              selectedDay: 'Friday',
+              time: '17:30',
+              description: `
+                This will be ran as 1xSR.
+                +5 DKP will be earned for being on-time.
+                +15 DKP will be earned upon kill.
+              `
+            },
+            'MC': {
+              selectedDay: 'Saturday',
+              time: '18:00',
+              description: `
+                This will be ran as DKP.
+                +5 DKP will be earned for being on-time.
+                +50 DKP will be earned throughout the raid.
+                Legendaries will be loot counciled. If no appropriate person is selected for the eye, it will be DKP bid between guildies.
+                If we cannot fill, and need to resort to running as 3xSR, the following items will be HR'd to be DKP bid between guildies:
+                - Onslaught Girdle
+                - Quick Strike Ring
+                - Band of Accuria
+                - Cauterizing Band
+              `
+            },
+            'BWL': {
+              selectedDay: 'Sunday',
+              time: '17:00',
+              description: `
+                This will be ran as DKP.
+                +5 DKP will be earned for being on-time.
+                +50 DKP will be earned throughout the raid.
+                If we cannot fill, and need to resort to running as 3xSR, the following items will be HR'd to be DKP bid between guildies:
+                - Drake Fang Talisman
+                - Rejuvenating Gem
+                - Neltharion's Tear
+                - Chromatically Tempered Sword
+              `
+            },
+            'AQ40': {
+              selectedDay: 'Sunday',
+              time: '17:00',
+              description: `
+                This will be ran as DKP.
+                +5 DKP will be earned for being on-time.
+                +100 DKP will be earned throughout the raid.
+                If we cannot fill, and need to resort to running as 3xSR, the following items will be HR'd to be DKP bid between guildies:
+                - Ancient Qiraji Ripper
+                - Death's Sting
+                - Badge of the Swarmguard
+                - Dark Storm Gauntlets
+                - Gauntlets of Annihilation
+                - Eyestalk Waist Cord
+              `
+            },
+            'Naxx': {
+              selectedDay: 'Monday',
+              time: '17:00',
+              description: `
+                This will be ran as DKP.
+                +250 DKP will be earned if the raid is completed in full.
+                +25 prog bonus will be awarded each naxx signup while we are in progression (not full raid completion).
+                There are a number of loot restrictions while we are in prog, please visit the guild site below to view Naxx rules.
+                https://paradoxguild.github.io/?tab=raid-info
+
+                In the case of Tuesday runs - your slot will be guaranteed the following Monday, as the instance ID is the same.
+              `
+            }
+          },
+          init() {
+          },
+          onRaidChanged() {
+            const raidDefaultOptions = this.defaultOptions[this.selectedRaid];
+            if (raidDefaultOptions) {
+              if (raidDefaultOptions.selectedDay) {
+                this.selectedDay = raidDefaultOptions.selectedDay;
+                this.onDayChanged();
+              }
+              if (raidDefaultOptions.time) {
+                this.pullTime = raidDefaultOptions.time;
+              }
+              if (raidDefaultOptions.description) {
+                this.description = this.mutilineTrim(raidDefaultOptions.description);
+              }
+            }
+          },
+          onDayChanged() {
+            this.selectedDate = this.getNextDate(this.selectedDay);
+          },
+          getNextDate(dayOfWeek) {
+            const array = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const dayIndex = array.indexOf(dayOfWeek);
+            const date = new Date();
+            date.setDate(date.getDate() + ((7 - date.getDay() + dayIndex) % 7)); 
+            return date.toLocaleDateString('en-GB').replace(/\//g, '-');
+          },
+          mutilineTrim(str) {
+            return str.split('\n').map(line => line.trim()).join('\n').trim();
+          },
+          buildRaidHelperCommand() {
+            let command = `/quickcreate arguments:[template: 3][channel: ${this.selectedChannel}]`;
+            command += `[date: ${this.selectedDate}][time: ${this.pullTime}]`;
+            command += `[title: ${this.selectedDay} ${this.selectedRaid}]`;
+            if (this.description && this.description.length) {
+              command += `[description: ${this.description.split('\n').map(line => line.trim()).join('\\n')}]`;
+            }
+            if (this.copySignupsMessageId && this.copySignupsMessageId.length > 0) {
+              command += `[optout: ${this.copySignupsMessageId}]`;
+            }
+            this.quickCreateCommand = command;
+            this.commandGenerated = true;
+          },
+          copyRaidHelperCommand() {
+            try {
+              navigator.clipboard.writeText(this.quickCreateCommand);
+            } catch (err) {
+              document.querySelector('#quickCreateCommandId').select();
+              document.execCommand('copy'); 
+            }
+          }
+        }
+      }
+    </script>
+  </div>
+</body>
+
+</html>
