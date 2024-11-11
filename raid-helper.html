@@ -127,28 +127,31 @@
               time: '19:00',
               description: `
                 This will be ran after Onyxia.
-                This will be ran as 1xSR: {PUT SR LINK HERE}
+                This will be ran as 2xSR, link is attached to this signup.
                 +5 DKP will be earned for being on-time.
                 +20 DKP will be earned throughout the raid.
                 Idols are to be rolled only by Consigliere+, if you believe you should be one, please reach out.
                 Mounts are to be open rolled only by guildies.
-              `
+              `,
+              srFormat: 'zg, alliance, 2, 0, protected, visible, yes, yes'
             },
             'AQ20': {
               time: '17:30',
               description: `
-                This will be ran as 2xSR: {PUT SR LINK HERE}
+                This will be ran as 2xSR, link is attached to this signup.
                 +5 DKP will be earned for being on-time.
-              `
+              `,
+              srFormat: 'aq20, alliance, 2, 0, protected, visible, yes, yes'
             },
             'Onyxia': {
               selectedDay: 'Friday',
               time: '17:30',
               description: `
-                This will be ran as 1xSR: {PUT SR LINK HERE}
+                This will be ran as 1xSR, link is attached to this signup.
                 +5 DKP will be earned for being on-time.
                 +15 DKP will be earned upon kill.
-              `
+              `,
+              srFormat: 'onyxia, alliance, 1, 0, protected, visible, yes, yes'
             },
             'MC': {
               selectedDay: 'Saturday',
@@ -249,7 +252,10 @@
             if (this.copySignupsMessageId && this.copySignupsMessageId.length > 0) {
               command += `[optout: ${this.copySignupsMessageId}]`;
             }
-            command += `[advanced: < show_numbering: false > < bench_overflow: false > < lock_at_limit: false > < preserve_order: always > < limit: 60 >]`;
+            if (this.defaultOptions[this.selectedRaid] && this.defaultOptions[this.selectedRaid].srFormat) {
+              command += `[softres: ${this.defaultOptions[this.selectedRaid].srFormat}]`;
+            }
+            command += '[advanced: < show_numbering: false > < bench_overflow: false > < lock_at_limit: false > < preserve_order: always > < limit: 60 > < create_discordevent: true >]';
             this.quickCreateCommand = command;
             this.commandGenerated = true;
           },
