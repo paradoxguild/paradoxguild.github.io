@@ -102,9 +102,9 @@
             class="w-full rounded-md border border-gray-500 bg-gray-200 px-2.5 py-2 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-900 disabled:cursor-not-allowed disabled:opacity-75 dark:border-gray-500 dark:bg-zinc-800 dark:focus-visible:outline-teal-400"></textarea>
         </div>
 
-        <button type="button" x-on:click="copyRaidHelperCommand" x-show="commandGenerated"
+        <button type="button" x-on:click="copyRaidHelperCommand" x-show="commandGenerated" x-text="copyButtonText"
           class="cursor-pointer whitespace-nowrap rounded-md bg-sky-900 px-4 py-2 text-sm font-medium tracking-wide text-white transition hover:opacity-75 text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-900 active:opacity-100 active:outline-offset-0 disabled:opacity-75 disabled:cursor-not-allowed dark:bg-teal-400 dark:text-black dark:focus-visible:outline-teal-400"
-        >Copy Raid-Helper Command</button>
+        ></button>
       </div>
     </div>
 
@@ -120,6 +120,7 @@
           quickCreateCommand: '',
           commandGenerated: false,
           description: '',
+          copyButtonText: 'Copy Raid-Helper Command',
           defaultOptions: {
             'ZG': {
               selectedDay: 'Friday',
@@ -252,12 +253,14 @@
             this.commandGenerated = true;
           },
           copyRaidHelperCommand() {
-            try {
-              navigator.clipboard.writeText(this.quickCreateCommand);
-            } catch (err) {
-              document.querySelector('#quickCreateCommandId').select();
-              document.execCommand('copy'); 
-            }
+            this.copyButtonText = 'Copy Raid-Helper Command...';
+            navigator.clipboard.writeText(this.quickCreateCommand)
+              .then(() => this.copyButtonText = 'Copy Raid-Helper Command ✔')
+              .catch(err => {
+                document.querySelector('#quickCreateCommandId').select();
+                document.execCommand('copy');
+                this.copyButtonText = 'Copy Raid-Helper Command ✔'; 
+              });
           }
         }
       }
