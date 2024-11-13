@@ -106,29 +106,51 @@ class CTALink extends AlpineComponent {
 
 class WowRestrictedItem extends AlpineComponent {
   connectedCallback() {
-    this.verifyAttributes(['x-data'], 'WowDescriptiveItem requires attributes: [x-data={image, lines}]');
+    this.verifyAttributes(['x-data'], 'WowDescriptiveItem requires attributes: [x-data={image, lines, itemName}]');
     this.verifyXData(['image'], 'WowDescriptiveItem requires attributes: [x-data={image, lines}]');
     const width = this.hasAttribute('no-description') ? '350px' : '310px';
-    const height = this.hasAttribute('no-description') ? '295px' : '415px';
+    const height = this.hasAttribute('no-description') ? '335px' : '455px';
     this.innerHTML = `
-      <div class="group flex rounded-md flex-col overflow-hidden border border-gray-500 bg-[#242424] text-gray-300 h-[${height}]">
-        <div class="py-4 my-auto">
-          <div class="overflow-hidden mx-auto flex transition duration-700 ease-out group-hover:scale-[1.1]">
-            <img :src="image" class="w-[${width}] h-auto mx-auto" alt="WoW Restricted Item" />
+      <div>
+        <div class="group flex rounded-md flex-col overflow-hidden border border-gray-500 bg-[#242424] text-gray-300 h-[${height}]">
+          <div class="py-4 my-auto">
+            <div class="overflow-hidden mx-auto flex transition duration-700 ease-out group-hover:scale-[1.1]">
+              <img :src="image" class="w-[${width}] h-auto mx-auto" alt="WoW Restricted Item" />
+            </div>
           </div>
+          ${this.hasAttribute('no-description') ? '' : `
+            <div class="flex flex-col justify-start gap-2 py-2 px-4 bg-zinc-900 h-[120px] mt-auto" x-show="lines && lines.length">
+              <h3 class="text-balance text-xl lg:text-2xl font-bold text-gray-950 dark:text-gray-100" aria-describedby="featureDescription">
+                Restrictions
+              </h3>
+              <p id="featureDescription" class="text-pretty text-sm">
+                <template x-for="(line, idx) in lines">
+                  <p x-text="(idx + 1) + '. ' + line"></li>
+                </template>
+              </p>
+            </div>
+          `}
         </div>
-        ${this.hasAttribute('no-description') ? '' : `
-          <div class="flex flex-col justify-start gap-2 py-2 px-4 bg-zinc-900 h-[120px] mt-auto" x-show="lines && lines.length">
-            <h3 class="text-balance text-xl lg:text-2xl font-bold text-gray-950 dark:text-gray-100" aria-describedby="featureDescription">
-              Restrictions
+
+        <template x-if="typeof receivers !== 'undefined' && typeof itemName !== 'undefined'">
+          <div class="flex flex-col justify-start gap-2 py-2 px-4 bg-zinc-900 rounded-md border border-gray-500 mt-2 min-h-[120px]">
+            <h3 class="text-balance text-xl lg:text-2xl font-bold text-gray-950 dark:text-gray-100">
+              Congrats on <span x-text="itemName"></span>!!
             </h3>
-            <p id="featureDescription" class="text-pretty text-sm">
-              <template x-for="(line, idx) in lines">
-                <p x-text="(idx + 1) + '. ' + line"></li>
-              </template>
-            </p>
+            <template x-for="(receiver, index) of receivers">
+              <p x-text="(index + 1) + '. ' + receiver"></p>
+            </template>
           </div>
-        `}
+        </template>
+        
+        <template x-if="typeof receivers === 'undefined' && typeof itemName !== 'undefined'">
+          <div class="flex flex-col justify-start gap-2 py-2 px-4 bg-zinc-900 rounded-md border border-gray-500 mt-2 min-h-[120px]">
+            <h3 class="text-balance text-xl lg:text-2xl font-bold text-gray-950 dark:text-gray-100">
+              Loot Priority Item
+            </h3>
+            <p><span x-text="itemName"></span> has not been cleared for open bid/next steps</p>
+          </div>
+        </template>
       </div>
     `;
   }
