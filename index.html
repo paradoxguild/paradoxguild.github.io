@@ -24,7 +24,7 @@
 <body>
   <custom-nav page="Home"></custom-nav>
 
-  <div class="p-5 max-w-[1000px] mx-auto">
+  <div class="p-5 max-w-[1000px] mx-auto" x-data="siteData">
     <tab-container selected="events">
       <tab-button-container>
         <tab-button id="events" label="Events" target="panel-events"></tab-button>
@@ -52,6 +52,17 @@
       </tab-panel-container>
     </div>
   </div>
+
+  <script>
+    function siteData() {
+      return {
+        validateQueryParam(param, value) {
+          const params = new URLSearchParams(window.location.search);
+          return params.has(param) && params.get(param) === value;
+        }
+      };
+    }
+  </script>
 </body>
 
 </html>

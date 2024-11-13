@@ -1,5 +1,5 @@
 <div class="flex w-full flex-col gap-4 text-gray-800 dark:text-gray-300 mt-4">
-  <div x-data="{ isExpanded: typeof expandByDefault !== 'undefined' ? true : false }"
+  <div x-data="{ isExpanded: typeof expandByDefault !== 'undefined' ? expandByDefault : false }"
     class="divide-y divide-gray-500 overflow-hidden rounded-md border border-gray-500 bg-gray-200/40 dark:divide-gray-500 dark:border-gray-500 dark:bg-zinc-800">
     <button :id="id + '-btn'" type="button"
       class="flex w-full items-center justify-between gap-2 bg-gray-200 p-4 text-left underline-offset-2 hover:bg-gray-200/75 focus-visible:bg-gray-200/75 focus-visible:underline focus-visible:outline-none dark:bg-zinc-800 dark:hover:bg-zinc-900/25 dark:focus-visible:bg-gray-800/75"

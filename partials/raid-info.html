@@ -6,7 +6,7 @@
   </p>
 </div>
 
-<custom-accordion x-data="{ id: 'raid-etiquette', title: 'Raid Etiquette' }">
+<custom-accordion x-data="{ id: 'raid-etiquette', title: 'Raid Etiquette', expandByDefault: validateQueryParam('rules', 'etiquette') }">
   <slot name="content">
     <div class="p-4">
       <p>Please respect the following rules to ensure a quick and smooth raid:</p>
@@ -34,7 +34,7 @@
   </slot>
 </custom-accordion>
 
-<custom-accordion x-data="{ id: 'dkp-values', title: 'DKP Bidding, Awards & Transfers' }">
+<custom-accordion x-data="{ id: 'dkp-values', title: 'DKP Bidding, Awards & Transfers', expandByDefault: validateQueryParam('rules', 'dkp') }">
   <slot name="content">
     <div class="p-4">
       <h3 class="text-2xl underline pb-2">Bidding</h3>
@@ -80,7 +80,7 @@
   </slot>
 </custom-accordion>
 
-<custom-accordion x-data="{ id: 'naxx-dkp', title: 'Loot Rules: Naxx DKP' }">
+<custom-accordion x-data="{ id: 'naxx-dkp', title: 'Loot Rules: Naxx DKP', expandByDefault: validateQueryParam('rules', 'naxx') }">
   <slot name="content">
     <div class="p-4">
       <p class="pb-2">As we are in progression of Naxx, the following rules will apply on bids:</p>
@@ -185,7 +185,7 @@
   </slot>
 </custom-accordion>
 
-<custom-accordion x-data="{ id: 'mc-sr-dkp', title: 'Loot Rules: Molten Core SR & DKP' }">
+<custom-accordion x-data="{ id: 'mc-sr-dkp', title: 'Loot Rules: Molten Core SR & DKP', expandByDefault: validateQueryParam('rules', 'mc') }">
   <slot name="content">
     <div class="p-4">
       <h3 class="text-2xl underline pb-2">About</h3>
@@ -215,7 +215,7 @@
   </slot>
 </custom-accordion>
 
-<custom-accordion x-data="{ id: 'bwl-sr-dkp', title: 'Loot Rules: Black Wing Lair SR & DKP' }">
+<custom-accordion x-data="{ id: 'bwl-sr-dkp', title: 'Loot Rules: Black Wing Lair SR & DKP', expandByDefault: validateQueryParam('rules', 'bwl') }">
   <slot name="content">
     <div class="p-4">
       <h3 class="text-2xl underline pb-2">About</h3>
@@ -244,7 +244,7 @@
   </slot>
 </custom-accordion>
 
-<custom-accordion x-data="{ id: 'aq40-sr-dkp', title: 'Loot Rules: Ahn\'Qiraj SR & DKP' }">
+<custom-accordion x-data="{ id: 'aq40-sr-dkp', title: 'Loot Rules: Ahn\'Qiraj SR & DKP', expandByDefault: validateQueryParam('rules', 'aq40') }">
   <slot name="content">
     <div class="p-4">
       
