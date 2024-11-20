@@ -112,7 +112,7 @@ class WowRestrictedItem extends AlpineComponent {
     const height = this.hasAttribute('no-description') ? '335px' : '455px';
     this.innerHTML = `
       <div>
-        <div class="group flex rounded-md flex-col overflow-hidden border border-gray-500 bg-[#242424] text-gray-300 h-[${height}]">
+        <div class="group flex rounded-md flex-col overflow-hidden border border-gray-500 bg-[#242424] text-gray-300 h-[${height}] relative">
           <div class="py-4 my-auto">
             <div class="overflow-hidden mx-auto flex transition duration-700 ease-out group-hover:scale-[1.1]">
               <img :src="image" class="w-[${width}] h-auto mx-auto" alt="WoW Restricted Item" />
@@ -121,7 +121,7 @@ class WowRestrictedItem extends AlpineComponent {
           ${this.hasAttribute('no-description') ? '' : `
             <div class="flex flex-col justify-start gap-2 py-2 px-4 bg-zinc-900 h-[120px] mt-auto" x-show="lines && lines.length">
               <h3 class="text-balance text-xl lg:text-2xl font-bold text-gray-950 dark:text-gray-100" aria-describedby="featureDescription">
-                Restrictions
+                <span :class="typeof cleared !== 'undefined' && 'line-through'">Restrictions</span>
               </h3>
               <p id="featureDescription" class="text-pretty text-sm">
                 <template x-for="(line, idx) in lines">
@@ -130,6 +130,9 @@ class WowRestrictedItem extends AlpineComponent {
               </p>
             </div>
           `}
+
+          
+          <div class="absolute bg-green-400/10 h-full w-full" x-show="typeof cleared !== 'undefined'"></div>
         </div>
 
         <template x-if="typeof receivers !== 'undefined' && typeof itemName !== 'undefined'">
