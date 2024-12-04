@@ -1,0 +1,763 @@
+[
+  {
+    "id": "20",
+    "name": "Patchwerk Normal",
+    "rankings": []
+  },
+  {
+    "id": "28",
+    "name": "Grobbulus Normal",
+    "rankings": [
+      {
+        "name": "Bunlop",
+        "class": "Priest",
+        "rank": 1
+      },
+      {
+        "name": "Msstorm",
+        "class": "Priest",
+        "rank": 2
+      },
+      {
+        "name": "Holyymolyy",
+        "class": "Priest",
+        "rank": 3
+      },
+      {
+        "name": "Trendkill",
+        "class": "Paladin",
+        "rank": 4
+      },
+      {
+        "name": "Dagomi",
+        "class": "Paladin",
+        "rank": 5
+      },
+      {
+        "name": "Aamara",
+        "class": "Priest",
+        "rank": 6
+      },
+      {
+        "name": "Fannia",
+        "class": "Druid",
+        "rank": 7
+      },
+      {
+        "name": "Moonwell",
+        "class": "Druid",
+        "rank": 8
+      },
+      {
+        "name": "Kasiri",
+        "class": "Priest",
+        "rank": 9
+      },
+      {
+        "name": "Shalawam",
+        "class": "Priest",
+        "rank": 10
+      },
+      {
+        "name": "Snormantha",
+        "class": "Priest",
+        "rank": 11
+      },
+      {
+        "name": "Esandarius",
+        "class": "Paladin",
+        "rank": 12
+      },
+      {
+        "name": "Oars",
+        "class": "Warrior",
+        "rank": 13
+      },
+      {
+        "name": "Kismyleather",
+        "class": "Mage",
+        "rank": 14
+      },
+      {
+        "name": "Taniel",
+        "class": "Warrior",
+        "rank": 15
+      },
+      {
+        "name": "Alexanderr",
+        "class": "Warrior",
+        "rank": 16
+      },
+      {
+        "name": "Bradjones",
+        "class": "Warrior",
+        "rank": 17
+      },
+      {
+        "name": "Grindpa",
+        "class": "Warrior",
+        "rank": 18
+      },
+      {
+        "name": "Brosephina",
+        "class": "Warrior",
+        "rank": 19
+      },
+      {
+        "name": "Whyu",
+        "class": "Rogue",
+        "rank": 20
+      },
+      {
+        "name": "Pouns",
+        "class": "Rogue",
+        "rank": 21
+      },
+      {
+        "name": "Vî",
+        "class": "Warrior",
+        "rank": 22
+      },
+      {
+        "name": "Goody",
+        "class": "Warrior",
+        "rank": 23
+      },
+      {
+        "name": "Mãverick",
+        "class": "Warrior",
+        "rank": 24
+      },
+      {
+        "name": "Dipindots",
+        "class": "Warlock",
+        "rank": 25
+      }
+    ]
+  },
+  {
+    "id": "44",
+    "name": "Gluth Normal",
+    "rankings": [
+      {
+        "name": "Bunlop",
+        "class": "Priest",
+        "rank": 1
+      },
+      {
+        "name": "Msstorm",
+        "class": "Priest",
+        "rank": 2
+      },
+      {
+        "name": "Holyymolyy",
+        "class": "Priest",
+        "rank": 3
+      },
+      {
+        "name": "Trendkill",
+        "class": "Paladin",
+        "rank": 4
+      },
+      {
+        "name": "Dagomi",
+        "class": "Paladin",
+        "rank": 5
+      },
+      {
+        "name": "Aamara",
+        "class": "Priest",
+        "rank": 6
+      },
+      {
+        "name": "Fannia",
+        "class": "Druid",
+        "rank": 7
+      },
+      {
+        "name": "Moonwell",
+        "class": "Druid",
+        "rank": 8
+      },
+      {
+        "name": "Kasiri",
+        "class": "Priest",
+        "rank": 9
+      },
+      {
+        "name": "Shalawam",
+        "class": "Priest",
+        "rank": 10
+      },
+      {
+        "name": "Snormantha",
+        "class": "Priest",
+        "rank": 11
+      },
+      {
+        "name": "Esandarius",
+        "class": "Paladin",
+        "rank": 12
+      },
+      {
+        "name": "Oars",
+        "class": "Warrior",
+        "rank": 13
+      },
+      {
+        "name": "Kismyleather",
+        "class": "Mage",
+        "rank": 14
+      },
+      {
+        "name": "Taniel",
+        "class": "Warrior",
+        "rank": 15
+      },
+      {
+        "name": "Alexanderr",
+        "class": "Warrior",
+        "rank": 16
+      },
+      {
+        "name": "Bradjones",
+        "class": "Warrior",
+        "rank": 17
+      },
+      {
+        "name": "Grindpa",
+        "class": "Warrior",
+        "rank": 18
+      },
+      {
+        "name": "Brosephina",
+        "class": "Warrior",
+        "rank": 19
+      },
+      {
+        "name": "Whyu",
+        "class": "Rogue",
+        "rank": 20
+      },
+      {
+        "name": "Pouns",
+        "class": "Rogue",
+        "rank": 21
+      },
+      {
+        "name": "Vî",
+        "class": "Warrior",
+        "rank": 22
+      },
+      {
+        "name": "Goody",
+        "class": "Warrior",
+        "rank": 23
+      },
+      {
+        "name": "Mãverick",
+        "class": "Warrior",
+        "rank": 24
+      },
+      {
+        "name": "Dipindots",
+        "class": "Warlock",
+        "rank": 25
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "name": "Thaddius Normal",
+    "rankings": [
+      {
+        "name": "Bunlop",
+        "class": "Priest",
+        "rank": 1
+      },
+      {
+        "name": "Holyymolyy",
+        "class": "Priest",
+        "rank": 2
+      },
+      {
+        "name": "Shalawam",
+        "class": "Priest",
+        "rank": 3
+      },
+      {
+        "name": "Dagomi",
+        "class": "Paladin",
+        "rank": 4
+      },
+      {
+        "name": "Trendkill",
+        "class": "Paladin",
+        "rank": 5
+      },
+      {
+        "name": "Moonwell",
+        "class": "Druid",
+        "rank": 6
+      },
+      {
+        "name": "Palamino",
+        "class": "Paladin",
+        "rank": 7
+      },
+      {
+        "name": "Kasiri",
+        "class": "Priest",
+        "rank": 8
+      },
+      {
+        "name": "Esandarius",
+        "class": "Paladin",
+        "rank": 9
+      },
+      {
+        "name": "Fannia",
+        "class": "Druid",
+        "rank": 10
+      },
+      {
+        "name": "Snormantha",
+        "class": "Priest",
+        "rank": 11
+      },
+      {
+        "name": "Grindpa",
+        "class": "Warrior",
+        "rank": 12
+      },
+      {
+        "name": "Oars",
+        "class": "Warrior",
+        "rank": 13
+      },
+      {
+        "name": "Mãverick",
+        "class": "Warrior",
+        "rank": 14
+      },
+      {
+        "name": "Iculus",
+        "class": "Warrior",
+        "rank": 15
+      },
+      {
+        "name": "Smalltime",
+        "class": "Warrior",
+        "rank": 16
+      },
+      {
+        "name": "Taniel",
+        "class": "Warrior",
+        "rank": 17
+      },
+      {
+        "name": "Brosephina",
+        "class": "Warrior",
+        "rank": 18
+      },
+      {
+        "name": "Lilianas",
+        "class": "Rogue",
+        "rank": 19
+      },
+      {
+        "name": "Vî",
+        "class": "Warrior",
+        "rank": 20
+      },
+      {
+        "name": "Gonk",
+        "class": "Rogue",
+        "rank": 21
+      },
+      {
+        "name": "Alexanderr",
+        "class": "Warrior",
+        "rank": 22
+      },
+      {
+        "name": "Bradjones",
+        "class": "Warrior",
+        "rank": 23
+      },
+      {
+        "name": "Figro",
+        "class": "Rogue",
+        "rank": 24
+      },
+      {
+        "name": "Acid",
+        "class": "Rogue",
+        "rank": 25
+      },
+      {
+        "name": "Whyu",
+        "class": "Rogue",
+        "rank": 26
+      }
+    ]
+  },
+  {
+    "id": "59",
+    "name": "Noth the Plaguebringer Normal",
+    "rankings": [
+      {
+        "name": "Bunlop",
+        "class": "Priest",
+        "rank": 1
+      },
+      {
+        "name": "Holyymolyy",
+        "class": "Priest",
+        "rank": 2
+      },
+      {
+        "name": "Shalawam",
+        "class": "Priest",
+        "rank": 3
+      },
+      {
+        "name": "Dagomi",
+        "class": "Paladin",
+        "rank": 4
+      },
+      {
+        "name": "Trendkill",
+        "class": "Paladin",
+        "rank": 5
+      },
+      {
+        "name": "Moonwell",
+        "class": "Druid",
+        "rank": 6
+      },
+      {
+        "name": "Palamino",
+        "class": "Paladin",
+        "rank": 7
+      },
+      {
+        "name": "Kasiri",
+        "class": "Priest",
+        "rank": 8
+      },
+      {
+        "name": "Esandarius",
+        "class": "Paladin",
+        "rank": 9
+      },
+      {
+        "name": "Fannia",
+        "class": "Druid",
+        "rank": 10
+      },
+      {
+        "name": "Snormantha",
+        "class": "Priest",
+        "rank": 11
+      },
+      {
+        "name": "Grindpa",
+        "class": "Warrior",
+        "rank": 12
+      },
+      {
+        "name": "Oars",
+        "class": "Warrior",
+        "rank": 13
+      },
+      {
+        "name": "Mãverick",
+        "class": "Warrior",
+        "rank": 14
+      },
+      {
+        "name": "Iculus",
+        "class": "Warrior",
+        "rank": 15
+      },
+      {
+        "name": "Smalltime",
+        "class": "Warrior",
+        "rank": 16
+      },
+      {
+        "name": "Taniel",
+        "class": "Warrior",
+        "rank": 17
+      },
+      {
+        "name": "Brosephina",
+        "class": "Warrior",
+        "rank": 18
+      },
+      {
+        "name": "Lilianas",
+        "class": "Rogue",
+        "rank": 19
+      },
+      {
+        "name": "Vî",
+        "class": "Warrior",
+        "rank": 20
+      },
+      {
+        "name": "Gonk",
+        "class": "Rogue",
+        "rank": 21
+      },
+      {
+        "name": "Alexanderr",
+        "class": "Warrior",
+        "rank": 22
+      },
+      {
+        "name": "Bradjones",
+        "class": "Warrior",
+        "rank": 23
+      },
+      {
+        "name": "Figro",
+        "class": "Rogue",
+        "rank": 24
+      },
+      {
+        "name": "Acid",
+        "class": "Rogue",
+        "rank": 25
+      },
+      {
+        "name": "Whyu",
+        "class": "Rogue",
+        "rank": 26
+      }
+    ]
+  },
+  {
+    "id": "64",
+    "name": "Heigan the Unclean Normal",
+    "rankings": [
+      {
+        "name": "Dagomi",
+        "class": "Paladin",
+        "rank": 1
+      },
+      {
+        "name": "Palamino",
+        "class": "Paladin",
+        "rank": 2
+      },
+      {
+        "name": "Fannia",
+        "class": "Druid",
+        "rank": 3
+      },
+      {
+        "name": "Esandarius",
+        "class": "Paladin",
+        "rank": 4
+      },
+      {
+        "name": "Shalawam",
+        "class": "Priest",
+        "rank": 5
+      },
+      {
+        "name": "Trendkill",
+        "class": "Paladin",
+        "rank": 6
+      },
+      {
+        "name": "Snormantha",
+        "class": "Priest",
+        "rank": 7
+      },
+      {
+        "name": "Kasiri",
+        "class": "Priest",
+        "rank": 8
+      },
+      {
+        "name": "Bunlop",
+        "class": "Priest",
+        "rank": 9
+      },
+      {
+        "name": "Aamara",
+        "class": "Priest",
+        "rank": 10
+      },
+      {
+        "name": "Moonwell",
+        "class": "Druid",
+        "rank": 11
+      },
+      {
+        "name": "Oars",
+        "class": "Warrior",
+        "rank": 12
+      },
+      {
+        "name": "Iculus",
+        "class": "Warrior",
+        "rank": 13
+      },
+      {
+        "name": "Smalltime",
+        "class": "Warrior",
+        "rank": 14
+      },
+      {
+        "name": "Bradjones",
+        "class": "Warrior",
+        "rank": 15
+      },
+      {
+        "name": "Alexanderr",
+        "class": "Warrior",
+        "rank": 16
+      },
+      {
+        "name": "Vî",
+        "class": "Warrior",
+        "rank": 17
+      },
+      {
+        "name": "Taniel",
+        "class": "Warrior",
+        "rank": 18
+      },
+      {
+        "name": "Mãverick",
+        "class": "Warrior",
+        "rank": 19
+      },
+      {
+        "name": "Grindpa",
+        "class": "Warrior",
+        "rank": 20
+      },
+      {
+        "name": "Narünn",
+        "class": "Druid",
+        "rank": 21
+      }
+    ]
+  },
+  {
+    "id": "last",
+    "name": "Instructor Razuvious Normal",
+    "rankings": [
+      {
+        "name": "Dagomi",
+        "class": "Paladin",
+        "rank": 1
+      },
+      {
+        "name": "Palamino",
+        "class": "Paladin",
+        "rank": 2
+      },
+      {
+        "name": "Fannia",
+        "class": "Druid",
+        "rank": 3
+      },
+      {
+        "name": "Esandarius",
+        "class": "Paladin",
+        "rank": 4
+      },
+      {
+        "name": "Shalawam",
+        "class": "Priest",
+        "rank": 5
+      },
+      {
+        "name": "Trendkill",
+        "class": "Paladin",
+        "rank": 6
+      },
+      {
+        "name": "Snormantha",
+        "class": "Priest",
+        "rank": 7
+      },
+      {
+        "name": "Kasiri",
+        "class": "Priest",
+        "rank": 8
+      },
+      {
+        "name": "Bunlop",
+        "class": "Priest",
+        "rank": 9
+      },
+      {
+        "name": "Aamara",
+        "class": "Priest",
+        "rank": 10
+      },
+      {
+        "name": "Moonwell",
+        "class": "Druid",
+        "rank": 11
+      },
+      {
+        "name": "Oars",
+        "class": "Warrior",
+        "rank": 12
+      },
+      {
+        "name": "Iculus",
+        "class": "Warrior",
+        "rank": 13
+      },
+      {
+        "name": "Smalltime",
+        "class": "Warrior",
+        "rank": 14
+      },
+      {
+        "name": "Bradjones",
+        "class": "Warrior",
+        "rank": 15
+      },
+      {
+        "name": "Alexanderr",
+        "class": "Warrior",
+        "rank": 16
+      },
+      {
+        "name": "Vî",
+        "class": "Warrior",
+        "rank": 17
+      },
+      {
+        "name": "Taniel",
+        "class": "Warrior",
+        "rank": 18
+      },
+      {
+        "name": "Mãverick",
+        "class": "Warrior",
+        "rank": 19
+      },
+      {
+        "name": "Grindpa",
+        "class": "Warrior",
+        "rank": 20
+      },
+      {
+        "name": "Narünn",
+        "class": "Druid",
+        "rank": 21
+      }
+    ]
+  }
+]

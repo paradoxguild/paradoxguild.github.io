@@ -1,0 +1,284 @@
+[
+  {
+    "id": 79,
+    "name": "Gothik the Harvester",
+    "rankings": [
+      {
+        "name": "Gonk",
+        "class": "Rogue",
+        "rank": 1
+      },
+      {
+        "name": "Chiillii",
+        "class": "Mage",
+        "rank": 2
+      },
+      {
+        "name": "Figro",
+        "class": "Rogue",
+        "rank": 3
+      },
+      {
+        "name": "Scuffles",
+        "class": "Rogue",
+        "rank": 4
+      },
+      {
+        "name": "Noshards",
+        "class": "Warlock",
+        "rank": 5
+      },
+      {
+        "name": "Whyu",
+        "class": "Rogue",
+        "rank": 6
+      },
+      {
+        "name": "Silvius",
+        "class": "Rogue",
+        "rank": 7
+      },
+      {
+        "name": "Grindpa",
+        "class": "Warrior",
+        "rank": 8
+      },
+      {
+        "name": "Badcandy",
+        "class": "Rogue",
+        "rank": 9
+      },
+      {
+        "name": "Taniel",
+        "class": "Warrior",
+        "rank": 10
+      },
+      {
+        "name": "Erma",
+        "class": "Mage",
+        "rank": 11
+      },
+      {
+        "name": "Frosturself",
+        "class": "Mage",
+        "rank": 12
+      },
+      {
+        "name": "Loafofbread",
+        "class": "Warrior",
+        "rank": 13
+      },
+      {
+        "name": "Misself",
+        "class": "Hunter",
+        "rank": 14
+      },
+      {
+        "name": "Kismyleather",
+        "class": "Mage",
+        "rank": 15
+      },
+      {
+        "name": "Acid",
+        "class": "Rogue",
+        "rank": 16
+      },
+      {
+        "name": "Oars",
+        "class": "Warrior",
+        "rank": 17
+      },
+      {
+        "name": "Iculus",
+        "class": "Warrior",
+        "rank": 18
+      },
+      {
+        "name": "Brosephina",
+        "class": "Warrior",
+        "rank": 19
+      },
+      {
+        "name": "Lilianas",
+        "class": "Rogue",
+        "rank": 20
+      },
+      {
+        "name": "Bradjones",
+        "class": "Warrior",
+        "rank": 21
+      },
+      {
+        "name": "Nyxie",
+        "class": "Hunter",
+        "rank": 22
+      },
+      {
+        "name": "Dipindots",
+        "class": "Warlock",
+        "rank": 23
+      },
+      {
+        "name": "Narünn",
+        "class": "Druid",
+        "rank": 24
+      },
+      {
+        "name": "Mãverick",
+        "class": "Warrior",
+        "rank": 25
+      },
+      {
+        "name": "Dagomi",
+        "class": "Paladin",
+        "rank": 26
+      },
+      {
+        "name": "Msstorm",
+        "class": "Priest",
+        "rank": 27
+      },
+      {
+        "name": "Trendkill",
+        "class": "Paladin",
+        "rank": 28
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Instructor Razuvious",
+    "rankings": [
+      {
+        "name": "Taniel",
+        "class": "Warrior",
+        "rank": 1
+      },
+      {
+        "name": "Gonk",
+        "class": "Rogue",
+        "rank": 2
+      },
+      {
+        "name": "Alexanderr",
+        "class": "Warrior",
+        "rank": 3
+      },
+      {
+        "name": "Loafofbread",
+        "class": "Warrior",
+        "rank": 4
+      },
+      {
+        "name": "Whyu",
+        "class": "Rogue",
+        "rank": 5
+      },
+      {
+        "name": "Lilianas",
+        "class": "Rogue",
+        "rank": 6
+      },
+      {
+        "name": "Figro",
+        "class": "Rogue",
+        "rank": 7
+      },
+      {
+        "name": "Oars",
+        "class": "Warrior",
+        "rank": 8
+      },
+      {
+        "name": "Silvius",
+        "class": "Rogue",
+        "rank": 9
+      },
+      {
+        "name": "Badcandy",
+        "class": "Rogue",
+        "rank": 10
+      },
+      {
+        "name": "Goody",
+        "class": "Warrior",
+        "rank": 11
+      },
+      {
+        "name": "Brosephina",
+        "class": "Warrior",
+        "rank": 12
+      },
+      {
+        "name": "Frosturself",
+        "class": "Mage",
+        "rank": 13
+      },
+      {
+        "name": "Erma",
+        "class": "Mage",
+        "rank": 14
+      },
+      {
+        "name": "Mãverick",
+        "class": "Warrior",
+        "rank": 15
+      },
+      {
+        "name": "Scuffles",
+        "class": "Rogue",
+        "rank": 16
+      },
+      {
+        "name": "Grindpa",
+        "class": "Warrior",
+        "rank": 17
+      },
+      {
+        "name": "Noshards",
+        "class": "Warlock",
+        "rank": 18
+      },
+      {
+        "name": "Iculus",
+        "class": "Warrior",
+        "rank": 19
+      },
+      {
+        "name": "Acid",
+        "class": "Rogue",
+        "rank": 20
+      },
+      {
+        "name": "Frostydevito",
+        "class": "Mage",
+        "rank": 21
+      },
+      {
+        "name": "Nyxie",
+        "class": "Hunter",
+        "rank": 22
+      },
+      {
+        "name": "Kismyleather",
+        "class": "Mage",
+        "rank": 23
+      },
+      {
+        "name": "Misself",
+        "class": "Hunter",
+        "rank": 24
+      },
+      {
+        "name": "Dipindots",
+        "class": "Warlock",
+        "rank": 25
+      },
+      {
+        "name": "Moonwell",
+        "class": "Druid",
+        "rank": 26
+      }
+    ]
+  }
+]

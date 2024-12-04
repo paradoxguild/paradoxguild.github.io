@@ -1,0 +1,858 @@
+[
+  {
+    "id": "4",
+    "name": "AnubRekhan Normal",
+    "rankings": [
+      {
+        "name": "Holyymolyy",
+        "class": "Priest",
+        "rank": 1
+      },
+      {
+        "name": "Bunlop",
+        "class": "Priest",
+        "rank": 2
+      },
+      {
+        "name": "Dayana",
+        "class": "Priest",
+        "rank": 3
+      },
+      {
+        "name": "Msstorm",
+        "class": "Priest",
+        "rank": 4
+      },
+      {
+        "name": "Alkindar",
+        "class": "Paladin",
+        "rank": 5
+      },
+      {
+        "name": "Snormantha",
+        "class": "Priest",
+        "rank": 6
+      },
+      {
+        "name": "Fannia",
+        "class": "Druid",
+        "rank": 7
+      },
+      {
+        "name": "Moonwell",
+        "class": "Druid",
+        "rank": 8
+      },
+      {
+        "name": "Palamino",
+        "class": "Paladin",
+        "rank": 9
+      },
+      {
+        "name": "Esandarius",
+        "class": "Paladin",
+        "rank": 10
+      },
+      {
+        "name": "Trendkill",
+        "class": "Paladin",
+        "rank": 11
+      },
+      {
+        "name": "Aamara",
+        "class": "Priest",
+        "rank": 12
+      },
+      {
+        "name": "Zuggithsf",
+        "class": "Warrior",
+        "rank": 13
+      },
+      {
+        "name": "Brosephina",
+        "class": "Warrior",
+        "rank": 14
+      },
+      {
+        "name": "Narünn",
+        "class": "Druid",
+        "rank": 15
+      },
+      {
+        "name": "Scuffles",
+        "class": "Rogue",
+        "rank": 16
+      },
+      {
+        "name": "Ninrah",
+        "class": "Warrior",
+        "rank": 17
+      },
+      {
+        "name": "Iculus",
+        "class": "Warrior",
+        "rank": 18
+      },
+      {
+        "name": "Alexanderr",
+        "class": "Warrior",
+        "rank": 19
+      },
+      {
+        "name": "Grindpa",
+        "class": "Warrior",
+        "rank": 20
+      },
+      {
+        "name": "Pouns",
+        "class": "Rogue",
+        "rank": 21
+      },
+      {
+        "name": "Badcandy",
+        "class": "Rogue",
+        "rank": 22
+      },
+      {
+        "name": "Chiillii",
+        "class": "Mage",
+        "rank": 23
+      },
+      {
+        "name": "Silv",
+        "class": "Warrior",
+        "rank": 24
+      },
+      {
+        "name": "Taniel",
+        "class": "Warrior",
+        "rank": 25
+      },
+      {
+        "name": "Whyu",
+        "class": "Rogue",
+        "rank": 26
+      },
+      {
+        "name": "Kismyleather",
+        "class": "Mage",
+        "rank": 27
+      },
+      {
+        "name": "Noshards",
+        "class": "Warlock",
+        "rank": 28
+      },
+      {
+        "name": "Acid",
+        "class": "Rogue",
+        "rank": 29
+      },
+      {
+        "name": "Bradjones",
+        "class": "Warrior",
+        "rank": 30
+      },
+      {
+        "name": "Oars",
+        "class": "Warrior",
+        "rank": 31
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "name": "Grand Widow Faerlina Normal",
+    "rankings": [
+      {
+        "name": "Holyymolyy",
+        "class": "Priest",
+        "rank": 1
+      },
+      {
+        "name": "Dayana",
+        "class": "Priest",
+        "rank": 2
+      },
+      {
+        "name": "Aamara",
+        "class": "Priest",
+        "rank": 3
+      },
+      {
+        "name": "Bunlop",
+        "class": "Priest",
+        "rank": 4
+      },
+      {
+        "name": "Msstorm",
+        "class": "Priest",
+        "rank": 5
+      },
+      {
+        "name": "Snormantha",
+        "class": "Priest",
+        "rank": 6
+      },
+      {
+        "name": "Palamino",
+        "class": "Paladin",
+        "rank": 7
+      },
+      {
+        "name": "Trendkill",
+        "class": "Paladin",
+        "rank": 8
+      },
+      {
+        "name": "Esandarius",
+        "class": "Paladin",
+        "rank": 9
+      },
+      {
+        "name": "Moonwell",
+        "class": "Druid",
+        "rank": 10
+      },
+      {
+        "name": "Alkindar",
+        "class": "Paladin",
+        "rank": 11
+      },
+      {
+        "name": "Fannia",
+        "class": "Druid",
+        "rank": 12
+      },
+      {
+        "name": "Grindpa",
+        "class": "Warrior",
+        "rank": 13
+      },
+      {
+        "name": "Zuggithsf",
+        "class": "Warrior",
+        "rank": 14
+      },
+      {
+        "name": "Ninrah",
+        "class": "Warrior",
+        "rank": 15
+      },
+      {
+        "name": "Badcandy",
+        "class": "Rogue",
+        "rank": 16
+      },
+      {
+        "name": "Brosephina",
+        "class": "Warrior",
+        "rank": 17
+      },
+      {
+        "name": "Frostydevito",
+        "class": "Mage",
+        "rank": 18
+      },
+      {
+        "name": "Oars",
+        "class": "Warrior",
+        "rank": 19
+      },
+      {
+        "name": "Noshards",
+        "class": "Warlock",
+        "rank": 20
+      },
+      {
+        "name": "Chiillii",
+        "class": "Mage",
+        "rank": 21
+      },
+      {
+        "name": "Narünn",
+        "class": "Druid",
+        "rank": 22
+      },
+      {
+        "name": "Scuffles",
+        "class": "Rogue",
+        "rank": 23
+      },
+      {
+        "name": "Bradjones",
+        "class": "Warrior",
+        "rank": 24
+      },
+      {
+        "name": "Silv",
+        "class": "Warrior",
+        "rank": 25
+      },
+      {
+        "name": "Pouns",
+        "class": "Rogue",
+        "rank": 26
+      },
+      {
+        "name": "Whyu",
+        "class": "Rogue",
+        "rank": 27
+      },
+      {
+        "name": "Alexanderr",
+        "class": "Warrior",
+        "rank": 28
+      },
+      {
+        "name": "Taniel",
+        "class": "Warrior",
+        "rank": 29
+      },
+      {
+        "name": "Iculus",
+        "class": "Warrior",
+        "rank": 30
+      },
+      {
+        "name": "Jooxter",
+        "class": "Warlock",
+        "rank": 31
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "name": "Maexxna Normal",
+    "rankings": [
+      {
+        "name": "Holyymolyy",
+        "class": "Priest",
+        "rank": 1
+      },
+      {
+        "name": "Bunlop",
+        "class": "Priest",
+        "rank": 2
+      },
+      {
+        "name": "Dayana",
+        "class": "Priest",
+        "rank": 3
+      },
+      {
+        "name": "Moonwell",
+        "class": "Druid",
+        "rank": 4
+      },
+      {
+        "name": "Aamara",
+        "class": "Priest",
+        "rank": 5
+      },
+      {
+        "name": "Trendkill",
+        "class": "Paladin",
+        "rank": 6
+      },
+      {
+        "name": "Esandarius",
+        "class": "Paladin",
+        "rank": 7
+      },
+      {
+        "name": "Msstorm",
+        "class": "Priest",
+        "rank": 8
+      },
+      {
+        "name": "Snormantha",
+        "class": "Priest",
+        "rank": 9
+      },
+      {
+        "name": "Alkindar",
+        "class": "Paladin",
+        "rank": 10
+      },
+      {
+        "name": "Fannia",
+        "class": "Druid",
+        "rank": 11
+      },
+      {
+        "name": "Palamino",
+        "class": "Paladin",
+        "rank": 12
+      },
+      {
+        "name": "Grindpa",
+        "class": "Warrior",
+        "rank": 13
+      },
+      {
+        "name": "Ninrah",
+        "class": "Warrior",
+        "rank": 14
+      },
+      {
+        "name": "Zuggithsf",
+        "class": "Warrior",
+        "rank": 15
+      },
+      {
+        "name": "Silv",
+        "class": "Warrior",
+        "rank": 16
+      },
+      {
+        "name": "Bradjones",
+        "class": "Warrior",
+        "rank": 17
+      },
+      {
+        "name": "Iculus",
+        "class": "Warrior",
+        "rank": 18
+      },
+      {
+        "name": "Taniel",
+        "class": "Warrior",
+        "rank": 19
+      },
+      {
+        "name": "Alexanderr",
+        "class": "Warrior",
+        "rank": 20
+      },
+      {
+        "name": "Brosephina",
+        "class": "Warrior",
+        "rank": 21
+      },
+      {
+        "name": "Pouns",
+        "class": "Rogue",
+        "rank": 22
+      },
+      {
+        "name": "Whyu",
+        "class": "Rogue",
+        "rank": 23
+      },
+      {
+        "name": "Oars",
+        "class": "Warrior",
+        "rank": 24
+      },
+      {
+        "name": "Badcandy",
+        "class": "Rogue",
+        "rank": 25
+      },
+      {
+        "name": "Scuffles",
+        "class": "Rogue",
+        "rank": 26
+      },
+      {
+        "name": "Nyxie",
+        "class": "Hunter",
+        "rank": 27
+      },
+      {
+        "name": "Acid",
+        "class": "Rogue",
+        "rank": 28
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "name": "Noth the Plaguebringer Normal",
+    "rankings": [
+      {
+        "name": "Holyymolyy",
+        "class": "Priest",
+        "rank": 1
+      },
+      {
+        "name": "Bunlop",
+        "class": "Priest",
+        "rank": 2
+      },
+      {
+        "name": "Fannia",
+        "class": "Druid",
+        "rank": 3
+      },
+      {
+        "name": "Moonwell",
+        "class": "Druid",
+        "rank": 4
+      },
+      {
+        "name": "Dayana",
+        "class": "Priest",
+        "rank": 5
+      },
+      {
+        "name": "Aamara",
+        "class": "Priest",
+        "rank": 6
+      },
+      {
+        "name": "Msstorm",
+        "class": "Priest",
+        "rank": 7
+      },
+      {
+        "name": "Esandarius",
+        "class": "Paladin",
+        "rank": 8
+      },
+      {
+        "name": "Trendkill",
+        "class": "Paladin",
+        "rank": 9
+      },
+      {
+        "name": "Alkindar",
+        "class": "Paladin",
+        "rank": 10
+      },
+      {
+        "name": "Snormantha",
+        "class": "Priest",
+        "rank": 11
+      },
+      {
+        "name": "Ninrah",
+        "class": "Warrior",
+        "rank": 12
+      },
+      {
+        "name": "Taniel",
+        "class": "Warrior",
+        "rank": 13
+      },
+      {
+        "name": "Scuffles",
+        "class": "Rogue",
+        "rank": 14
+      },
+      {
+        "name": "Oars",
+        "class": "Warrior",
+        "rank": 15
+      },
+      {
+        "name": "Silv",
+        "class": "Warrior",
+        "rank": 16
+      },
+      {
+        "name": "Brosephina",
+        "class": "Warrior",
+        "rank": 17
+      },
+      {
+        "name": "Palamino",
+        "class": "Paladin",
+        "rank": 18
+      },
+      {
+        "name": "Badcandy",
+        "class": "Rogue",
+        "rank": 19
+      },
+      {
+        "name": "Narünn",
+        "class": "Druid",
+        "rank": 20
+      },
+      {
+        "name": "Noshards",
+        "class": "Warlock",
+        "rank": 21
+      },
+      {
+        "name": "Pouns",
+        "class": "Rogue",
+        "rank": 22
+      },
+      {
+        "name": "Bradjones",
+        "class": "Warrior",
+        "rank": 23
+      },
+      {
+        "name": "Frostydevito",
+        "class": "Mage",
+        "rank": 24
+      },
+      {
+        "name": "Grindpa",
+        "class": "Warrior",
+        "rank": 25
+      },
+      {
+        "name": "Zuggithsf",
+        "class": "Warrior",
+        "rank": 26
+      },
+      {
+        "name": "Iculus",
+        "class": "Warrior",
+        "rank": 27
+      },
+      {
+        "name": "Alexanderr",
+        "class": "Warrior",
+        "rank": 28
+      },
+      {
+        "name": "Whyu",
+        "class": "Rogue",
+        "rank": 29
+      },
+      {
+        "name": "Acid",
+        "class": "Rogue",
+        "rank": 30
+      }
+    ]
+  },
+  {
+    "id": "52",
+    "name": "Heigan the Unclean Normal",
+    "rankings": [
+      {
+        "name": "Holyymolyy",
+        "class": "Priest",
+        "rank": 1
+      },
+      {
+        "name": "Fannia",
+        "class": "Druid",
+        "rank": 2
+      },
+      {
+        "name": "Esandarius",
+        "class": "Paladin",
+        "rank": 3
+      },
+      {
+        "name": "Msstorm",
+        "class": "Priest",
+        "rank": 4
+      },
+      {
+        "name": "Dayana",
+        "class": "Priest",
+        "rank": 5
+      },
+      {
+        "name": "Palamino",
+        "class": "Paladin",
+        "rank": 6
+      },
+      {
+        "name": "Trendkill",
+        "class": "Paladin",
+        "rank": 7
+      },
+      {
+        "name": "Bunlop",
+        "class": "Priest",
+        "rank": 8
+      },
+      {
+        "name": "Aamara",
+        "class": "Priest",
+        "rank": 9
+      },
+      {
+        "name": "Snormantha",
+        "class": "Priest",
+        "rank": 10
+      },
+      {
+        "name": "Bradjones",
+        "class": "Warrior",
+        "rank": 11
+      },
+      {
+        "name": "Narünn",
+        "class": "Druid",
+        "rank": 12
+      },
+      {
+        "name": "Grindpa",
+        "class": "Warrior",
+        "rank": 13
+      },
+      {
+        "name": "Silv",
+        "class": "Warrior",
+        "rank": 14
+      },
+      {
+        "name": "Alexanderr",
+        "class": "Warrior",
+        "rank": 15
+      },
+      {
+        "name": "Taniel",
+        "class": "Warrior",
+        "rank": 16
+      },
+      {
+        "name": "Oars",
+        "class": "Warrior",
+        "rank": 17
+      },
+      {
+        "name": "Ninrah",
+        "class": "Warrior",
+        "rank": 18
+      },
+      {
+        "name": "Zuggithsf",
+        "class": "Warrior",
+        "rank": 19
+      },
+      {
+        "name": "Brosephina",
+        "class": "Warrior",
+        "rank": 20
+      },
+      {
+        "name": "Iculus",
+        "class": "Warrior",
+        "rank": 21
+      },
+      {
+        "name": "Jooxter",
+        "class": "Warlock",
+        "rank": 22
+      }
+    ]
+  },
+  {
+    "id": "last",
+    "name": "Instructor Razuvious Normal",
+    "rankings": [
+      {
+        "name": "Holyymolyy",
+        "class": "Priest",
+        "rank": 1
+      },
+      {
+        "name": "Fannia",
+        "class": "Druid",
+        "rank": 2
+      },
+      {
+        "name": "Esandarius",
+        "class": "Paladin",
+        "rank": 3
+      },
+      {
+        "name": "Msstorm",
+        "class": "Priest",
+        "rank": 4
+      },
+      {
+        "name": "Dayana",
+        "class": "Priest",
+        "rank": 5
+      },
+      {
+        "name": "Palamino",
+        "class": "Paladin",
+        "rank": 6
+      },
+      {
+        "name": "Trendkill",
+        "class": "Paladin",
+        "rank": 7
+      },
+      {
+        "name": "Bunlop",
+        "class": "Priest",
+        "rank": 8
+      },
+      {
+        "name": "Aamara",
+        "class": "Priest",
+        "rank": 9
+      },
+      {
+        "name": "Snormantha",
+        "class": "Priest",
+        "rank": 10
+      },
+      {
+        "name": "Bradjones",
+        "class": "Warrior",
+        "rank": 11
+      },
+      {
+        "name": "Narünn",
+        "class": "Druid",
+        "rank": 12
+      },
+      {
+        "name": "Grindpa",
+        "class": "Warrior",
+        "rank": 13
+      },
+      {
+        "name": "Silv",
+        "class": "Warrior",
+        "rank": 14
+      },
+      {
+        "name": "Alexanderr",
+        "class": "Warrior",
+        "rank": 15
+      },
+      {
+        "name": "Taniel",
+        "class": "Warrior",
+        "rank": 16
+      },
+      {
+        "name": "Oars",
+        "class": "Warrior",
+        "rank": 17
+      },
+      {
+        "name": "Ninrah",
+        "class": "Warrior",
+        "rank": 18
+      },
+      {
+        "name": "Zuggithsf",
+        "class": "Warrior",
+        "rank": 19
+      },
+      {
+        "name": "Brosephina",
+        "class": "Warrior",
+        "rank": 20
+      },
+      {
+        "name": "Iculus",
+        "class": "Warrior",
+        "rank": 21
+      },
+      {
+        "name": "Jooxter",
+        "class": "Warlock",
+        "rank": 22
+      }
+    ]
+  }
+]
