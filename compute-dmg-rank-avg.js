@@ -1,14 +1,42 @@
 const encounterList = [];
 
+const august = [
+  require('./static/rankings/naxx/dmg/2024-08-05.json'),
+  require('./static/rankings/naxx/dmg/2024-08-13.json'),
+  require('./static/rankings/naxx/dmg/2024-08-18.json'),
+  require('./static/rankings/naxx/dmg/2024-08-20.json'),
+  require('./static/rankings/naxx/dmg/2024-08-25.json'),
+  require('./static/rankings/naxx/dmg/2024-08-27.json'),
+];
+
+const september = [
+  require('./static/rankings/naxx/dmg/2024-09-03.json'),
+  require('./static/rankings/naxx/dmg/2024-09-10.json'),
+  require('./static/rankings/naxx/dmg/2024-09-17.json'),
+  require('./static/rankings/naxx/dmg/2024-09-24.json'),
+];
+
+const october = [
+  require('./static/rankings/naxx/dmg/2024-10-01.json'),
+  require('./static/rankings/naxx/dmg/2024-10-08.json'),
+  require('./static/rankings/naxx/dmg/2024-10-15.json'),
+  require('./static/rankings/naxx/dmg/2024-10-22.json'),
+  require('./static/rankings/naxx/dmg/2024-10-28.json'),
+  require('./static/rankings/naxx/dmg/2024-10-29.json'),
+];
+
 const november = [
   require('./static/rankings/naxx/dmg/2024-11-04.json'),
   require('./static/rankings/naxx/dmg/2024-11-05.json'),
   require('./static/rankings/naxx/dmg/2024-11-11.json'),
   require('./static/rankings/naxx/dmg/2024-11-12.json'),
   require('./static/rankings/naxx/dmg/2024-11-18.json'),
-  require('./static/rankings/naxx/dmg/2024-11-19.json')
+  require('./static/rankings/naxx/dmg/2024-11-19.json'),
 ];
 
+encounterList.push(...august);
+encounterList.push(...september);
+encounterList.push(...october);
 encounterList.push(...november);
 
 const players = [];

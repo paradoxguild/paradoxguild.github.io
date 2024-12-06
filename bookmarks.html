@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/lib/tailwind-3.4.5.js"></script>
+  <script defer src="/lib/alpine-morph-3.x.x.js"></script>
+  <script defer src="/lib/alpine-collapse-3.x.x.js"></script>
+  <script defer src="/lib/alpine-3.x.x.js"></script>
+  <script src="/lib/htmx-2.0.3.js"></script>
+  <script src="/lib/htmx-preload-2.0.1.js"></script>
+  <script src="/lib/htmx-morph-1.9.12.js"></script>
+  <script src="/components/js/utils.js"></script>
+  <script src="/components/js/alpine-components.js"></script>
+  <script src="/components/js/htmx-components.js"></script>
+  <style type="text/tailwindcss">
+    body {
+      @apply bg-slate-200 dark:bg-zinc-900 text-sky-900 dark:text-teal-500;
+    }
+  </style>
+</head>
+
+<body x-data="data()">
+  <custom-nav page="Bookmarks"></custom-nav>
+
+  <div class="py-5 px-5 max-w-[1000px] mx-auto" x-data="data()">
+    <h1 class="text-3xl font-bold text-center">
+      Bookmark Utilities
+    </h1>
+
+    <h3 class="text-center">Right click any of the bookmarks below and click <strong>Bookmark Link</strong></h3>
+
+    <div class="py-4 flex flex-col items-center gap-4 mt-4">
+      <template x-for="button of buttons">
+        <a :href="button.href">
+          <button type="button" x-text="button.text"
+            class="cursor-pointer whitespace-nowrap rounded-md bg-sky-900 px-4 py-2 text-sm font-medium tracking-wide text-white transition hover:opacity-75 text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-900 active:opacity-100 active:outline-offset-0 disabled:opacity-75 disabled:cursor-not-allowed dark:bg-teal-400 dark:text-black dark:focus-visible:outline-teal-400"
+          ></button>
+        </a>
+      </template>
+    </div>
+  </div>
+
+  <script>
+    function data() {
+      return {
+        buttons: [
+          { href: 'javascript:void(0)', text: 'WarCraftLogs DMG Ranker' },
+          { href: 'javascript:void(0)', text: 'WarCraftLogs Heal Ranker' },
+        ],
+        init() {
+          fetch("wcl-dmg-rankings.js")
+            .then(res => res.text())
+            .then(scriptSrc => {
+              this.buttons[0].href = 'javascript:' + scriptSrc;
+            });
+
+            
+          fetch("wcl-heal-rankings.js")
+            .then(res => res.text())
+            .then(scriptSrc => {
+              this.buttons[1].href = 'javascript:' + scriptSrc;
+            });
+        }
+      };
+    }
+  </script>
+</body>
+
+</html>

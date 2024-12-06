@@ -1,4 +1,15 @@
 (async function() {
+  if (!window.location.href.match("https?\:\/\/vanilla.warcraftlogs.com\/reports\/([A-Za-z0-9])+")) {
+    alert('This bookmark can only be ran on a Vanilla WarCraftLogs page.');
+    return;
+  }
+
+  if (!window.location.href.match("https?\:\/\/vanilla.warcraftlogs.com\/reports\/([A-Za-z0-9])+$")) {
+    alert('A redirect to the base report URL will happen after dismissing this alert.\n\nYou will need to click the bookmark again!\n\nPlease always run from the base report URL.');
+    document.querySelector('#report-title-link').click();
+    return;
+  }
+
   /* Event-based variables */
   const checksumChangedEvent = new Event("checksumChanged");
   let checksum = -1;
@@ -132,4 +143,14 @@
   }
 
   console.log('encounters', encounters);
+
+  const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(encounters, null, 2));
+  const downloadAnchorNode = document.createElement('a');
+  downloadAnchorNode.setAttribute('href', dataStr);
+  downloadAnchorNode.setAttribute('download', zone + '-' + logDateText + '.json');
+  document.body.appendChild(downloadAnchorNode);
+  downloadAnchorNode.click();
+  downloadAnchorNode.remove();
+
+  alert('File downloaded to ' + zone + '-' + logDateText + '.json');
 })();

@@ -1,0 +1,269 @@
+[
+  {
+    "id": 70,
+    "name": "Grand Widow Faerlina",
+    "rankings": []
+  },
+  {
+    "id": 31,
+    "name": "Grobbulus",
+    "rankings": [
+      {
+        "name": "Frostydevito",
+        "class": "Mage",
+        "rank": 1
+      },
+      {
+        "name": "Chiillii",
+        "class": "Mage",
+        "rank": 2
+      },
+      {
+        "name": "Frosturself",
+        "class": "Mage",
+        "rank": 3
+      },
+      {
+        "name": "Kismyleather",
+        "class": "Mage",
+        "rank": 4
+      },
+      {
+        "name": "Misself",
+        "class": "Hunter",
+        "rank": 5
+      },
+      {
+        "name": "Nyxie",
+        "class": "Hunter",
+        "rank": 6
+      },
+      {
+        "name": "Popup",
+        "class": "Rogue",
+        "rank": 7
+      },
+      {
+        "name": "Vî",
+        "class": "Warrior",
+        "rank": 8
+      },
+      {
+        "name": "Scuffles",
+        "class": "Rogue",
+        "rank": 9
+      },
+      {
+        "name": "Bradjones",
+        "class": "Warrior",
+        "rank": 10
+      },
+      {
+        "name": "Basta",
+        "class": "Warrior",
+        "rank": 11
+      },
+      {
+        "name": "Danamantha",
+        "class": "Hunter",
+        "rank": 12
+      },
+      {
+        "name": "Oars",
+        "class": "Warrior",
+        "rank": 13
+      },
+      {
+        "name": "Brosephina",
+        "class": "Warrior",
+        "rank": 14
+      },
+      {
+        "name": "Lilianas",
+        "class": "Rogue",
+        "rank": 15
+      },
+      {
+        "name": "Ninrah",
+        "class": "Warrior",
+        "rank": 16
+      },
+      {
+        "name": "Taniel",
+        "class": "Warrior",
+        "rank": 17
+      },
+      {
+        "name": "Figro",
+        "class": "Rogue",
+        "rank": 18
+      },
+      {
+        "name": "Frantica",
+        "class": "Hunter",
+        "rank": 19
+      },
+      {
+        "name": "Milo",
+        "class": "Warrior",
+        "rank": 20
+      },
+      {
+        "name": "Shøgun",
+        "class": "Rogue",
+        "rank": 21
+      },
+      {
+        "name": "Iculus",
+        "class": "Warrior",
+        "rank": 22
+      },
+      {
+        "name": "Grindpa",
+        "class": "Warrior",
+        "rank": 23
+      },
+      {
+        "name": "Narünn",
+        "class": "Druid",
+        "rank": 24
+      },
+      {
+        "name": "Dossius",
+        "class": "Paladin",
+        "rank": 25
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Patchwerk",
+    "rankings": [
+      {
+        "name": "Frostydevito",
+        "class": "Mage",
+        "rank": 1
+      },
+      {
+        "name": "Chiillii",
+        "class": "Mage",
+        "rank": 2
+      },
+      {
+        "name": "Frosturself",
+        "class": "Mage",
+        "rank": 3
+      },
+      {
+        "name": "Kismyleather",
+        "class": "Mage",
+        "rank": 4
+      },
+      {
+        "name": "Misself",
+        "class": "Hunter",
+        "rank": 5
+      },
+      {
+        "name": "Nyxie",
+        "class": "Hunter",
+        "rank": 6
+      },
+      {
+        "name": "Popup",
+        "class": "Rogue",
+        "rank": 7
+      },
+      {
+        "name": "Vî",
+        "class": "Warrior",
+        "rank": 8
+      },
+      {
+        "name": "Scuffles",
+        "class": "Rogue",
+        "rank": 9
+      },
+      {
+        "name": "Bradjones",
+        "class": "Warrior",
+        "rank": 10
+      },
+      {
+        "name": "Basta",
+        "class": "Warrior",
+        "rank": 11
+      },
+      {
+        "name": "Danamantha",
+        "class": "Hunter",
+        "rank": 12
+      },
+      {
+        "name": "Oars",
+        "class": "Warrior",
+        "rank": 13
+      },
+      {
+        "name": "Brosephina",
+        "class": "Warrior",
+        "rank": 14
+      },
+      {
+        "name": "Lilianas",
+        "class": "Rogue",
+        "rank": 15
+      },
+      {
+        "name": "Ninrah",
+        "class": "Warrior",
+        "rank": 16
+      },
+      {
+        "name": "Taniel",
+        "class": "Warrior",
+        "rank": 17
+      },
+      {
+        "name": "Figro",
+        "class": "Rogue",
+        "rank": 18
+      },
+      {
+        "name": "Frantica",
+        "class": "Hunter",
+        "rank": 19
+      },
+      {
+        "name": "Milo",
+        "class": "Warrior",
+        "rank": 20
+      },
+      {
+        "name": "Shøgun",
+        "class": "Rogue",
+        "rank": 21
+      },
+      {
+        "name": "Iculus",
+        "class": "Warrior",
+        "rank": 22
+      },
+      {
+        "name": "Grindpa",
+        "class": "Warrior",
+        "rank": 23
+      },
+      {
+        "name": "Narünn",
+        "class": "Druid",
+        "rank": 24
+      },
+      {
+        "name": "Dossius",
+        "class": "Paladin",
+        "rank": 25
+      }
+    ]
+  }
+]
