@@ -133,7 +133,7 @@
 
   await initialize();
 
-  const zone = document.querySelector(".report-overview-zone-name").innerText.replace("'", "-").toLowerCase();
+  const zone = document.querySelector(".report-overview-zone-name").innerText.replace("'", "-").replace(/ /g, '-').toLowerCase();
   const logDate = new Date(document.querySelector("#report-start-date").innerText);
   const logDateText = logDate.getFullYear() + '-' + (logDate.getMonth() + 1).toString().padStart(2, '0') + '-' + logDate.getDate().toString().padStart(2, '0');
 
