@@ -105,7 +105,7 @@
   async function grabEncounterData() {
     console.debug('Grabbing encounter data...');
     await useParameters({ type: 'damage-done' }, function() {
-      document.querySelectorAll("a.Boss.actor-menu-link").forEach(function(anchor) {
+      document.querySelectorAll("a.Boss.actor-menu-link[onclick*='setFilterTarget']").forEach(function(anchor) {
         const encounterId = parseInt(cleanString(anchor.getAttribute('onclick').split("setFilterTarget(")[1].split(",")[0]));
         const encounterName = anchor.innerText;
         encounters.push({ id: encounterId, name: encounterName });
