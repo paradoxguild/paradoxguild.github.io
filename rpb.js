@@ -239,9 +239,10 @@
   var showRPB = async () => {
     window._global.changeView({});
 
-    const oldDiv = document.querySelector("#paradox-rpb-container");
-    if (oldDiv) {
-      oldDiv.remove();
+    const existingContainer = document.querySelector("#paradox-rpb-container");
+    if (existingContainer) {
+      existingContainer.style.display = existingContainer.style.display === 'flex' ? 'none' : 'flex';
+      return;
     }
     const container = createRPBContainer();
     const tableContainer = createTableContainer();
