@@ -28,7 +28,11 @@
         "Sunder Armor",
         "Taunt",
         "Thunderclap",
+        "Melee",
       ],
+      mutations: {
+        "Melee": { options: 66 },
+      },
     },
   ];
 
@@ -66,19 +70,27 @@
     return { reportId };
   };
 
-  var runExpression = async (expression) => {
+  var runExpression = async (expression, viewMutator = {}) => {
     const wrapper = document.querySelector("#main-table-0_wrapper");
 
     if (wrapper) {
       wrapper.remove();
     }
 
-    window._global.changeView({
-      type: "casts",
-      boss: -3,
-      difficulty: 0,
-      pins: "2$Separate$#244F4B$expression$" + expression,
-    });
+    const viewParams = Object.assign(
+      {},
+      {
+        type: "casts",
+        boss: -3,
+        difficulty: 0,
+        pins: "2$Separate$#244F4B$expression$" + expression,
+      },
+      viewMutator
+    );
+
+    console.log(expression, viewParams);
+
+    window._global.changeView(viewParams);
     await waitFor(() => {
       return document.querySelectorAll("#main-table-0_wrapper").length;
     }, 50);
@@ -208,7 +220,8 @@
   };
 
   var runRPB = async (role) => {
-    const abilities = RPB_ROLES.find((r) => r.name === role).abilities;
+    const roleObj = RPB_ROLES.find((r) => r.name === role);
+    const abilities = roleObj.abilities;
     const loader = createLoader();
 
     const tableContainer = document.querySelector(
@@ -226,7 +239,8 @@
             role +
             "' AND ability.name IN ('" +
             ability +
-            "')"
+            "')",
+          roleObj.mutations[ability] || {}
         )
       ) {
         cloneActiveTable(ability, holder);
@@ -241,7 +255,8 @@
 
     const existingContainer = document.querySelector("#paradox-rpb-container");
     if (existingContainer) {
-      existingContainer.style.display = existingContainer.style.display === 'flex' ? 'none' : 'flex';
+      existingContainer.style.display =
+        existingContainer.style.display === "flex" ? "none" : "flex";
       return;
     }
     const container = createRPBContainer();
