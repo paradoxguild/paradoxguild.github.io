@@ -3,36 +3,41 @@
     {
       name: "warrior",
       abilities: [
-        "Battle Shout",
-        "Berserker Stance",
-        "Bloodthirst",
-        "Mortal Strike",
-        "Sweeping Strikes",
-        "Charge",
-        "Defensive Stance",
-        "Demoralizing Shout",
-        "Disarm",
-        "Execute",
-        "Hamstring",
-        "Heroic Strike",
-        "Intercept",
-        "Intimidating Shout",
-        "Mocking Blow",
-        "Overpower",
-        "Pummel",
-        "Revenge",
-        "Shield Bash",
-        "Shield Block",
-        "Shield Slam",
-        "Slam",
-        "Sunder Armor",
-        "Taunt",
-        "Thunderclap",
-        "Melee",
+        { name: "Battle Shout" },
+        { name: "Berserker Stance" },
+        { name: "Bloodthirst" },
+        { name: "Mortal Strike" },
+        { name: "Sweeping Strikes" },
+        { name: "Charge" },
+        { name: "Defensive Stance" },
+        { name: "Demoralizing Shout" },
+        { name: "Disarm" },
+        { name: "Execute" },
+        { name: "Hamstring" },
+        { name: "Heroic Strike" },
+        { name: "Intercept" },
+        { name: "Intimidating Shout" },
+        { name: "Mocking Blow" },
+        { name: "Overpower" },
+        { name: "Pummel" },
+        { name: "Revenge" },
+        { name: "Shield Bash" },
+        { name: "Shield Block" },
+        { name: "Shield Slam" },
+        { name: "Slam" },
+        { name: "Sunder Armor" },
+        { name: "Taunt" },
+        { name: "Thunderclap" },
+        { name: "Melee", viewArgs: { options: 66 } },
+        { name: "Cleave" },
+        { name: "Whirlwind" },
+        { name: "Berserker Rage" },
+        { name: "Challenging Shout" },
+        { name: "Death Wish" },
+        { name: "Last Stand" },
+        { name: "Recklessness" },
+        { name: "Shield Wall" },
       ],
-      mutations: {
-        "Melee": { options: 66 },
-      },
     },
   ];
 
@@ -51,26 +56,19 @@
   };
 
   var setup = () => {
-    if (!window.WH || !window._global || !window._global.changeView) {
-      alert("RPB can only be ran on WarcraftLogs");
+    if (
+      !window._global ||
+      !window._global.changeView ||
+      !window._global.report_id
+    ) {
+      alert("RPB can only be ran on a WarcraftLogs Report");
       return false;
     }
 
-    const reportKey = Object.keys(window.WH.getGets()).find((k) =>
-      k.startsWith("reports/")
-    );
-
-    if (!reportKey) {
-      alert("RPB can only be ran on WarcraftLogs");
-      return false;
-    }
-
-    const reportId = reportKey.substring(8);
-
-    return { reportId };
+    return { reportId: window._global.report_id };
   };
 
-  var runExpression = async (expression, viewMutator = {}) => {
+  var runExpression = async (expression, viewArgs = {}) => {
     const wrapper = document.querySelector("#main-table-0_wrapper");
 
     if (wrapper) {
@@ -85,10 +83,8 @@
         difficulty: 0,
         pins: "2$Separate$#244F4B$expression$" + expression,
       },
-      viewMutator
+      viewArgs
     );
-
-    console.log(expression, viewParams);
 
     window._global.changeView(viewParams);
     await waitFor(() => {
@@ -238,12 +234,12 @@
           "source.class = '" +
             role +
             "' AND ability.name IN ('" +
-            ability +
+            ability.name +
             "')",
-          roleObj.mutations[ability] || {}
+          ability.viewArgs || {}
         )
       ) {
-        cloneActiveTable(ability, holder);
+        cloneActiveTable(ability.name, holder);
       }
     }
 
