@@ -67,7 +67,12 @@
   };
 
   var runExpression = async (expression) => {
-    document.querySelector("#main-table-0_wrapper").remove();
+    const wrapper = document.querySelector("#main-table-0_wrapper");
+
+    if (wrapper) {
+      wrapper.remove();
+    }
+
     window._global.changeView({
       type: "casts",
       boss: -3,
@@ -191,7 +196,10 @@
     tableWrapper.innerHTML = tableHtml;
     tableWrapper.classList.add("rpb-wrapper");
 
-    tableWrapper.querySelector(".dt-buttons").remove();
+    const buttons = tableWrapper.querySelector(".dt-buttons");
+    if (buttons) {
+      buttons.remove();
+    }
     tableWrapper.querySelectorAll("a").forEach((a) => (a.target = "_blank"));
 
     container.appendChild(heading);
