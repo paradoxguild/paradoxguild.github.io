@@ -46,18 +46,10 @@
     function data() {
       return {
         buttons: [
-          { href: 'javascript:void(0)', text: 'WarCraftLogs DMG Ranker' },
-          { href: 'javascript:void(0)', text: 'WarCraftLogs Heal Ranker' },
+          { href: 'javascript:void(0)', text: 'WCL RPB Tool' },
         ],
         init() {
-          fetch("wcl-dmg-rankings.js")
-            .then(res => res.text())
-            .then(scriptSrc => {
-              this.buttons[0].href = 'javascript:' + scriptSrc;
-            });
-
-            
-          fetch("wcl-heal-rankings.js")
+          fetch("rpb.js")
             .then(res => res.text())
             .then(scriptSrc => {
               this.buttons[1].href = 'javascript:' + scriptSrc;
