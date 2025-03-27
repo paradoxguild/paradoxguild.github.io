@@ -174,7 +174,7 @@
     el.style.borderTop = "16px solid rgb(221, 46, 46)";
     el.style.width = "100px";
     el.style.height = "100px";
-    el.style.marginTop = "35px";
+    el.style.marginTop = "15px";
     el.animate(
       [{ transform: "rotate(0deg)" }, { transform: "rotate(360deg)" }],
       {
@@ -182,6 +182,15 @@
         iterations: Infinity,
       }
     );
+    return el;
+  };
+
+  var createStatus = () => {
+    const el = document.createElement("p");
+    el.style.fontSize = "24px";
+    el.style.color = "rgb(243, 243, 243)";
+    el.style.textAlign = "center";
+    el.style.width = '100%';
     return el;
   };
 
@@ -218,17 +227,20 @@
   var runRPB = async (role) => {
     const roleObj = RPB_ROLES.find((r) => r.name === role);
     const abilities = roleObj.abilities;
+    const status = createStatus();
     const loader = createLoader();
 
     const tableContainer = document.querySelector(
       "#paradox-rpb-container .rpb-table-container"
     );
     tableContainer.innerHTML = "";
+    tableContainer.appendChild(status);
     tableContainer.appendChild(loader);
 
     const holder = document.createElement("div");
 
     for (let ability of abilities) {
+      status.innerHTML = "Collecting casts: " + ability.name;
       if (
         await runExpression(
           "source.class = '" +
