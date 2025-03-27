@@ -52,7 +52,7 @@
           fetch("rpb.js")
             .then(res => res.text())
             .then(scriptSrc => {
-              this.buttons[1].href = 'javascript:' + scriptSrc;
+              this.buttons[0].href = 'javascript:' + scriptSrc;
             });
         }
       };
