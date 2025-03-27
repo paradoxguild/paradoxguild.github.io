@@ -39,6 +39,77 @@
         { name: "Shield Wall" },
       ],
     },
+    {
+      name: "rogue",
+      abilities: [
+        { name: "Ambush" },
+        { name: "Backstab" },
+        { name: "Cheap Shot" },
+        { name: "Disarm Trap" },
+        { name: "Distract" },
+        { name: "Eviscerate" },
+        { name: "Expose Armor" },
+        { name: "Feint" },
+        { name: "Garrote" },
+        { name: "Gouge" },
+        { name: "Hemmorrhage" },
+        { name: "Kick" },
+        { name: "Kidney Shot" },
+        { name: "Rupture" },
+        { name: "Sinister Strike" },
+        { name: "Slice and Dice" },
+        { name: "Melee", viewArgs: { options: 66 } },
+        { name: "Blade Flurry" },
+        { name: "Adrenaline Rush" },
+        { name: "Evasion" },
+        { name: "Vanish" },
+      ],
+    },
+    {
+      name: "Hunter",
+      abilities: [
+        { name: "Aimed Shot" },
+        { name: "Arcane Shot" },
+        { name: "Concussive Shot" },
+        { name: "Distracting Shot" },
+        { name: "Growl" },
+        { name: "Mongoose Bite" },
+        { name: "Raptor Strike" },
+        { name: "Scorpid Sting" },
+        { name: "Tranquilizing Shot" },
+        { name: "Viper Sting" },
+        { name: "Wing Clip" },
+        { name: "Wyvern Sting" },
+        { name: "Aspect of the Beast" },
+        { name: "Aspect of the Cheetah" },
+        { name: "Aspect of the Hawk" },
+        { name: "Aspect of the Monkey" },
+        { name: "Aspect of the Pack" },
+        { name: "Aspect of the Wild" },
+        { name: "Disengage" },
+        { name: "Dismiss Pet" },
+        { name: "Eagle Eye" },
+        { name: "Eyes of the Beast" },
+        { name: "Feign Death" },
+        { name: "Flare" },
+        { name: "Hunter's Mark" },
+        { name: "Mend Pet" },
+        { name: "Revive Pet" },
+        { name: "Trueshot Aura" },
+        { name: "Auto Shot" },
+        { name: "Melee", viewArgs: { options: 66 } },
+        { name: "Multi-Shot" },
+        { name: "Volley" },
+        { name: "Explosive Trap" },
+        { name: "Freezing Trap" },
+        { name: "Frost Trap" },
+        { name: "Immolation Trap" },
+        { name: "Bestial Wrath" },
+        { name: "Deterrence" },
+        { name: "Rapid Fire" },
+        { name: "Readiness" },
+      ]
+    }
   ];
 
   var sleep = async (ms) => {
@@ -190,7 +261,7 @@
     el.style.fontSize = "24px";
     el.style.color = "rgb(243, 243, 243)";
     el.style.textAlign = "center";
-    el.style.width = '100%';
+    el.style.width = "100%";
     return el;
   };
 
