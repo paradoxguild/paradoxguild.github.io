@@ -108,8 +108,87 @@
         { name: "Deterrence" },
         { name: "Rapid Fire" },
         { name: "Readiness" },
-      ]
-    }
+      ],
+    },
+    {
+      name: "Druid",
+      abilities: [
+        { name: "Faerie Fire" },
+        { name: "Faerie Fire (Feral)" },
+        { name: "Entangling Roots" },
+        { name: "Insect Swarm" },
+        { name: "Moonfire" },
+        { name: "Starfire" },
+        { name: "Thorns" },
+        { name: "Wrath" },
+        { name: "Hibernate" },
+        { name: "Abolish Poison" },
+        { name: "Cure Poison" },
+        { name: "Remove Curse" },
+        { name: "Gift of the Wild" },
+        { name: "Mark of the Wild" },
+        { name: "Healing Touch (Rank 1)", id: 5185 },
+        { name: "Healing Touch (Rank 2)", id: 5186 },
+        { name: "Healing Touch (Rank 3)", id: 5187 },
+        { name: "Healing Touch (Rank 4)", id: 5188 },
+        { name: "Healing Touch (Rank 5)", id: 5189 },
+        { name: "Healing Touch (Rank 6)", id: 6778 },
+        { name: "Healing Touch (Rank 7)", id: 8903 },
+        { name: "Healing Touch (Rank 8)", id: 9758 },
+        { name: "Healing Touch (Rank 9)", id: 9888 },
+        { name: "Healing Touch (Rank 10)", id: 9889 },
+        { name: "Healing Touch (Rank 11)", id: 25297 },
+        { name: "Regrowth (Rank 1)", id: 8936 },
+        { name: "Regrowth (Rank 2)", id: 8938 },
+        { name: "Regrowth (Rank 3)", id: 8939 },
+        { name: "Regrowth (Rank 4)", id: 8940 },
+        { name: "Regrowth (Rank 5)", id: 8941 },
+        { name: "Regrowth (Rank 6)", id: 9750 },
+        { name: "Regrowth (Rank 7)", id: 9856 },
+        { name: "Regrowth (Rank 8)", id: 9857 },
+        { name: "Regrowth (Rank 9)", id: 9858 },
+        { name: "Rejuvenation (Rank 1)", id: 774 },
+        { name: "Rejuvenation (Rank 2)", id: 1058 },
+        { name: "Rejuvenation (Rank 3)", id: 1430 },
+        { name: "Rejuvenation (Rank 4)", id: 2090 },
+        { name: "Rejuvenation (Rank 5)", id: 2091 },
+        { name: "Rejuvenation (Rank 6)", id: 3627 },
+        { name: "Rejuvenation (Rank 7)", id: 8910 },
+        { name: "Rejuvenation (Rank 8)", id: 9839 },
+        { name: "Rejuvenation (Rank 9)", id: 9840 },
+        { name: "Rejuvenation (Rank 10)", id: 9841 },
+        { name: "Rejuvenation (Rank 11)", id: 25299 },
+        { name: "Swiftmend" },
+        { name: "Melee", viewArgs: { options: 66 } },
+        { name: "Bear Form" },
+        { name: "Cat Form" },
+        { name: "Dire Bear Form" },
+        { name: "Bash" },
+        { name: "Claw" },
+        { name: "Cower" },
+        { name: "Demoralizing Roar" },
+        { name: "Enrage" },
+        { name: "Ferocious Bite" },
+        { name: "Growl" },
+        { name: "Maul" },
+        { name: "Pounce" },
+        { name: "Prowl" },
+        { name: "Rake" },
+        { name: "Ravage" },
+        { name: "Rip" },
+        { name: "Shred" },
+        { name: "Swipe" },
+        { name: "Tiger's Fury" },
+        { name: "Hurricane" },
+        { name: "Challenging Roar" },
+        { name: "Dash" },
+        { name: "Frenzied Regeneration" },
+        { name: "Innervate" },
+        { name: "Nature's Swiftness" },
+        { name: "Rebirth" },
+        { name: "Tranquility" },
+      ],
+    },
   ];
 
   var sleep = async (ms) => {
@@ -312,13 +391,18 @@
 
     for (let ability of abilities) {
       status.innerHTML = "Collecting casts: " + ability.name;
+
+      const prop = ability.id ? "id" : "name";
+      const value = ability.id ? ability.id : "'" + ability.name + "'";
       if (
         await runExpression(
           "source.class = '" +
             role +
-            "' AND ability.name IN ('" +
-            ability.name +
-            "')",
+            "' AND ability." +
+            prop +
+            " IN (" +
+            value +
+            ")",
           ability.viewArgs || {}
         )
       ) {
