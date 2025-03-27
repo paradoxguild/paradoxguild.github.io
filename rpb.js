@@ -327,8 +327,8 @@
         { name: "Elemental Mastery" },
         { name: "Mana Tide Totem" },
         { name: "Nature's Swiftness" },
-      ]
-    }
+      ],
+    },
   ];
 
   var sleep = async (ms) => {
