@@ -430,9 +430,9 @@
     button.style.width = "300px";
     button.style.padding = "8px";
     button.style.marginTop = "8px";
-    button.onclick = () => {
+    button.onclick = async () => {
       button.disabled = true;
-      runRPB(dropdown.value);
+      await runRPB(dropdown.value);
       button.disabled = false;
     };
 
